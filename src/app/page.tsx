@@ -5,6 +5,7 @@ import {
   HospitalityPillars,
   ServiceSchedule,
   ReviewsSlider,
+  BanquetingInquiry,
 } from "@/components/home";
 
 export default function Home() {
@@ -27,6 +28,9 @@ export default function Home() {
 
       {/* 6. What Our Customers Say / Customer Reviews Slider with White (#FFFFFF) background */}
       <ReviewsSlider />
+
+      {/* 7. Banqueting & Direct Inquiries / Contact Form with #F5F1EB (60%) warm ivory background */}
+      <BanquetingInquiry />
 
       {/* Subsequent sections will continue to alternate backgrounds */}
     </main>

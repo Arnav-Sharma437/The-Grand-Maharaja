@@ -6,7 +6,32 @@ import Link from "next/link";
 import { Star, ArrowRight, Utensils, MapPin, CheckCircle2 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
+// Real Authentic Images from the Website
+const REAL_HERO_IMAGES = [
+  {
+    src: "/images/about/about-grand-maharaja-exterior-facade.png",
+    alt: "The Grand Maharaja Fine Indian Cuisine Restaurant Exterior in Leicester",
+    label: "Catherine St Facade",
+  },
+  {
+    src: "/images/hero/hero-slider-royal-ambiance-1.jpg",
+    alt: "The Grand Maharaja Royal Dining Hall & Chandeliers",
+    label: "Imperial Dining Hall",
+  },
+  {
+    src: "/images/hero/hero-slider-cuisine-spread-2.jpg",
+    alt: "The Grand Maharaja Royal Indian Vegetarian Culinary Feast",
+    label: "Royal Cuisine Spread",
+  },
+  {
+    src: "/images/about/about-royal-golden-backlit-bar.png",
+    alt: "The Grand Maharaja Golden Backlit Bar & Lounge",
+    label: "Golden Backlit Bar",
+  },
+];
+
 export function HeroBanner() {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,11 +49,16 @@ export function HeroBanner() {
     setTimeout(() => setSubmitted(false), 4000);
   };
 
+  const currentImage = REAL_HERO_IMAGES[activeImageIndex];
+
   return (
     <section className="relative w-full bg-[#F5F1EB]/60 pt-8 sm:pt-12 lg:pt-14 pb-14 sm:pb-16 lg:pb-20 overflow-hidden">
-      {/* Main Hero Container */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      {/* Main 1400px Hero Container */}
+      <div
+        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        style={{ maxWidth: "1400px" }}
+      >
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-center">
           {/* Left Column: Headlines & Call to Actions */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* Google Reviews Pill Badge */}
@@ -67,7 +97,7 @@ export function HeroBanner() {
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-playfair text-4xl sm:text-5xl lg:text-[54px] leading-[1.14] text-[#1A1A1A] font-semibold tracking-tight">
+            <h1 className="font-playfair text-4xl sm:text-5xl lg:text-[54px] xl:text-[58px] leading-[1.12] text-[#1A1A1A] font-semibold tracking-tight">
               Royal Flavours,
               <br />
               <span className="font-playfair italic font-normal text-[#9B7B34]">
@@ -103,19 +133,37 @@ export function HeroBanner() {
             </div>
           </div>
 
-          {/* Right Column: Hero Restaurant Facade Card with Floating Location Badge */}
+          {/* Right Column: Hero Real Restaurant Card with Floating Location Badge */}
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl p-2.5 bg-white shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-[#EBE6DC]">
-              {/* Restaurant Facade at Dusk */}
-              <div className="relative w-full h-[360px] sm:h-[420px] lg:h-[450px] rounded-2xl overflow-hidden">
+              {/* Real Photo Frame */}
+              <div className="relative w-full h-[380px] sm:h-[450px] lg:h-[490px] xl:h-[510px] rounded-2xl overflow-hidden bg-[#1A1A1A]">
                 <Image
-                  src="/images/hero/hero-grand-maharaja-at-dusk.png"
-                  alt="The Grand Maharaja Fine Indian Cuisine Restaurant Facade in Leicester"
+                  src={currentImage.src}
+                  alt={currentImage.alt}
                   fill
                   priority
-                  className="object-cover object-center"
+                  className="object-cover object-center transition-all duration-500"
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
+
+                {/* Subtle Image Switcher Dots (allowing user to view other authentic website photos) */}
+                <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-white/20">
+                  {REAL_HERO_IMAGES.map((img, idx) => (
+                    <button
+                      key={img.label}
+                      type="button"
+                      onClick={() => setActiveImageIndex(idx)}
+                      title={img.label}
+                      aria-label={`View ${img.label}`}
+                      className={`h-2 transition-all duration-200 rounded-full ${
+                        activeImageIndex === idx
+                          ? "w-5 bg-[#F3E5AB]"
+                          : "w-2 bg-white/60 hover:bg-white"
+                      }`}
+                    />
+                  ))}
+                </div>
               </div>
 
               {/* Floating Location Card */}
@@ -136,9 +184,11 @@ export function HeroBanner() {
           </div>
         </div>
 
-        {/* Bottom Floating Booking Bar ("SWIFT BOOKING DESK") */}
-        <div className="mt-12 sm:mt-16">
-          <div className="bg-white rounded-2xl p-5 sm:p-7 shadow-[0_10px_35px_rgba(0,0,0,0.05)] border border-[#EBE6DC]">
+        {/* Bottom Floating Booking Bar ("SWIFT BOOKING DESK") - 1400px Container */}
+        <div className="w-full mt-12 sm:mt-16">
+          <div
+            className="w-full bg-white rounded-2xl p-5 sm:p-7 lg:p-8 shadow-[0_10px_35px_rgba(0,0,0,0.05)] border border-[#EBE6DC]"
+          >
             {/* Header Row */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-4 border-b border-[#F0EBE3]">
               <div>
@@ -156,7 +206,7 @@ export function HeroBanner() {
             </div>
 
             {/* Booking Form Grid */}
-            <form onSubmit={handleSubmit} className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3.5 items-end">
+            <form onSubmit={handleSubmit} className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3.5 xl:gap-4 items-end">
               {/* Field 1: Name */}
               <div className="space-y-1.5">
                 <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">

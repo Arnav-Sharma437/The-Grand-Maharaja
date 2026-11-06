@@ -34,7 +34,10 @@ export function Header({ className = "" }: HeaderProps) {
           : "border-[#F0EBE3]"
       } ${className}`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div
+        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 h-20 flex items-center justify-between"
+        style={{ maxWidth: "1400px" }}
+      >
         {/* Left: Circular Black Crest + Two-Line Brand Title */}
         <div className="flex items-center">
           <Link
@@ -42,14 +45,14 @@ export function Header({ className = "" }: HeaderProps) {
             className="flex items-center gap-3 focus:outline-none group"
             aria-label="The Grand Maharaja - Home"
           >
-            {/* Circular Black Medallion Crest */}
+            {/* Real Original Circular Crest Logo from Website */}
             <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222] shadow-sm transition-transform duration-200 group-hover:scale-105">
               <Image
-                src={BRAND_LOGOS.circularSeal}
+                src={BRAND_LOGOS.circularSealSolid}
                 alt="The Grand Maharaja Crest"
-                width={40}
-                height={40}
-                className="object-contain p-0.5"
+                width={44}
+                height={44}
+                className="object-contain"
                 priority
               />
             </div>

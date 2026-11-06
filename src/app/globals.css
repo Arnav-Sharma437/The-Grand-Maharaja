@@ -46,6 +46,9 @@
   --font-cinzel: var(--font-cinzel);
   --font-cormorant: var(--font-cormorant);
   --font-sans: var(--font-sans);
+
+  /* Container width override to 1400px */
+  --container-7xl: 87.5rem;
 }
 
 /* Base resets & smooth scrolling */

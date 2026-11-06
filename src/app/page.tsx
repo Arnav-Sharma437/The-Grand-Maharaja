@@ -1,4 +1,9 @@
-import { HeroBanner, SpecialDishes, SignatureMenu } from "@/components/home";
+import {
+  HeroBanner,
+  SpecialDishes,
+  SignatureMenu,
+  HospitalityPillars,
+} from "@/components/home";
 
 export default function Home() {
   return (
@@ -11,6 +16,9 @@ export default function Home() {
 
       {/* 3. Heritage Gastronomy / Signature À La Carte & Bar with #F5F1EB (60%) warm ivory background */}
       <SignatureMenu />
+
+      {/* 4. Imperial Standard / Three Pillars of Royal Hospitality with White (#FFFFFF) background */}
+      <HospitalityPillars />
 
       {/* Subsequent sections will continue to alternate backgrounds */}
     </main>

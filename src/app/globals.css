@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0B0B0B;
+  --background: #0A0A0A;
   --foreground: #FAF7F2;
   --gold: #D4AF37;
   --gold-champagne: #E5C07B;
+  --gold-light: #F3E5AB;
   --gold-muted: #C5A059;
-  --gold-light: #F5E6C8;
+  --gold-dark: #997A2D;
   --ivory: #FAF7F2;
   --ivory-warm: #F5F0E6;
 }
@@ -15,21 +16,23 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-brand-black: #0B0B0B;
+  --color-brand-black: #0A0A0A;
   --color-brand-black-deep: #050505;
-  --color-brand-black-card: #141414;
+  --color-brand-black-card: #121212;
+  --color-brand-black-elevated: #181818;
   --color-brand-black-border: #26221C;
 
   --color-gold: #D4AF37;
   --color-gold-champagne: #E5C07B;
+  --color-gold-light: #F3E5AB;
   --color-gold-muted: #C5A059;
-  --color-gold-light: #F5E6C8;
   --color-gold-dark: #997A2D;
 
   --color-ivory: #FAF7F2;
   --color-ivory-warm: #F5F0E6;
-  --color-ivory-muted: #EFE7DA;
+  --color-ivory-muted: #E8E2D5;
 
+  --font-cinzel: var(--font-cinzel);
   --font-cormorant: var(--font-cormorant);
   --font-sans: var(--font-sans);
 }
@@ -51,12 +54,16 @@ body {
 /* Royal Champagne Gold selection highlight */
 ::selection {
   background-color: #D4AF37;
-  color: #0B0B0B;
+  color: #0A0A0A;
 }
 
 /* Brand gold gradient utilities */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #F5E6C8 0%, #D4AF37 50%, #997A2D 100%);
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #997A2D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #997A2D 100%);
 }

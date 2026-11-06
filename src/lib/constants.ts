@@ -9,22 +9,28 @@ export const SITE_CONFIG = {
   tagline: "Royal Indian Vegetarian Dining & Banquets",
   description:
     "Experience the opulence of royal Indian vegetarian cuisine at The Grand Maharaja. An exquisite culinary journey crafted with authentic royal recipes and timeless elegance.",
-  url: "https://thegrandmaharaja.com",
-  locale: "en_IN",
-  themeColor: "#0D0D0D",
+  url: "https://thegrandmaharaja.co.uk",
+  locale: "en_GB",
+  themeColor: "#0A0A0A",
+  contact: {
+    phone: "+44 121 000 0000",
+    email: "info@thegrandmaharaja.co.uk",
+    address: "Birmingham, United Kingdom",
+  },
 } as const;
 
 export const BRAND_COLORS = {
   black: {
-    DEFAULT: "#0D0D0D",
-    rich: "#141414",
-    soft: "#1F1F1F",
-    card: "#181818",
+    DEFAULT: "#0A0A0A",
+    deep: "#050505",
+    surface: "#121212",
+    elevated: "#181818",
+    border: "#26221C",
   },
   gold: {
     DEFAULT: "#D4AF37", // Champagne Gold
-    champagne: "#D4AF37",
-    light: "#F5E6C8",
+    champagne: "#E5C07B",
+    light: "#F3E5AB",
     muted: "#C5A059",
     dark: "#997A2D",
   },
@@ -37,6 +43,14 @@ export const BRAND_COLORS = {
   white: {
     DEFAULT: "#FFFFFF",
   },
+} as const;
+
+export const BRAND_LOGOS = {
+  masterDesktop: "/images/branding/tgm-master-logo-5120.png",
+  compactMobile: "/images/branding/tgm-logo-cropped-512.png",
+  circularSeal: "/images/branding/tgm-circular-crest-855.png",
+  goldCrest: "/images/branding/tgm-gold-logo-1600.jpeg",
+  animatedPromoVideo: "/images/branding/tgm-logo-promo-video.mp4",
 } as const;
 
 export const NAV_LINKS = [

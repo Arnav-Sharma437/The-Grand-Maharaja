@@ -1,0 +1,134 @@
+[
+  {
+    "url": "https://www.figma.com/api/figment-proxy/page",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.253"
+  },
+  {
+    "url": "https://errors.figma.com/api/sentry/api/56203/envelope/?sentry_key=d1b12a8fbe424e4b956eb33cadd5b30d&sentry_version=7&sentry_client=sentry.javascript.browser%2F8.40.0",
+    "status": 200,
+    "mime": "application/json",
+    "requestId": "25224.255"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/page",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.254"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.259"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.261"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.260"
+  },
+  {
+    "url": "https://www.figma.com/api/web_logger/metrics/session_start",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.412"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.416"
+  },
+  {
+    "url": "https://www.figma.com/api/files/zhxsbXmof90rH108j2OvcH/realtime_token",
+    "status": 200,
+    "mime": "application/json",
+    "requestId": "25224.414"
+  },
+  {
+    "url": "https://www.figma.com/api/statsig/bootstrap?team_id=1140159965730533332&page_locale=en&release_manifest_git_commit=032ed3e15d1ef20e188199035d32a04f241394da&release_server_git_commit=95ed1fe149984d4ba172b957694de3a855911b47",
+    "status": 200,
+    "mime": "application/json",
+    "requestId": "25224.415"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.422"
+  },
+  {
+    "url": "https://www.figma.com/api/web_logger/metrics/page_load",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.425"
+  },
+  {
+    "url": "https://www.figma.com/api/v2/statsig/bootstrap?team_ids=&page_locale=en&release_manifest_git_commit=032ed3e15d1ef20e188199035d32a04f241394da&release_server_git_commit=95ed1fe149984d4ba172b957694de3a855911b47",
+    "status": 200,
+    "mime": "application/json",
+    "requestId": "25224.423"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.429"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.431"
+  },
+  {
+    "url": "https://www.figma.com/file/zhxsbXmof90rH108j2OvcH/image/batch",
+    "status": 200,
+    "mime": "application/json",
+    "requestId": "25224.440"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.441"
+  },
+  {
+    "url": "https://www.figma.com/api/web_logger/metrics_batched",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.445"
+  },
+  {
+    "url": "https://www.figma.com/api/web_logger/histogram_batched",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.446"
+  },
+  {
+    "url": "https://www.figma.com/api/files/zhxsbXmof90rH108j2OvcH/prototype/view",
+    "status": 401,
+    "mime": "application/json",
+    "requestId": "25224.463"
+  },
+  {
+    "url": "https://www.figma.com/api/figment-proxy/monitor",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.468"
+  },
+  {
+    "url": "https://www.figma.com/api/web_logger/histogram_batched",
+    "status": 200,
+    "mime": "text/plain",
+    "requestId": "25224.469"
+  }
+]

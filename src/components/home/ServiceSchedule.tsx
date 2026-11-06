@@ -2,13 +2,17 @@
 
 import React from "react";
 import { Clock } from "lucide-react";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 export function ServiceSchedule() {
   return (
-    <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-16 sm:py-20 lg:py-24 transition-colors duration-200">
+    <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
+      {/* Live Royal Background Effects */}
+      <RoyalBackgroundGlow variant="warm" particleCount={28} mandalaPosition="right" />
+
       {/* 1400px Strict Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         {/* Section Header Row */}

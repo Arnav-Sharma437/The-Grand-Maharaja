@@ -3,6 +3,7 @@
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Star, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 // Authentic Google Reviews from The Grand Maharaja Leicester (https://thegrandmaharaja.co.uk)
 const REVIEWS_DATA = [
@@ -156,9 +157,12 @@ export function ReviewsSlider() {
 
   return (
     <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
+      {/* Live Royal Background Effects */}
+      <RoyalBackgroundGlow variant="section" particleCount={32} mandalaPosition="left" />
+
       {/* 1400px Strict Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         {/* Section Header: Title & Google Review Badge */}

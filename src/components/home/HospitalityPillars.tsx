@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 const PILLARS_DATA = [
   {
@@ -49,10 +50,13 @@ const PILLARS_DATA = [
 
 export function HospitalityPillars() {
   return (
-    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 transition-colors duration-200">
+    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
+      {/* Live Royal Background Effects */}
+      <RoyalBackgroundGlow variant="section" particleCount={30} mandalaPosition="left" />
+
       {/* 1400px Strict Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         {/* Section Header */}

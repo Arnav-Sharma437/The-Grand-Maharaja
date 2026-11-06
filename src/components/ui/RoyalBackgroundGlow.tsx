@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useMemo } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTheme } from "next-themes";
 
 export interface RoyalBackgroundGlowProps {
@@ -8,6 +8,7 @@ export interface RoyalBackgroundGlowProps {
   particleCount?: number;
   interactive?: boolean;
   showMandala?: boolean;
+  mandalaPosition?: "left" | "right" | "center";
   variant?: "hero" | "section" | "warm" | "minimal";
 }
 
@@ -26,13 +27,15 @@ interface Particle {
 
 export function RoyalBackgroundGlow({
   className = "",
-  particleCount = 38,
+  particleCount = 36,
   interactive = true,
   showMandala = true,
+  mandalaPosition = "right",
   variant = "section",
 }: RoyalBackgroundGlowProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  const isVisibleRef = useRef<boolean>(true);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const mouseRef = useRef<{ x: number; y: number; active: boolean }>({
@@ -49,7 +52,8 @@ export function RoyalBackgroundGlow({
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    const container = containerRef.current;
+    if (!canvas || !container) return;
 
     const ctx = canvas.getContext("2d", { alpha: true });
     if (!ctx) return;
@@ -60,9 +64,7 @@ export function RoyalBackgroundGlow({
 
     // Handle canvas dimensions with Retina / HiDPI support
     const handleResize = () => {
-      const container = containerRef.current;
       if (!container || !canvas) return;
-
       const rect = container.getBoundingClientRect();
       width = rect.width;
       height = rect.height;
@@ -76,9 +78,17 @@ export function RoyalBackgroundGlow({
 
     handleResize();
     const resizeObserver = new ResizeObserver(handleResize);
-    if (containerRef.current) {
-      resizeObserver.observe(containerRef.current);
-    }
+    resizeObserver.observe(container);
+
+    // Pause animation when section is offscreen for maximum battery & CPU performance
+    const intersectionObserver = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        isVisibleRef.current = entry.isIntersecting;
+      },
+      { threshold: 0.05 }
+    );
+    intersectionObserver.observe(container);
 
     // Color palettes tuned specifically for Light & Dark modes
     const getColors = (dark: boolean) => {
@@ -98,7 +108,7 @@ export function RoyalBackgroundGlow({
 
     // Initialize particles
     const particles: Particle[] = [];
-    const count = Math.max(15, Math.min(particleCount, 60));
+    const count = Math.max(15, Math.min(particleCount, 50));
 
     for (let i = 0; i < count; i++) {
       const baseAlpha = isDark ? 0.25 + Math.random() * 0.45 : 0.18 + Math.random() * 0.35;
@@ -131,7 +141,7 @@ export function RoyalBackgroundGlow({
       mouseRef.current.active = false;
     };
 
-    const parent = containerRef.current?.parentElement;
+    const parent = container.parentElement;
     if (parent && interactive) {
       parent.addEventListener("mousemove", handleMouseMove, { passive: true });
       parent.addEventListener("mouseleave", handleMouseLeave, { passive: true });
@@ -141,65 +151,67 @@ export function RoyalBackgroundGlow({
 
     // Render loop
     const render = () => {
-      time += 0.02;
-      ctx.clearRect(0, 0, width, height);
+      if (isVisibleRef.current) {
+        time += 0.02;
+        ctx.clearRect(0, 0, width, height);
 
-      const colors = getColors(isDark);
-      const mouse = mouseRef.current;
+        const colors = getColors(isDark);
+        const mouse = mouseRef.current;
 
-      for (let i = 0; i < particles.length; i++) {
-        const p = particles[i];
+        for (let i = 0; i < particles.length; i++) {
+          const p = particles[i];
 
-        // Upward drift with gentle sinusoidal sway
-        p.y -= p.speedY;
-        p.x += Math.sin(time + p.phase) * 0.35 + p.speedX;
+          // Upward drift with gentle sinusoidal sway
+          p.y -= p.speedY;
+          p.x += Math.sin(time + p.phase) * 0.35 + p.speedX;
 
-        // Subtle alpha pulsation (twinkling star dust)
-        p.alpha = Math.max(
-          0.05,
-          p.baseAlpha + Math.sin(time * p.twinkleSpeed * 50 + p.phase) * 0.25
-        );
+          // Subtle alpha pulsation (twinkling star dust)
+          p.alpha = Math.max(
+            0.05,
+            p.baseAlpha + Math.sin(time * p.twinkleSpeed * 50 + p.phase) * 0.25
+          );
 
-        // Interactive mouse gentle repulsion
-        if (mouse.active) {
-          const dx = p.x - mouse.x;
-          const dy = p.y - mouse.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          const maxDist = 110;
+          // Interactive mouse gentle repulsion
+          if (mouse.active) {
+            const dx = p.x - mouse.x;
+            const dy = p.y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            const maxDist = 110;
 
-          if (dist < maxDist && dist > 0) {
-            const force = (1 - dist / maxDist) * 1.8;
-            p.x += (dx / dist) * force;
-            p.y += (dy / dist) * force;
+            if (dist < maxDist && dist > 0) {
+              const force = (1 - dist / maxDist) * 1.8;
+              p.x += (dx / dist) * force;
+              p.y += (dy / dist) * force;
+            }
           }
+
+          // Boundary wrap
+          if (p.y < -10) {
+            p.y = height + 10;
+            p.x = Math.random() * width;
+          }
+          if (p.x < -10) p.x = width + 10;
+          if (p.x > width + 10) p.x = -10;
+
+          // Draw particle
+          ctx.save();
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+
+          const colorPrefix = colors[p.colorType];
+          ctx.fillStyle = `${colorPrefix}${p.alpha})`;
+
+          if (isDark) {
+            ctx.shadowBlur = p.size * 3;
+            ctx.shadowColor = "rgba(212, 175, 55, 0.7)";
+          } else {
+            ctx.shadowBlur = p.size * 1.8;
+            ctx.shadowColor = "rgba(155, 123, 52, 0.35)";
+          }
+
+          ctx.fill();
+          ctx.restore();
         }
-
-        // Boundary wrap
-        if (p.y < -10) {
-          p.y = height + 10;
-          p.x = Math.random() * width;
-        }
-        if (p.x < -10) p.x = width + 10;
-        if (p.x > width + 10) p.x = -10;
-
-        // Draw particle
-        ctx.save();
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-
-        const colorPrefix = colors[p.colorType];
-        ctx.fillStyle = `${colorPrefix}${p.alpha})`;
-
-        if (isDark) {
-          ctx.shadowBlur = p.size * 3;
-          ctx.shadowColor = "rgba(212, 175, 55, 0.7)";
-        } else {
-          ctx.shadowBlur = p.size * 1.8;
-          ctx.shadowColor = "rgba(155, 123, 52, 0.35)";
-        }
-
-        ctx.fill();
-        ctx.restore();
       }
 
       animationFrameId = requestAnimationFrame(render);
@@ -210,12 +222,21 @@ export function RoyalBackgroundGlow({
     return () => {
       cancelAnimationFrame(animationFrameId);
       resizeObserver.disconnect();
+      intersectionObserver.disconnect();
       if (parent && interactive) {
         parent.removeEventListener("mousemove", handleMouseMove);
         parent.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
   }, [isDark, particleCount, interactive]);
+
+  // Position class for royal mandala
+  const mandalaPosClass =
+    mandalaPosition === "left"
+      ? "-left-28 top-1/2 -translate-y-1/2"
+      : mandalaPosition === "center"
+      ? "left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      : "-right-28 top-1/2 -translate-y-1/2";
 
   return (
     <div
@@ -251,7 +272,7 @@ export function RoyalBackgroundGlow({
       {/* 2. Delicate Sacred Royal Indian Mandala Motif (Slow Ambient Spin) */}
       {showMandala && (
         <div
-          className={`absolute -right-24 top-1/2 -translate-y-1/2 w-[420px] sm:w-[540px] lg:w-[680px] h-[420px] sm:h-[540px] lg:h-[680px] opacity-[0.035] dark:opacity-[0.055] transition-opacity duration-500 animate-slow-spin`}
+          className={`absolute ${mandalaPosClass} w-[420px] sm:w-[540px] lg:w-[680px] h-[420px] sm:h-[540px] lg:h-[680px] opacity-[0.035] dark:opacity-[0.055] transition-opacity duration-500 animate-slow-spin`}
         >
           <svg
             viewBox="0 0 600 600"

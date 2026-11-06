@@ -3,13 +3,17 @@
 import React from "react";
 import Link from "next/link";
 import { Crown, MapPin, Phone, Mail } from "lucide-react";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-[#F5F1EB] dark:bg-[#12100D] border-t border-[#E8E2D5] dark:border-[#241F18] pt-16 sm:pt-20 pb-8 sm:pb-10 text-[#1A1A1A] dark:text-[#F5F1EB] transition-colors duration-200">
+    <footer className="relative overflow-hidden w-full bg-[#F5F1EB] dark:bg-[#12100D] border-t border-[#E8E2D5] dark:border-[#241F18] pt-16 sm:pt-20 pb-8 sm:pb-10 text-[#1A1A1A] dark:text-[#F5F1EB] transition-colors duration-200">
+      {/* Live Royal Background Effects */}
+      <RoyalBackgroundGlow variant="minimal" particleCount={22} showMandala={false} />
+
       {/* 1400px Strict Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         {/* 4 Columns Grid */}

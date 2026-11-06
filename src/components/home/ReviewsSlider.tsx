@@ -316,22 +316,8 @@ export function ReviewsSlider() {
         </div>
 
         {/* Bottom Pagination Dots & Mobile Navigation Controls */}
-        <div className="flex items-center justify-between pt-6 sm:pt-8 border-t border-[#F0EBE3] dark:border-[#221D16] mt-4">
-          {/* Direct Link to the restaurant's reviews on original website & Google */}
-          <div className="flex items-center gap-3 text-xs text-[#666666] dark:text-[#A0988A]">
-            <span>Read more reviews on</span>
-            <a
-              href="https://thegrandmaharaja.co.uk/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#8C6E2E] dark:text-[#D4AF37] hover:underline font-medium inline-flex items-center gap-1"
-            >
-              thegrandmaharaja.co.uk
-              <ArrowRight className="w-3 h-3" />
-            </a>
-          </div>
-
-          {/* Dots Indicator */}
+        <div className="flex items-center justify-center relative pt-6 sm:pt-8 border-t border-[#F0EBE3] dark:border-[#221D16] mt-4">
+          {/* Dots Indicator (Centered) */}
           <div className="flex items-center gap-1.5">
             {REVIEWS_DATA.slice(0, Math.ceil(REVIEWS_DATA.length / 2) + 1).map((_, i) => (
               <button
@@ -345,8 +331,8 @@ export function ReviewsSlider() {
             ))}
           </div>
 
-          {/* Mobile Arrows (visible on small screens) */}
-          <div className="flex sm:hidden items-center gap-2">
+          {/* Mobile Arrows (visible on small screens on the right) */}
+          <div className="flex sm:hidden items-center gap-2 absolute right-0">
             <button
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}

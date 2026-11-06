@@ -1,37 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0A0A0A;
-  --foreground: #FAF7F2;
-  --gold: #D4AF37;
-  --gold-champagne: #E5C07B;
-  --gold-light: #F3E5AB;
-  --gold-muted: #C5A059;
-  --gold-dark: #997A2D;
-  --ivory: #FAF7F2;
-  --ivory-warm: #F5F0E6;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
+  
+  /* User-specified alternating background tokens */
+  --bg-ivory-60: rgba(245, 241, 235, 0.6);
+  --bg-ivory-solid: #F5F1EB;
+  --bg-white: #FFFFFF;
+  
+  /* Signature Brand Palette */
+  --color-gold-button: #7D6328;
+  --color-gold-hover: #6B531F;
+  --color-gold-accent: #9B7B34;
+  --color-gold-badge: #8C6E2E;
+  --color-charcoal: #1A1A1A;
+  --color-charcoal-muted: #4A4A4A;
+  --color-border-card: #EBE6DC;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  --color-brand-black: #0A0A0A;
-  --color-brand-black-deep: #050505;
-  --color-brand-black-card: #121212;
-  --color-brand-black-elevated: #181818;
-  --color-brand-black-border: #26221C;
+  /* Warm Ivory & Alternating section backgrounds */
+  --color-ivory-banner: rgba(245, 241, 235, 0.6);
+  --color-ivory-solid: #F5F1EB;
+  --color-ivory-card: #F8F6F2;
+  --color-ivory-border: #EBE6DC;
 
-  --color-gold: #D4AF37;
-  --color-gold-champagne: #E5C07B;
+  /* Royal Golds */
+  --color-gold-primary: #7D6328;
+  --color-gold-accent: #9B7B34;
+  --color-gold-badge: #8C6E2E;
   --color-gold-light: #F3E5AB;
-  --color-gold-muted: #C5A059;
-  --color-gold-dark: #997A2D;
 
-  --color-ivory: #FAF7F2;
-  --color-ivory-warm: #F5F0E6;
-  --color-ivory-muted: #E8E2D5;
+  /* Charcoal / Black */
+  --color-charcoal-primary: #1A1A1A;
+  --color-charcoal-dark: #1E1B18;
+  --color-charcoal-muted: #4A4A4A;
+  --color-charcoal-subtle: #666666;
 
+  /* Typography */
+  --font-playfair: var(--font-playfair);
   --font-cinzel: var(--font-cinzel);
   --font-cormorant: var(--font-cormorant);
   --font-sans: var(--font-sans);
@@ -40,7 +51,7 @@
 /* Base resets & smooth scrolling */
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
@@ -51,19 +62,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Royal Champagne Gold selection highlight */
+/* Royal selection highlight */
 ::selection {
-  background-color: #D4AF37;
-  color: #0A0A0A;
+  background-color: #7D6328;
+  color: #FFFFFF;
 }
 
-/* Brand gold gradient utilities */
-.text-gold-gradient {
-  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #997A2D 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* Section Background Alternation Classes */
+.bg-section-banner {
+  background-color: rgba(245, 241, 235, 0.6);
 }
 
-.bg-gold-gradient {
-  background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #997A2D 100%);
+.bg-section-white {
+  background-color: #FFFFFF;
 }

@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
-import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Playfair_Display, Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import { Header } from "@/components/layout";
 import { constructMetadata } from "@/lib/seo";
 import "./globals.css";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
 
 const cinzel = Cinzel({
   subsets: ["latin"],
@@ -35,9 +43,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cinzel.variable} ${cormorant.variable} ${plusJakartaSans.variable}`}
+      className={`${playfair.variable} ${cinzel.variable} ${cormorant.variable} ${plusJakartaSans.variable}`}
     >
-      <body className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#FAF7F2] font-sans antialiased selection:bg-[#D4AF37] selection:text-[#0A0A0A]">
+      <body className="min-h-screen flex flex-col bg-white text-[#1A1A1A] font-sans antialiased selection:bg-[#7D6328] selection:text-white">
         <Header />
         {children}
       </body>

@@ -8,56 +8,55 @@ export const SITE_CONFIG = {
   shortName: "TGM",
   tagline: "Royal Indian Vegetarian Dining & Banquets",
   description:
-    "Experience the opulence of royal Indian vegetarian cuisine at The Grand Maharaja. An exquisite culinary journey crafted with authentic royal recipes and timeless elegance.",
+    "At The Grand Maharaja, we bring royal flavours to your special occasions with an exquisite vegetarian catering and dining experience that blends timeless Indian tradition with imperial hospitality in Leicester.",
   url: "https://thegrandmaharaja.co.uk",
   locale: "en_GB",
-  themeColor: "#0A0A0A",
+  themeColor: "#F5F1EB",
   contact: {
-    phone: "+44 121 000 0000",
+    phone: "+0116 507 0296",
+    displayPhone: "+0116 507 0296",
     email: "info@thegrandmaharaja.co.uk",
-    address: "Birmingham, United Kingdom",
+    address: "209 Catherine St, Leicester LE4 6GE",
+    shortAddress: "209 Catherine St, Leicester",
   },
 } as const;
 
 export const BRAND_COLORS = {
-  black: {
-    DEFAULT: "#0A0A0A",
-    deep: "#050505",
-    surface: "#121212",
-    elevated: "#181818",
-    border: "#26221C",
+  ivory: {
+    DEFAULT: "#F5F1EB",
+    banner: "rgba(245, 241, 235, 0.6)",
+    card: "#F8F6F2",
+    border: "#EBE6DC",
   },
   gold: {
-    DEFAULT: "#D4AF37", // Champagne Gold
-    champagne: "#E5C07B",
-    light: "#F3E5AB",
-    muted: "#C5A059",
-    dark: "#997A2D",
+    DEFAULT: "#7D6328", // Primary button gold/bronze
+    accent: "#9B7B34",  // Italic headline gold
+    light: "#D4AF37",
+    badge: "#8C6E2E",
   },
-  ivory: {
-    DEFAULT: "#FAF7F2", // Warm Ivory
-    warm: "#F5F0E6",
-    muted: "#E8E2D5",
-    subtle: "#FDFBF7",
+  charcoal: {
+    DEFAULT: "#1A1A1A",
+    button: "#1E1B18",
+    muted: "#4A4A4A",
+    light: "#666666",
   },
-  white: {
-    DEFAULT: "#FFFFFF",
-  },
+  white: "#FFFFFF",
 } as const;
 
 export const BRAND_LOGOS = {
   masterDesktop: "/images/branding/tgm-master-logo-5120.png",
   compactMobile: "/images/branding/tgm-logo-cropped-512.png",
   circularSeal: "/images/branding/tgm-circular-crest-855.png",
+  circularSealSolid: "/images/branding/tgm-circular-crest-829.png",
   goldCrest: "/images/branding/tgm-gold-logo-1600.jpeg",
   animatedPromoVideo: "/images/branding/tgm-logo-promo-video.mp4",
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Menu", href: "/#menu" },
-  { label: "Banquets", href: "/#banquets" },
-  { label: "Gallery", href: "/#gallery" },
-  { label: "Contact", href: "/#contact" },
+  { label: "HOME", href: "/" },
+  { label: "MENUS", href: "/#menus" },
+  { label: "BANQUETING & CATERING", href: "/#banquets" },
+  { label: "ABOUT US", href: "/#about" },
+  { label: "GALLERY", href: "/#gallery" },
+  { label: "CONTACT", href: "/#contact" },
 ] as const;

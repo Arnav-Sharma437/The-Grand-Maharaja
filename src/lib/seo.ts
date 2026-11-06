@@ -66,7 +66,14 @@ export function constructMetadata({
       },
     },
     icons: {
-      icon: "/favicon.ico",
+      icon: [
+        { url: "/favicon.png", sizes: "32x32", type: "image/png" },
+        { url: "/images/branding/tgm-circular-crest-829.png", sizes: "192x192", type: "image/png" },
+      ],
+      shortcut: "/favicon.png",
+      apple: [
+        { url: "/images/branding/tgm-circular-crest-829.png", sizes: "180x180", type: "image/png" },
+      ],
     },
   };
 }

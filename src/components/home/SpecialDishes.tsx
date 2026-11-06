@@ -41,7 +41,7 @@ const CURATED_DISHES = [
 
 export function SpecialDishes() {
   return (
-    <section className="relative w-full bg-white py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 transition-colors duration-200">
       {/* 1400px Strict Container */}
       <div
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
@@ -50,15 +50,15 @@ export function SpecialDishes() {
         {/* Section Header Row */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-10 sm:mb-12">
           <div>
-            <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34]">
+            <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37]">
               SPECIAL FOR YOU
             </p>
-            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#1A1A1A] tracking-tight mt-1.5">
+            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] tracking-tight mt-1.5">
               Try Some Delicious Dishes
             </h2>
           </div>
 
-          <p className="text-xs sm:text-sm text-[#555555] max-w-md leading-relaxed font-sans">
+          <p className="text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] max-w-md leading-relaxed font-sans">
             Every creation is prepared adhering to royal Indian gastronomic standards with fresh
             herbs, unadulterated churned dairy, and sacred care.
           </p>
@@ -67,7 +67,7 @@ export function SpecialDishes() {
         {/* Main Content Grid: Large Highlight Card (Left) + 4 Curated Dish Cards (Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-stretch">
           {/* Left Column: Main Course Highlight Card */}
-          <div className="lg:col-span-7 flex flex-col justify-between bg-[#FAF8F5] rounded-2xl p-4 sm:p-5 border border-[#EBE6DC] shadow-[0_4px_20px_rgba(0,0,0,0.03)] group">
+          <div className="lg:col-span-7 flex flex-col justify-between bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl p-4 sm:p-5 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] group transition-colors">
             {/* Image with Badges */}
             <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden bg-[#1A1A1A]">
               <Image
@@ -80,7 +80,7 @@ export function SpecialDishes() {
               />
 
               {/* Top Left Badge: MAIN COURSE HIGHLIGHT */}
-              <div className="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-xs text-[#1A1A1A] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm">
+              <div className="absolute top-4 left-4 z-10 bg-white/95 dark:bg-[#1C1813]/95 backdrop-blur-xs text-[#1A1A1A] dark:text-[#F5F1EB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm">
                 MAIN COURSE HIGHLIGHT
               </div>
 
@@ -94,14 +94,14 @@ export function SpecialDishes() {
             {/* Bottom Dish Info */}
             <div className="pt-4 sm:pt-5">
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A]">
+                <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                   Shahi Tandoori Paneer Tikka
                 </h3>
-                <span className="font-serif text-sm sm:text-base font-semibold text-[#8C6E2E]">
+                <span className="font-serif text-sm sm:text-base font-semibold text-[#8C6E2E] dark:text-[#D4AF37]">
                   Chef&apos;s Signature
                 </span>
               </div>
-              <p className="text-xs sm:text-sm text-[#555555] leading-relaxed mt-2 font-sans">
+              <p className="text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed mt-2 font-sans">
                 Artisanal cottage cheese marinated in hung yoghurt and roasted spices, char-grilled
                 over live embers. Tender, smoky, and infused with royal north Indian aroma.
               </p>
@@ -113,10 +113,10 @@ export function SpecialDishes() {
             {CURATED_DISHES.map((dish) => (
               <div
                 key={dish.title}
-                className="bg-white rounded-xl p-3 sm:p-3.5 border border-[#EBE6DC] shadow-sm hover:shadow-md hover:border-[#D4AF37]/50 transition-all duration-200 flex items-center gap-4 group cursor-pointer"
+                className="bg-white dark:bg-[#14120E] rounded-xl p-3 sm:p-3.5 border border-[#EBE6DC] dark:border-[#28221A] shadow-sm hover:shadow-md hover:border-[#D4AF37]/50 transition-all duration-200 flex items-center gap-4 group cursor-pointer"
               >
                 {/* Dish Thumbnail */}
-                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden shrink-0 bg-[#F5F1EB]">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-lg overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#1E1B15]">
                   <Image
                     src={dish.image}
                     alt={dish.alt}
@@ -128,13 +128,13 @@ export function SpecialDishes() {
 
                 {/* Dish Details */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#9B7B34]">
+                  <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37]">
                     {dish.category}
                   </p>
-                  <h4 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] group-hover:text-[#7D6328] transition-colors mt-0.5 truncate">
+                  <h4 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors mt-0.5 truncate">
                     {dish.title}
                   </h4>
-                  <p className="text-xs sm:text-[13px] text-[#666666] leading-relaxed mt-1 line-clamp-2 font-sans">
+                  <p className="text-xs sm:text-[13px] text-[#666666] dark:text-[#A8A194] leading-relaxed mt-1 line-clamp-2 font-sans">
                     {dish.description}
                   </p>
                 </div>

@@ -38,15 +38,15 @@ export function DesktopNavigation({
             href={item.href}
             className={`group relative py-2 font-sans text-xs lg:text-[13px] font-semibold uppercase tracking-wider transition-colors duration-200 focus:outline-none ${
               isActive
-                ? "text-[#8C6E2E]"
-                : "text-[#2C2C2C] hover:text-[#8C6E2E]"
+                ? "text-[#8C6E2E] dark:text-[#D4AF37]"
+                : "text-[#2C2C2C] hover:text-[#8C6E2E] dark:text-[#D5CFC5] dark:hover:text-[#D4AF37]"
             }`}
           >
             <span>{item.label}</span>
             {/* Active Gold Underline or Subtle Hover Underline */}
             <span
               aria-hidden="true"
-              className={`absolute bottom-0 left-0 h-[2px] bg-[#8C6E2E] transition-all duration-200 ${
+              className={`absolute bottom-0 left-0 h-[2px] bg-[#8C6E2E] dark:bg-[#D4AF37] transition-all duration-200 ${
                 isActive ? "w-full" : "w-0 group-hover:w-full"
               }`}
             />

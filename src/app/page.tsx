@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col w-full bg-white">
+    <main className="min-h-screen flex flex-col w-full bg-white dark:bg-[#0D0C0A] transition-colors duration-200">
       {/* 1. Hero / Banner Section with #F5F1EB (60%) warm ivory background */}
       <HeroBanner />
 

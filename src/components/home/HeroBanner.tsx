@@ -52,7 +52,7 @@ export function HeroBanner() {
   const currentImage = REAL_HERO_IMAGES[activeImageIndex];
 
   return (
-    <section className="relative w-full bg-[#F5F1EB]/60 pt-8 sm:pt-12 lg:pt-14 pb-14 sm:pb-16 lg:pb-20 overflow-hidden">
+    <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] pt-8 sm:pt-12 lg:pt-14 pb-14 sm:pb-16 lg:pb-20 overflow-hidden transition-colors duration-200">
       {/* Main 1400px Hero Container */}
       <div
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
@@ -62,7 +62,7 @@ export function HeroBanner() {
           {/* Left Column: Headlines & Call to Actions */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* Google Reviews Pill Badge */}
-            <div className="inline-flex items-center gap-2.5 bg-white border border-[#E8E2D5] rounded-full px-4 py-1.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] mb-6">
+            <div className="inline-flex items-center gap-2.5 bg-white dark:bg-[#1C1813] border border-[#E8E2D5] dark:border-[#2D271E] rounded-full px-4 py-1.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] mb-6 transition-colors">
               {/* Authentic Google "G" 4-Color Icon */}
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                 <path
@@ -91,23 +91,23 @@ export function HeroBanner() {
               </div>
 
               {/* Verified Rating & Reviews Count */}
-              <span className="text-xs font-bold tracking-wider text-[#1A1A1A]">
-                4.4 / 5 <span className="text-[#C5BEB3] mx-1">|</span> 71+ REVIEWS
+              <span className="text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F5F1EB]">
+                4.4 / 5 <span className="text-[#C5BEB3] dark:text-[#555] mx-1">|</span> 71+ REVIEWS
               </span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="font-playfair text-4xl sm:text-5xl lg:text-[54px] xl:text-[58px] leading-[1.12] text-[#1A1A1A] font-semibold tracking-tight">
+            <h1 className="font-playfair text-4xl sm:text-5xl lg:text-[54px] xl:text-[58px] leading-[1.12] text-[#1A1A1A] dark:text-[#F5F1EB] font-semibold tracking-tight">
               Royal Flavours,
               <br />
-              <span className="font-playfair italic font-normal text-[#9B7B34]">
+              <span className="font-playfair italic font-normal text-[#9B7B34] dark:text-[#D4AF37]">
                 Pure Vegetarian
               </span>{" "}
               <span>Grandeur</span>
             </h1>
 
             {/* Subtitle Description */}
-            <p className="mt-5 text-sm sm:text-base text-[#4A4A4A] leading-relaxed max-w-xl font-sans">
+            <p className="mt-5 text-sm sm:text-base text-[#4A4A4A] dark:text-[#B5ACA0] leading-relaxed max-w-xl font-sans">
               At The Grand Maharaja, we bring royal flavours to your special occasions with an
               exquisite vegetarian catering and dining experience that blends timeless Indian
               tradition with imperial hospitality in Leicester.
@@ -117,7 +117,7 @@ export function HeroBanner() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/#reservations"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#7D6328] hover:bg-[#6B531F] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200 group"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200 group"
               >
                 <span>RESERVE YOUR ROYAL EXPERIENCE</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
@@ -125,17 +125,17 @@ export function HeroBanner() {
 
               <Link
                 href="/#menus"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white hover:bg-[#FAF7F2] text-[#1A1A1A] border border-[#E0D9CE] text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white hover:bg-[#FAF7F2] dark:bg-[#1C1813] dark:hover:bg-[#252019] text-[#1A1A1A] dark:text-[#F5F1EB] border border-[#E0D9CE] dark:border-[#2C261D] text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200"
               >
                 <span>EXPLORE FOOD &amp; BAR MENUS</span>
-                <Utensils className="w-4 h-4 text-[#8C6E2E]" />
+                <Utensils className="w-4 h-4 text-[#8C6E2E] dark:text-[#D4AF37]" />
               </Link>
             </div>
           </div>
 
           {/* Right Column: Hero Real Restaurant Card with Floating Location Badge */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-3xl p-2.5 bg-white shadow-[0_12px_40px_rgba(0,0,0,0.08)] border border-[#EBE6DC]">
+            <div className="relative rounded-3xl p-2.5 bg-white dark:bg-[#1A1713] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] border border-[#EBE6DC] dark:border-[#2C261D] transition-colors">
               {/* Real Photo Frame */}
               <div className="relative w-full h-[380px] sm:h-[450px] lg:h-[490px] xl:h-[510px] rounded-2xl overflow-hidden bg-[#1A1A1A]">
                 <Image
@@ -167,16 +167,16 @@ export function HeroBanner() {
               </div>
 
               {/* Floating Location Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:px-5 shadow-lg border border-[#EBE6DC] flex items-center justify-between">
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-[#181511]/95 backdrop-blur-md rounded-2xl p-4 sm:px-5 shadow-lg border border-[#EBE6DC] dark:border-[#2C261D] flex items-center justify-between transition-colors">
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34] mb-0.5">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] mb-0.5">
                     SANCTUARY OF TASTE
                   </p>
-                  <p className="font-serif text-sm sm:text-base font-semibold text-[#1A1A1A]">
+                  <p className="font-serif text-sm sm:text-base font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                     {SITE_CONFIG.contact.shortAddress}
                   </p>
                 </div>
-                <div className="w-9 h-9 rounded-full bg-[#F5F1EB] flex items-center justify-center text-[#8C6E2E] shrink-0 ml-3">
+                <div className="w-9 h-9 rounded-full bg-[#F5F1EB] dark:bg-[#231F19] flex items-center justify-center text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 ml-3">
                   <MapPin className="w-4 h-4" />
                 </div>
               </div>
@@ -187,20 +187,20 @@ export function HeroBanner() {
         {/* Bottom Floating Booking Bar ("SWIFT BOOKING DESK") - 1400px Container */}
         <div className="w-full mt-12 sm:mt-16">
           <div
-            className="w-full bg-white rounded-2xl p-5 sm:p-7 lg:p-8 shadow-[0_10px_35px_rgba(0,0,0,0.05)] border border-[#EBE6DC]"
+            className="w-full bg-white dark:bg-[#181511] rounded-2xl p-5 sm:p-7 lg:p-8 shadow-[0_10px_35px_rgba(0,0,0,0.05)] dark:shadow-[0_10px_35px_rgba(0,0,0,0.4)] border border-[#EBE6DC] dark:border-[#2C261D] transition-colors"
           >
             {/* Header Row */}
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-4 border-b border-[#F0EBE3]">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-4 border-b border-[#F0EBE3] dark:border-[#221D16]">
               <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37]">
                   SWIFT BOOKING DESK
                 </p>
-                <h2 className="font-playfair text-lg sm:text-xl font-semibold text-[#1A1A1A] mt-0.5">
+                <h2 className="font-playfair text-lg sm:text-xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-0.5">
                   Book Your Feast or Grand Celebration
                 </h2>
               </div>
-              <div className="flex items-center gap-2 text-xs text-[#555555]">
-                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+              <div className="flex items-center gap-2 text-xs text-[#555555] dark:text-[#9E9689]">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-500 shrink-0" />
                 <span>Instant booking inquiry forwarded to Catherine St reception</span>
               </div>
             </div>
@@ -209,7 +209,7 @@ export function HeroBanner() {
             <form onSubmit={handleSubmit} className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3.5 xl:gap-4 items-end">
               {/* Field 1: Name */}
               <div className="space-y-1.5">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">
+                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666] dark:text-[#A8A194]">
                   YOUR NAME *
                 </label>
                 <input
@@ -218,13 +218,13 @@ export function HeroBanner() {
                   placeholder="e.g. Priyesh Patel"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors"
+                  className="w-full h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] dark:text-[#F5F1EB] placeholder:text-[#999999] dark:placeholder:text-[#666] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors"
                 />
               </div>
 
               {/* Field 2: Email */}
               <div className="space-y-1.5">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">
+                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666] dark:text-[#A8A194]">
                   EMAIL ADDRESS *
                 </label>
                 <input
@@ -233,13 +233,13 @@ export function HeroBanner() {
                   placeholder="patel@family.co.uk"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors"
+                  className="w-full h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] dark:text-[#F5F1EB] placeholder:text-[#999999] dark:placeholder:text-[#666] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors"
                 />
               </div>
 
               {/* Field 3: Phone */}
               <div className="space-y-1.5">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">
+                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666] dark:text-[#A8A194]">
                   PHONE NUMBER *
                 </label>
                 <input
@@ -248,19 +248,19 @@ export function HeroBanner() {
                   placeholder="+44 7000 000000"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors"
+                  className="w-full h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] dark:text-[#F5F1EB] placeholder:text-[#999999] dark:placeholder:text-[#666] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors"
                 />
               </div>
 
               {/* Field 4: Event Type */}
               <div className="space-y-1.5">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">
+                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666] dark:text-[#A8A194]">
                   EVENT TYPE *
                 </label>
                 <select
                   value={formData.eventType}
                   onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-                  className="w-full h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors cursor-pointer"
+                  className="w-full h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-3 py-2 text-xs text-[#1A1A1A] dark:text-[#F5F1EB] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors cursor-pointer"
                 >
                   <option value="Table Dining">Table Dining</option>
                   <option value="Royal Banquet">Royal Banquet</option>
@@ -271,7 +271,7 @@ export function HeroBanner() {
 
               {/* Field 5: Guests & Date */}
               <div className="space-y-1.5">
-                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666]">
+                <label className="block text-[10px] font-bold uppercase tracking-wider text-[#666666] dark:text-[#A8A194]">
                   GUESTS &amp; DATE *
                 </label>
                 <div className="flex items-center gap-2">
@@ -280,14 +280,14 @@ export function HeroBanner() {
                     placeholder="2–4"
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                    className="w-16 h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-2 text-center text-xs text-[#1A1A1A] placeholder:text-[#999999] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors"
+                    className="w-16 h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-2 text-center text-xs text-[#1A1A1A] dark:text-[#F5F1EB] placeholder:text-[#999999] dark:placeholder:text-[#666] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors"
                   />
                   <input
                     type="date"
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="flex-1 h-10 bg-[#F8F6F2] border border-[#E8E2D5] rounded-lg px-2 text-xs text-[#1A1A1A] focus:outline-none focus:border-[#7D6328] focus:bg-white transition-colors cursor-pointer"
+                    className="flex-1 h-10 bg-[#F8F6F2] dark:bg-[#12100D] border border-[#E8E2D5] dark:border-[#2C261D] rounded-lg px-2 text-xs text-[#1A1A1A] dark:text-[#F5F1EB] focus:outline-none focus:border-[#7D6328] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-colors cursor-pointer"
                   />
                 </div>
               </div>
@@ -296,7 +296,7 @@ export function HeroBanner() {
               <div>
                 <button
                   type="submit"
-                  className="w-full h-10 bg-[#1E1B18] hover:bg-[#312B25] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider rounded-lg px-4 flex items-center justify-center gap-2 shadow-sm transition-all duration-200 cursor-pointer"
+                  className="w-full h-10 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider rounded-lg px-4 flex items-center justify-center gap-2 shadow-sm transition-all duration-200 cursor-pointer"
                 >
                   <span>{submitted ? "REQUEST SENT!" : "BOOK TABLE"}</span>
                   <Utensils className="w-3.5 h-3.5" />

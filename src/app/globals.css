@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #FFFFFF;
   --foreground: #1A1A1A;
@@ -17,6 +19,25 @@
   --color-charcoal: #1A1A1A;
   --color-charcoal-muted: #4A4A4A;
   --color-border-card: #EBE6DC;
+}
+
+.dark {
+  --background: #0D0C0A;
+  --foreground: #F5F1EB;
+  
+  /* Warm Regal Obsidian & Onyx alternating backgrounds */
+  --bg-ivory-60: #14120F;
+  --bg-ivory-solid: #181512;
+  --bg-white: #0D0C0A;
+  
+  /* Signature Brand Palette in dark mode */
+  --color-gold-button: #9B7B34;
+  --color-gold-hover: #B38E3F;
+  --color-gold-accent: #D4AF37;
+  --color-gold-badge: #C5A880;
+  --color-charcoal: #F5F1EB;
+  --color-charcoal-muted: #A8A29E;
+  --color-border-card: #2B261E;
 }
 
 @theme {
@@ -55,6 +76,10 @@
 html {
   scroll-behavior: smooth;
   color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {

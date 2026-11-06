@@ -7,6 +7,7 @@ import { Phone, ArrowRight } from "lucide-react";
 import { BRAND_LOGOS, SITE_CONFIG } from "@/lib/constants";
 import { DesktopNavigation } from "./DesktopNavigation";
 import { MobileMenu } from "./MobileMenu";
+import { ThemeToggle } from "./ThemeToggle";
 
 export interface HeaderProps {
   className?: string;
@@ -28,10 +29,10 @@ export function Header({ className = "" }: HeaderProps) {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full transition-all duration-200 bg-white border-b ${
+      className={`sticky top-0 z-40 w-full transition-colors duration-200 bg-white dark:bg-[#110F0C] border-b ${
         isScrolled
-          ? "border-[#EBE6DC] shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
-          : "border-[#F0EBE3]"
+          ? "border-[#EBE6DC] dark:border-[#26221A] shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+          : "border-[#F0EBE3] dark:border-[#201C16]"
       } ${className}`}
     >
       <div
@@ -46,7 +47,7 @@ export function Header({ className = "" }: HeaderProps) {
             aria-label="The Grand Maharaja - Home"
           >
             {/* Real Original Circular Crest Logo - Size Enlarged */}
-            <div className="relative w-14 h-14 sm:w-[60px] sm:h-[60px] lg:w-16 lg:h-16 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222] shadow-sm transition-transform duration-200 group-hover:scale-105">
+            <div className="relative w-14 h-14 sm:w-[60px] sm:h-[60px] lg:w-16 lg:h-16 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222] dark:border-[#333] shadow-sm transition-transform duration-200 group-hover:scale-105">
               <Image
                 src={BRAND_LOGOS.circularSealSolid}
                 alt="The Grand Maharaja Crest"
@@ -62,21 +63,24 @@ export function Header({ className = "" }: HeaderProps) {
         {/* Center: Desktop Navigation Bar */}
         <DesktopNavigation />
 
-        {/* Right: Phone Badge, Primary CTA & Mobile Hamburger */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        {/* Right: Theme Toggle, Phone Badge, Primary CTA & Mobile Hamburger */}
+        <div className="flex items-center gap-2.5 sm:gap-3.5">
+          {/* Light / Dark Mode Toggle */}
+          <ThemeToggle />
+
           {/* Phone Badge (+0116 507 0296) */}
           <a
             href={`tel:${SITE_CONFIG.contact.phone.replace(/\s+/g, "")}`}
-            className="hidden lg:inline-flex items-center gap-2 px-3.5 py-2 bg-[#F5F1EB] hover:bg-[#EBE5DC] text-[#2C2C2C] font-semibold text-xs rounded-md transition-colors"
+            className="hidden lg:inline-flex items-center gap-2 px-3.5 py-2 bg-[#F5F1EB] hover:bg-[#EBE5DC] text-[#2C2C2C] dark:bg-[#1E1B15] dark:hover:bg-[#28231C] dark:text-[#E8E2D5] font-semibold text-xs rounded-md transition-colors"
           >
-            <Phone className="w-3.5 h-3.5 text-[#8C6E2E]" />
+            <Phone className="w-3.5 h-3.5 text-[#8C6E2E] dark:text-[#D4AF37]" />
             <span>{SITE_CONFIG.contact.displayPhone}</span>
           </a>
 
           {/* Primary CTA: "BOOK A TABLE ->" */}
           <Link
             href="/#reservations"
-            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#7D6328] hover:bg-[#6B531F] text-white font-semibold text-xs uppercase tracking-wider rounded-md shadow-sm transition-all duration-200"
+            className="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white font-semibold text-xs uppercase tracking-wider rounded-md shadow-sm transition-all duration-200"
           >
             <span>BOOK A TABLE</span>
             <ArrowRight className="w-4 h-4" />

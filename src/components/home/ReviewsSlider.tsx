@@ -155,7 +155,7 @@ export function ReviewsSlider() {
   }, [isPaused]);
 
   return (
-    <section className="relative w-full bg-white py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
       {/* 1400px Strict Container */}
       <div
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
@@ -165,13 +165,13 @@ export function ReviewsSlider() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 sm:mb-12">
           {/* Left Column: Eyebrow, Title & Subtitle */}
           <div>
-            <div className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] font-sans">
+            <div className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
               WHAT OUR CUSTOMERS SAY
             </div>
-            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#1A1A1A] tracking-tight mt-1.5">
+            <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[44px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] tracking-tight mt-1.5">
               Royal Dining Experiences
             </h2>
-            <p className="text-xs sm:text-sm text-[#555555] font-sans mt-2 max-w-xl leading-relaxed">
+            <p className="text-xs sm:text-sm text-[#555555] dark:text-[#A0988A] font-sans mt-2 max-w-xl leading-relaxed">
               Verified real-time dining impressions &amp; love from our guests on Google
             </p>
           </div>
@@ -183,7 +183,7 @@ export function ReviewsSlider() {
               href={GOOGLE_REVIEW_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white border border-[#E8E2D5] rounded-full px-5 py-3 shadow-[0_4px_16px_rgba(0,0,0,0.03)] inline-flex items-center gap-3.5 hover:border-[#D4C3A3] hover:shadow-md transition-all duration-200 group"
+              className="bg-white dark:bg-[#181511] border border-[#E8E2D5] dark:border-[#2C261D] rounded-full px-5 py-3 shadow-[0_4px_16px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.4)] inline-flex items-center gap-3.5 hover:border-[#D4C3A3] hover:shadow-md transition-all duration-200 group"
               title="Read all reviews and review The Grand Maharaja on Google"
             >
               {/* Google 4-Color 'G' Logo */}
@@ -216,12 +216,12 @@ export function ReviewsSlider() {
                       <Star key={i} className="w-3.5 h-3.5 fill-[#E5A118] text-[#E5A118]" />
                     ))}
                   </div>
-                  <span className="font-bold text-sm text-[#1A1A1A] font-sans">4.4 / 5</span>
+                  <span className="font-bold text-sm text-[#1A1A1A] dark:text-[#F5F1EB] font-sans">4.4 / 5</span>
                 </div>
-                <div className="text-[11px] sm:text-xs text-[#555555] font-sans flex items-center gap-1 mt-0.5">
+                <div className="text-[11px] sm:text-xs text-[#555555] dark:text-[#A0988A] font-sans flex items-center gap-1 mt-0.5">
                   <span>Based on 71+ Google Reviews</span>
                   <span className="text-[#888888]">&bull;</span>
-                  <span className="font-medium text-[#1A1A1A] group-hover:text-[#9B7B34] transition-colors inline-flex items-center gap-0.5">
+                  <span className="font-medium text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors inline-flex items-center gap-0.5">
                     Review us{" "}
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
                   </span>
@@ -237,8 +237,8 @@ export function ReviewsSlider() {
                 aria-label="Previous reviews"
                 className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
                   canScrollLeft
-                    ? "border-[#E8E2D5] bg-white text-[#1A1A1A] hover:bg-[#F5F1EB] hover:border-[#9B7B34]"
-                    : "border-[#ECE7DE] bg-white text-[#CCCCCC] cursor-not-allowed opacity-50"
+                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34]"
+                    : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] cursor-not-allowed opacity-50"
                 }`}
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -249,8 +249,8 @@ export function ReviewsSlider() {
                 aria-label="Next reviews"
                 className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
                   canScrollRight
-                    ? "border-[#E8E2D5] bg-white text-[#1A1A1A] hover:bg-[#F5F1EB] hover:border-[#9B7B34]"
-                    : "border-[#ECE7DE] bg-white text-[#CCCCCC] cursor-not-allowed opacity-50"
+                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34]"
+                    : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] cursor-not-allowed opacity-50"
                 }`}
               >
                 <ChevronRight className="w-5 h-5" />
@@ -272,7 +272,7 @@ export function ReviewsSlider() {
             <div
               key={review.id}
               data-card
-              className="snap-start shrink-0 w-[85vw] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] bg-[#FAF8F5] rounded-2xl p-6 sm:p-7 border border-[#EFEBE4] shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col justify-between hover:border-[#DFD7C7] hover:shadow-md transition-all duration-300"
+              className="snap-start shrink-0 w-[85vw] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl p-6 sm:p-7 border border-[#EFEBE4] dark:border-[#2C261D] shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:border-[#DFD7C7] dark:hover:border-[#3D3528] hover:shadow-md transition-all duration-300"
             >
               <div>
                 {/* Top Row: 5 Amber Stars & Relative Date */}
@@ -282,24 +282,24 @@ export function ReviewsSlider() {
                       <Star key={i} className="w-3.5 h-3.5 fill-[#E5A118] text-[#E5A118]" />
                     ))}
                   </div>
-                  <span className="text-xs text-[#999999] font-sans">{review.time}</span>
+                  <span className="text-xs text-[#999999] dark:text-[#777] font-sans">{review.time}</span>
                 </div>
 
                 {/* Review Quote Body */}
-                <blockquote className="text-[13px] sm:text-sm text-[#4A453E] leading-[1.65] font-sans my-5">
+                <blockquote className="text-[13px] sm:text-sm text-[#4A453E] dark:text-[#C5BEB3] leading-[1.65] font-sans my-5">
                   &ldquo;{review.quote}&rdquo;
                 </blockquote>
               </div>
 
               {/* Author Details & Verified Google Badge */}
               <div className="pt-4 mt-auto">
-                <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A]">
+                <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                   {review.name}
                 </h4>
-                <div className="flex items-center gap-1.5 mt-1 text-[11.5px] text-[#059669] font-medium font-sans">
+                <div className="flex items-center gap-1.5 mt-1 text-[11.5px] text-[#059669] dark:text-[#10B981] font-medium font-sans">
                   {/* Google Verified Checkmark SVG (Filled Green Circle with White Checkmark) */}
                   <svg
-                    className="w-3.5 h-3.5 fill-[#059669] text-white shrink-0"
+                    className="w-3.5 h-3.5 fill-[#059669] dark:fill-[#10B981] text-white shrink-0"
                     viewBox="0 0 16 16"
                   >
                     <path
@@ -316,15 +316,15 @@ export function ReviewsSlider() {
         </div>
 
         {/* Bottom Pagination Dots & Mobile Navigation Controls */}
-        <div className="flex items-center justify-between pt-6 sm:pt-8 border-t border-[#F0EBE3] mt-4">
+        <div className="flex items-center justify-between pt-6 sm:pt-8 border-t border-[#F0EBE3] dark:border-[#221D16] mt-4">
           {/* Direct Link to the restaurant's reviews on original website & Google */}
-          <div className="flex items-center gap-3 text-xs text-[#666666]">
+          <div className="flex items-center gap-3 text-xs text-[#666666] dark:text-[#A0988A]">
             <span>Read more reviews on</span>
             <a
               href="https://thegrandmaharaja.co.uk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#8C6E2E] hover:underline font-medium inline-flex items-center gap-1"
+              className="text-[#8C6E2E] dark:text-[#D4AF37] hover:underline font-medium inline-flex items-center gap-1"
             >
               thegrandmaharaja.co.uk
               <ArrowRight className="w-3 h-3" />
@@ -339,7 +339,7 @@ export function ReviewsSlider() {
                 onClick={() => scrollToIndex(i)}
                 aria-label={`Scroll to review slide ${i + 1}`}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  activeIndex === i ? "w-6 bg-[#9B7B34]" : "w-2 bg-[#DED6C7] hover:bg-[#BDB09B]"
+                  activeIndex === i ? "w-6 bg-[#9B7B34] dark:bg-[#D4AF37]" : "w-2 bg-[#DED6C7] dark:bg-[#3D3528] hover:bg-[#BDB09B]"
                 }`}
               />
             ))}
@@ -353,8 +353,8 @@ export function ReviewsSlider() {
               aria-label="Previous reviews"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
                 canScrollLeft
-                  ? "border-[#E8E2D5] bg-white text-[#1A1A1A]"
-                  : "border-[#ECE7DE] bg-white text-[#CCCCCC] opacity-50"
+                  ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB]"
+                  : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] opacity-50"
               }`}
             >
               <ChevronLeft className="w-4 h-4" />
@@ -365,8 +365,8 @@ export function ReviewsSlider() {
               aria-label="Next reviews"
               className={`w-8 h-8 rounded-full border flex items-center justify-center transition-all ${
                 canScrollRight
-                  ? "border-[#E8E2D5] bg-white text-[#1A1A1A]"
-                  : "border-[#ECE7DE] bg-white text-[#CCCCCC] opacity-50"
+                  ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB]"
+                  : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] opacity-50"
               }`}
             >
               <ChevronRight className="w-4 h-4" />

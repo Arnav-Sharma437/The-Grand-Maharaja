@@ -85,7 +85,7 @@ const BAR_DRINKS_MENU = [
 
 export function SignatureMenu() {
   return (
-    <section className="relative w-full bg-[#F5F1EB]/60 py-16 sm:py-20 lg:py-24">
+    <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-16 sm:py-20 lg:py-24 transition-colors duration-200">
       {/* 1400px Strict Container */}
       <div
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
@@ -93,13 +93,13 @@ export function SignatureMenu() {
       >
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-          <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34]">
+          <p className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37]">
             HERITAGE GASTRONOMY
           </p>
-          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[46px] font-semibold text-[#1A1A1A] tracking-tight mt-1.5">
+          <h2 className="font-playfair text-3xl sm:text-4xl lg:text-[46px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] tracking-tight mt-1.5">
             Signature &Agrave; La Carte &amp; Bar
           </h2>
-          <p className="font-sans text-xs sm:text-sm text-[#555555] leading-relaxed mt-3">
+          <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed mt-3">
             Purity-certified vegetarian dining with genuine Gujarati &amp; Punjabi traditions paired
             with a fully licensed international bar.
           </p>
@@ -108,30 +108,30 @@ export function SignatureMenu() {
         {/* 2-Column Cards Grid: Food Menu (Left) + Bar Menu (Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 items-stretch">
           {/* Card 1: Signature Dishes (Food Menu) */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] shadow-[0_8px_30px_rgba(0,0,0,0.04)] flex flex-col justify-between">
+          <div className="bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
             <div>
               {/* Card Header */}
-              <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3]">
+              <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3] dark:border-[#221D16]">
                 <div className="flex items-center gap-2.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] inline-block shrink-0" />
-                  <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A]">
+                  <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                     Signature Dishes
                   </h3>
                 </div>
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34]">
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37]">
                   PURE VEGETARIAN
                 </span>
               </div>
 
               {/* Dishes List */}
-              <div className="divide-y divide-[#F0EBE3]/70 my-5">
+              <div className="divide-y divide-[#F0EBE3]/70 dark:divide-[#221D16] my-5">
                 {SIGNATURE_FOOD_DISHES.map((dish) => (
                   <div
                     key={dish.title}
                     className="flex items-start gap-3.5 sm:gap-4 py-3.5 first:pt-1 last:pb-1 group"
                   >
                     {/* Dish Thumbnail */}
-                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] border border-[#EBE6DC]/80">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D]">
                       <Image
                         src={dish.image}
                         alt={dish.alt}
@@ -144,14 +144,14 @@ export function SignatureMenu() {
                     {/* Dish Title, Price, Description */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline justify-between gap-2">
-                        <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] group-hover:text-[#7D6328] transition-colors">
+                        <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors">
                           {dish.title}
                         </h4>
-                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] shrink-0">
+                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0">
                           {dish.price}
                         </span>
                       </div>
-                      <p className="text-xs text-[#666666] leading-relaxed mt-0.5 font-sans">
+                      <p className="text-xs text-[#666666] dark:text-[#A0988A] leading-relaxed mt-0.5 font-sans">
                         {dish.description}
                       </p>
                     </div>
@@ -161,12 +161,12 @@ export function SignatureMenu() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4 border-t border-[#F0EBE3]">
+            <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16]">
               <Link
                 href="/images/menu/the-grand-maharaja-food-menu-889.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-6 bg-[#7D6328] hover:bg-[#6B531F] text-white text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200"
+                className="w-full py-3.5 px-6 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200"
               >
                 <span>VIEW FULL FOOD MENU</span>
                 <ArrowRight className="w-4 h-4" />
@@ -175,30 +175,30 @@ export function SignatureMenu() {
           </div>
 
           {/* Card 2: The Grand Maharaja's Bar (Drinks Menu) */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] shadow-[0_8px_30px_rgba(0,0,0,0.04)] flex flex-col justify-between">
+          <div className="bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
             <div>
               {/* Card Header */}
-              <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3]">
+              <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3] dark:border-[#221D16]">
                 <div className="flex items-center gap-2.5">
-                  <Wine className="w-5 h-5 text-[#8C6E2E] shrink-0" />
-                  <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A]">
+                  <Wine className="w-5 h-5 text-[#8C6E2E] dark:text-[#D4AF37] shrink-0" />
+                  <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                     The Grand Maharaja&apos;s Bar
                   </h3>
                 </div>
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34]">
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37]">
                   FULLY LICENSED BAR
                 </span>
               </div>
 
               {/* Drinks List */}
-              <div className="divide-y divide-[#F0EBE3]/70 my-5">
+              <div className="divide-y divide-[#F0EBE3]/70 dark:divide-[#221D16] my-5">
                 {BAR_DRINKS_MENU.map((drink) => (
                   <div
                     key={drink.title}
                     className="flex items-start gap-3.5 sm:gap-4 py-3.5 first:pt-1 last:pb-1 group"
                   >
                     {/* Drink Thumbnail */}
-                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] border border-[#EBE6DC]/80">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D]">
                       <Image
                         src={drink.image}
                         alt={drink.alt}
@@ -211,14 +211,14 @@ export function SignatureMenu() {
                     {/* Drink Title, Price, Description */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-baseline justify-between gap-2">
-                        <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] group-hover:text-[#7D6328] transition-colors">
+                        <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors">
                           {drink.title}
                         </h4>
-                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] shrink-0">
+                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0">
                           {drink.price}
                         </span>
                       </div>
-                      <p className="text-xs text-[#666666] leading-relaxed mt-0.5 font-sans">
+                      <p className="text-xs text-[#666666] dark:text-[#A0988A] leading-relaxed mt-0.5 font-sans">
                         {drink.description}
                       </p>
                     </div>
@@ -228,12 +228,12 @@ export function SignatureMenu() {
             </div>
 
             {/* CTA Button */}
-            <div className="pt-4 border-t border-[#F0EBE3]">
+            <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16]">
               <Link
                 href="/images/menu/the-grand-maharaja-drinks-menu-835.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-6 bg-[#1E1B18] hover:bg-[#312B25] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200"
+                className="w-full py-3.5 px-6 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#2A241C] dark:hover:bg-[#383126] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200 border border-transparent dark:border-[#383126]"
               >
                 <span>VIEW BAR &amp; DRINKS MENU</span>
                 <ArrowRight className="w-4 h-4" />

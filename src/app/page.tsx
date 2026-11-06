@@ -1,4 +1,4 @@
-import { HeroBanner } from "@/components/home";
+import { HeroBanner, SpecialDishes } from "@/components/home";
 
 export default function Home() {
   return (
@@ -6,7 +6,10 @@ export default function Home() {
       {/* 1. Hero / Banner Section with #F5F1EB (60%) warm ivory background */}
       <HeroBanner />
 
-      {/* Subsequent sections will alternate: White (#FFFFFF) -> Ivory (#F5F1EB/60) */}
+      {/* 2. Special For You / Delicious Dishes Section with White (#FFFFFF) background */}
+      <SpecialDishes />
+
+      {/* Subsequent sections will continue to alternate backgrounds */}
     </main>
   );
 }

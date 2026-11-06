@@ -161,3 +161,46 @@ body {
 .card-hover-elevate:hover {
   transform: translateY(-4px);
 }
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slowSpin 140s linear infinite;
+}
+
+@keyframes ambientPulse {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+}
+
+.animate-ambient-pulse {
+  animation: ambientPulse 9s ease-in-out infinite;
+}
+
+@keyframes ambientPulseDelayed {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1.08);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(0.95);
+  }
+}
+
+.animate-ambient-pulse-delayed {
+  animation: ambientPulseDelayed 11s ease-in-out infinite 3s;
+}

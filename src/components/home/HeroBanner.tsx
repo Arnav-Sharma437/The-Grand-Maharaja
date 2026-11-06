@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Star, ArrowRight, Utensils, MapPin, CheckCircle2 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 // Real Authentic Images from the Website
 const REAL_HERO_IMAGES = [
@@ -53,9 +54,12 @@ export function HeroBanner() {
 
   return (
     <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] pt-8 sm:pt-12 lg:pt-14 pb-14 sm:pb-16 lg:pb-20 overflow-hidden transition-colors duration-200">
+      {/* Live Royal Background Effects (Floating Gold Dust, Breathing Aura & Sacred Mandala) */}
+      <RoyalBackgroundGlow variant="hero" particleCount={45} showMandala={true} />
+
       {/* Main 1400px Hero Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 xl:gap-16 items-center">

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
 // Authentic curated dishes from The Grand Maharaja
 const CURATED_DISHES = [
@@ -41,10 +42,13 @@ const CURATED_DISHES = [
 
 export function SpecialDishes() {
   return (
-    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 transition-colors duration-200">
+    <section className="relative w-full bg-white dark:bg-[#0D0C0A] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
+      {/* Live Royal Background Effects */}
+      <RoyalBackgroundGlow variant="section" particleCount={32} showMandala={true} />
+
       {/* 1400px Strict Container */}
       <div
-        className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+        className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
         style={{ maxWidth: "1400px" }}
       >
         {/* Section Header Row */}

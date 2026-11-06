@@ -3,6 +3,7 @@ import {
   SpecialDishes,
   SignatureMenu,
   HospitalityPillars,
+  ServiceSchedule,
 } from "@/components/home";
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
 
       {/* 4. Imperial Standard / Three Pillars of Royal Hospitality with White (#FFFFFF) background */}
       <HospitalityPillars />
+
+      {/* 5. Royal Hospitality / Opening Hours & Service Schedule with #F5F1EB (60%) warm ivory background */}
+      <ServiceSchedule />
 
       {/* Subsequent sections will continue to alternate backgrounds */}
     </main>

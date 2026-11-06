@@ -1,4 +1,4 @@
-import { HeroBanner, SpecialDishes } from "@/components/home";
+import { HeroBanner, SpecialDishes, SignatureMenu } from "@/components/home";
 
 export default function Home() {
   return (
@@ -8,6 +8,9 @@ export default function Home() {
 
       {/* 2. Special For You / Delicious Dishes Section with White (#FFFFFF) background */}
       <SpecialDishes />
+
+      {/* 3. Heritage Gastronomy / Signature À La Carte & Bar with #F5F1EB (60%) warm ivory background */}
+      <SignatureMenu />
 
       {/* Subsequent sections will continue to alternate backgrounds */}
     </main>

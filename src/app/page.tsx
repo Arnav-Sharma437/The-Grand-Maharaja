@@ -4,6 +4,7 @@ import {
   SignatureMenu,
   HospitalityPillars,
   ServiceSchedule,
+  ReviewsSlider,
 } from "@/components/home";
 
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
 
       {/* 5. Royal Hospitality / Opening Hours & Service Schedule with #F5F1EB (60%) warm ivory background */}
       <ServiceSchedule />
+
+      {/* 6. What Our Customers Say / Customer Reviews Slider with White (#FFFFFF) background */}
+      <ReviewsSlider />
 
       {/* Subsequent sections will continue to alternate backgrounds */}
     </main>

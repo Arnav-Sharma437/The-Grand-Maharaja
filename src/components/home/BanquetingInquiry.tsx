@@ -43,7 +43,7 @@ export function BanquetingInquiry() {
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
           {/* Left Card: Leicester Royal Hall & Direct Inquiries */}
-          <div className="lg:col-span-5 bg-white dark:bg-[#181511] rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
+          <div className="card-hover-elevate lg:col-span-5 bg-white dark:bg-[#181511] rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300">
             <div>
               {/* Eyebrow */}
               <div className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
@@ -61,26 +61,26 @@ export function BanquetingInquiry() {
                 multi-generational celebrations.
               </p>
 
-              {/* Contact Info List */}
+              {/* Contact Info List with Interactive Hover Micro-animations */}
               <div className="mt-8 space-y-6">
                 {/* Item 1: Address */}
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37]">
+                <div className="flex items-start gap-4 group/item cursor-default">
+                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37] transition-all duration-300 group-hover/item:scale-110 group-hover/item:bg-[#9B7B34] group-hover/item:text-white shadow-xs">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
                     <div className="text-[10.5px] font-bold uppercase tracking-[0.16em] text-[#666666] dark:text-[#A8A194] font-sans">
                       ADDRESS
                     </div>
-                    <div className="text-xs sm:text-[13.5px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-0.5 leading-snug">
+                    <div className="text-xs sm:text-[13.5px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover/item:text-[#9B7B34] dark:group-hover/item:text-[#D4AF37] transition-colors mt-0.5 leading-snug">
                       209 Catherine St, Leicester LE4 6GE, United Kingdom
                     </div>
                   </div>
                 </div>
 
                 {/* Item 2: Phone Desk */}
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37]">
+                <div className="flex items-start gap-4 group/item cursor-pointer">
+                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37] transition-all duration-300 group-hover/item:scale-110 group-hover/item:bg-[#9B7B34] group-hover/item:text-white shadow-xs">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
@@ -97,15 +97,15 @@ export function BanquetingInquiry() {
                 </div>
 
                 {/* Item 3: Capacity */}
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37]">
+                <div className="flex items-start gap-4 group/item cursor-default">
+                  <div className="w-10 h-10 rounded-xl bg-[#F5F1EB] dark:bg-[#221E17] border border-[#E8E2D5] dark:border-[#2F2920] flex items-center justify-center shrink-0 text-[#8C6E2E] dark:text-[#D4AF37] transition-all duration-300 group-hover/item:scale-110 group-hover/item:bg-[#9B7B34] group-hover/item:text-white shadow-xs">
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
                     <div className="text-[10.5px] font-bold uppercase tracking-[0.16em] text-[#666666] dark:text-[#A8A194] font-sans">
                       CAPACITY
                     </div>
-                    <div className="text-xs sm:text-[13.5px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-0.5 leading-snug">
+                    <div className="text-xs sm:text-[13.5px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover/item:text-[#9B7B34] dark:group-hover/item:text-[#D4AF37] transition-colors mt-0.5 leading-snug">
                       Seated dining up to 200 guests with private bar
                     </div>
                   </div>
@@ -115,7 +115,7 @@ export function BanquetingInquiry() {
 
             {/* Map Preview Snippet */}
             <div className="mt-8 pt-6 border-t border-[#F0EBE3] dark:border-[#221D16]">
-              <div className="relative w-full h-[160px] sm:h-[180px] rounded-2xl overflow-hidden border border-[#E8E2D5] dark:border-[#2C261D] bg-[#EFEBE4] dark:bg-[#1E1B16]">
+              <div className="relative w-full h-[160px] sm:h-[180px] rounded-2xl overflow-hidden border border-[#E8E2D5] dark:border-[#2C261D] bg-[#EFEBE4] dark:bg-[#1E1B16] group/map">
                 <iframe
                   title="The Grand Maharaja Location Map"
                   src="https://maps.google.com/maps?q=The+Grand+Maharaja,+209+Catherine+St,+Leicester+LE4+6GE&t=&z=14&ie=UTF8&iwloc=&output=embed"
@@ -125,7 +125,7 @@ export function BanquetingInquiry() {
                 />
 
                 {/* Floating Map Pin Badge */}
-                <div className="absolute bottom-3 left-3 bg-white/95 dark:bg-[#181511]/95 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-[#E0D9CD] dark:border-[#2C261D] shadow-sm flex items-center gap-1.5 pointer-events-none">
+                <div className="absolute bottom-3 left-3 bg-white/95 dark:bg-[#181511]/95 backdrop-blur-sm px-3 py-1.5 rounded-lg border border-[#E0D9CD] dark:border-[#2C261D] shadow-sm flex items-center gap-1.5 pointer-events-none transition-transform duration-300 group-hover/map:scale-105">
                   <MapPin className="w-3.5 h-3.5 text-[#9B7B34] dark:text-[#D4AF37]" />
                   <span className="text-[11px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] font-sans">
                     Catherine Street, Leicester
@@ -136,7 +136,7 @@ export function BanquetingInquiry() {
           </div>
 
           {/* Right Card: Send a Banquet or Dining Inquiry Form */}
-          <div className="lg:col-span-7 bg-white dark:bg-[#181511] rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
+          <div className="card-hover-elevate lg:col-span-7 bg-white dark:bg-[#181511] rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 lg:p-10 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300">
             <div>
               {/* Eyebrow */}
               <div className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
@@ -266,10 +266,10 @@ export function BanquetingInquiry() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#1A1A1A] hover:bg-[#2A2A2A] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-[#F5F1EB] rounded-xl py-4 px-6 text-xs sm:text-[13px] font-bold uppercase tracking-[0.18em] flex items-center justify-center gap-2 shadow-md hover:shadow-lg active:scale-[0.99] transition-all duration-200 group disabled:opacity-75"
+                  className="shimmer-hover w-full bg-[#1A1A1A] hover:bg-[#2A2A2A] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-[#F5F1EB] rounded-xl py-4 px-6 text-xs sm:text-[13px] font-bold uppercase tracking-[0.18em] flex items-center justify-center gap-2 shadow-md hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group disabled:opacity-75 cursor-pointer"
                 >
                   <span>{isSubmitting ? "TRANSMITTING INQUIRY..." : "SUBMIT MESSAGE"}</span>
-                  <span className="text-[#C5A880] dark:text-[#F5F1EB] group-hover:translate-x-1 transition-transform duration-200 text-sm">
+                  <span className="text-[#C5A880] dark:text-[#F5F1EB] group-hover:translate-x-1.5 transition-transform duration-200 text-sm">
                     &#9655;
                   </span>
                 </button>

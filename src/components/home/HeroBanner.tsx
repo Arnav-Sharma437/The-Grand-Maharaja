@@ -62,9 +62,9 @@ export function HeroBanner() {
           {/* Left Column: Headlines & Call to Actions */}
           <div className="lg:col-span-7 flex flex-col items-start">
             {/* Google Reviews Pill Badge */}
-            <div className="inline-flex items-center gap-2.5 bg-white dark:bg-[#1C1813] border border-[#E8E2D5] dark:border-[#2D271E] rounded-full px-4 py-1.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] mb-6 transition-colors">
+            <div className="inline-flex items-center gap-2.5 bg-white dark:bg-[#1C1813] border border-[#E8E2D5] dark:border-[#2D271E] rounded-full px-4 py-1.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)] mb-6 transition-all duration-300 hover:scale-105 hover:shadow-md hover:border-[#9B7B34]/60 cursor-pointer">
               {/* Authentic Google "G" 4-Color Icon */}
-              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="w-4 h-4 shrink-0 transition-transform duration-300 hover:rotate-12" viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   fill="#4285F4"
                   d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
@@ -86,7 +86,7 @@ export function HeroBanner() {
               {/* 5 Amber Stars */}
               <div className="flex items-center gap-0.5 text-[#F59E0B]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-[#F59E0B] stroke-none" />
+                  <Star key={i} className="w-3.5 h-3.5 fill-[#F59E0B] stroke-none transition-transform duration-200 hover:scale-125" />
                 ))}
               </div>
 
@@ -117,25 +117,25 @@ export function HeroBanner() {
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href="/#reservations"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200 group"
+                className="shimmer-hover inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm hover:shadow-[0_12px_28px_rgba(125,99,40,0.4)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
               >
                 <span>RESERVE YOUR ROYAL EXPERIENCE</span>
-                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1.5" />
               </Link>
 
               <Link
                 href="/#menus"
-                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white hover:bg-[#FAF7F2] dark:bg-[#1C1813] dark:hover:bg-[#252019] text-[#1A1A1A] dark:text-[#F5F1EB] border border-[#E0D9CE] dark:border-[#2C261D] text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200"
+                className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white hover:bg-[#FAF7F2] dark:bg-[#1C1813] dark:hover:bg-[#252019] text-[#1A1A1A] dark:text-[#F5F1EB] border border-[#E0D9CE] dark:border-[#2C261D] hover:border-[#9B7B34] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200 group/menu"
               >
                 <span>EXPLORE FOOD &amp; BAR MENUS</span>
-                <Utensils className="w-4 h-4 text-[#8C6E2E] dark:text-[#D4AF37]" />
+                <Utensils className="w-4 h-4 text-[#8C6E2E] dark:text-[#D4AF37] transition-transform duration-200 group-hover/menu:rotate-12" />
               </Link>
             </div>
           </div>
 
           {/* Right Column: Hero Real Restaurant Card with Floating Location Badge */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-3xl p-2.5 bg-white dark:bg-[#1A1713] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] border border-[#EBE6DC] dark:border-[#2C261D] transition-colors">
+            <div className="group/hero-card relative rounded-3xl p-2.5 bg-white dark:bg-[#1A1713] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] border border-[#EBE6DC] dark:border-[#2C261D] hover:border-[#9B7B34]/60 hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition-all duration-500">
               {/* Real Photo Frame */}
               <div className="relative w-full h-[380px] sm:h-[450px] lg:h-[490px] xl:h-[510px] rounded-2xl overflow-hidden bg-[#1A1A1A]">
                 <Image
@@ -143,12 +143,12 @@ export function HeroBanner() {
                   alt={currentImage.alt}
                   fill
                   priority
-                  className="object-cover object-center transition-all duration-500"
+                  className="object-cover object-center transition-all duration-700 group-hover/hero-card:scale-105"
                   sizes="(max-width: 1024px) 100vw, 45vw"
                 />
 
-                {/* Subtle Image Switcher Dots (allowing user to view other authentic website photos) */}
-                <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-black/40 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-white/20">
+                {/* Subtle Image Switcher Dots */}
+                <div className="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-black/50 backdrop-blur-md px-2.5 py-1.5 rounded-full border border-white/20">
                   {REAL_HERO_IMAGES.map((img, idx) => (
                     <button
                       key={img.label}
@@ -156,18 +156,18 @@ export function HeroBanner() {
                       onClick={() => setActiveImageIndex(idx)}
                       title={img.label}
                       aria-label={`View ${img.label}`}
-                      className={`h-2 transition-all duration-200 rounded-full ${
+                      className={`h-2 transition-all duration-300 rounded-full cursor-pointer ${
                         activeImageIndex === idx
-                          ? "w-5 bg-[#F3E5AB]"
-                          : "w-2 bg-white/60 hover:bg-white"
+                          ? "w-6 bg-[#F3E5AB] shadow-[0_0_8px_rgba(243,229,171,0.6)]"
+                          : "w-2 bg-white/60 hover:bg-white hover:scale-125"
                       }`}
                     />
                   ))}
                 </div>
               </div>
 
-              {/* Floating Location Card */}
-              <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-[#181511]/95 backdrop-blur-md rounded-2xl p-4 sm:px-5 shadow-lg border border-[#EBE6DC] dark:border-[#2C261D] flex items-center justify-between transition-colors">
+              {/* Floating Location Card with Gentle Hover Lift */}
+              <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-[#181511]/95 backdrop-blur-md rounded-2xl p-4 sm:px-5 shadow-lg border border-[#EBE6DC] dark:border-[#2C261D] flex items-center justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#9B7B34]/50 cursor-default group/loc">
                 <div>
                   <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] mb-0.5">
                     SANCTUARY OF TASTE
@@ -176,7 +176,7 @@ export function HeroBanner() {
                     {SITE_CONFIG.contact.shortAddress}
                   </p>
                 </div>
-                <div className="w-9 h-9 rounded-full bg-[#F5F1EB] dark:bg-[#231F19] flex items-center justify-center text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 ml-3">
+                <div className="w-9 h-9 rounded-full bg-[#F5F1EB] dark:bg-[#231F19] flex items-center justify-center text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 ml-3 transition-transform duration-300 group-hover/loc:scale-110 group-hover/loc:rotate-6">
                   <MapPin className="w-4 h-4" />
                 </div>
               </div>
@@ -187,7 +187,7 @@ export function HeroBanner() {
         {/* Bottom Floating Booking Bar ("SWIFT BOOKING DESK") - 1400px Container */}
         <div className="w-full mt-12 sm:mt-16">
           <div
-            className="w-full bg-white dark:bg-[#181511] rounded-2xl p-5 sm:p-7 lg:p-8 shadow-[0_10px_35px_rgba(0,0,0,0.05)] dark:shadow-[0_10px_35px_rgba(0,0,0,0.4)] border border-[#EBE6DC] dark:border-[#2C261D] transition-colors"
+            className="card-hover-elevate w-full bg-white dark:bg-[#181511] rounded-2xl p-5 sm:p-7 lg:p-8 shadow-[0_10px_35px_rgba(0,0,0,0.05)] dark:shadow-[0_10px_35px_rgba(0,0,0,0.4)] border border-[#EBE6DC] dark:border-[#2C261D] hover:border-[#9B7B34]/50 transition-all duration-300"
           >
             {/* Header Row */}
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 pb-4 border-b border-[#F0EBE3] dark:border-[#221D16]">

@@ -183,11 +183,11 @@ export function ReviewsSlider() {
               href={GOOGLE_REVIEW_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white dark:bg-[#181511] border border-[#E8E2D5] dark:border-[#2C261D] rounded-full px-5 py-3 shadow-[0_4px_16px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.4)] inline-flex items-center gap-3.5 hover:border-[#D4C3A3] hover:shadow-md transition-all duration-200 group"
+              className="bg-white dark:bg-[#181511] border border-[#E8E2D5] dark:border-[#2C261D] rounded-full px-5 py-3 shadow-[0_4px_16px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_16px_rgba(0,0,0,0.4)] inline-flex items-center gap-3.5 hover:border-[#9B7B34]/60 hover:shadow-lg hover:scale-105 transition-all duration-300 group"
               title="Read all reviews and review The Grand Maharaja on Google"
             >
               {/* Google 4-Color 'G' Logo */}
-              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0">
+              <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:rotate-12">
                 <svg className="w-6 h-6" viewBox="0 0 24 24">
                   <path
                     fill="#4285F4"
@@ -223,7 +223,7 @@ export function ReviewsSlider() {
                   <span className="text-[#888888]">&bull;</span>
                   <span className="font-medium text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors inline-flex items-center gap-0.5">
                     Review us{" "}
-                    <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
@@ -237,7 +237,7 @@ export function ReviewsSlider() {
                 aria-label="Previous reviews"
                 className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
                   canScrollLeft
-                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34]"
+                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34] hover:scale-110 active:scale-95"
                     : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] cursor-not-allowed opacity-50"
                 }`}
               >
@@ -249,7 +249,7 @@ export function ReviewsSlider() {
                 aria-label="Next reviews"
                 className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-200 ${
                   canScrollRight
-                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34]"
+                    ? "border-[#E8E2D5] dark:border-[#2C261D] bg-white dark:bg-[#181511] text-[#1A1A1A] dark:text-[#F5F1EB] hover:bg-[#F5F1EB] dark:hover:bg-[#252019] hover:border-[#9B7B34] hover:scale-110 active:scale-95"
                     : "border-[#ECE7DE] dark:border-[#221D16] bg-white dark:bg-[#14120E] text-[#CCCCCC] dark:text-[#444] cursor-not-allowed opacity-50"
                 }`}
               >
@@ -272,7 +272,7 @@ export function ReviewsSlider() {
             <div
               key={review.id}
               data-card
-              className="snap-start shrink-0 w-[85vw] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl p-6 sm:p-7 border border-[#EFEBE4] dark:border-[#2C261D] shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:border-[#DFD7C7] dark:hover:border-[#3D3528] hover:shadow-md transition-all duration-300"
+              className="card-hover-elevate snap-start shrink-0 w-[85vw] sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] xl:w-[calc(25%-15px)] bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl p-6 sm:p-7 border border-[#EFEBE4] dark:border-[#2C261D] shadow-[0_4px_20px_rgba(0,0,0,0.02)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:border-[#9B7B34]/60 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default"
             >
               <div>
                 {/* Top Row: 5 Amber Stars & Relative Date */}

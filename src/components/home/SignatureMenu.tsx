@@ -108,12 +108,15 @@ export function SignatureMenu() {
         {/* 2-Column Cards Grid: Food Menu (Left) + Bar Menu (Right) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 xl:gap-10 items-stretch">
           {/* Card 1: Signature Dishes (Food Menu) */}
-          <div className="bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] flex flex-col justify-between transition-all duration-300">
             <div>
               {/* Card Header */}
               <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3] dark:border-[#221D16]">
                 <div className="flex items-center gap-2.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] inline-block shrink-0" />
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
+                  </span>
                   <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                     Signature Dishes
                   </h3>
@@ -128,15 +131,15 @@ export function SignatureMenu() {
                 {SIGNATURE_FOOD_DISHES.map((dish) => (
                   <div
                     key={dish.title}
-                    className="flex items-start gap-3.5 sm:gap-4 py-3.5 first:pt-1 last:pb-1 group"
+                    className="flex items-start gap-3.5 sm:gap-4 p-2.5 -mx-2.5 rounded-xl hover:bg-[#FAF6EE] dark:hover:bg-[#1D1914] transition-all duration-200 group cursor-pointer"
                   >
                     {/* Dish Thumbnail */}
-                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D]">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D] shadow-xs group-hover:border-[#9B7B34]/50 transition-colors">
                       <Image
                         src={dish.image}
                         alt={dish.alt}
                         fill
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover object-center group-hover:scale-110 transition-transform duration-500"
                         sizes="(max-width: 640px) 56px, 64px"
                       />
                     </div>
@@ -147,7 +150,7 @@ export function SignatureMenu() {
                         <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors">
                           {dish.title}
                         </h4>
-                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0">
+                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 group-hover:scale-105 transition-transform duration-200">
                           {dish.price}
                         </span>
                       </div>
@@ -166,21 +169,21 @@ export function SignatureMenu() {
                 href="/images/menu/the-grand-maharaja-food-menu-889.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-6 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200"
+                className="shimmer-hover w-full py-3.5 px-6 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm hover:shadow-[0_8px_20px_rgba(125,99,40,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group/btn"
               >
                 <span>VIEW FULL FOOD MENU</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1.5" />
               </Link>
             </div>
           </div>
 
           {/* Card 2: The Grand Maharaja's Bar (Drinks Menu) */}
-          <div className="bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-colors">
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-3xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] flex flex-col justify-between transition-all duration-300">
             <div>
               {/* Card Header */}
               <div className="flex items-center justify-between pb-5 border-b border-[#F0EBE3] dark:border-[#221D16]">
                 <div className="flex items-center gap-2.5">
-                  <Wine className="w-5 h-5 text-[#8C6E2E] dark:text-[#D4AF37] shrink-0" />
+                  <Wine className="w-5 h-5 text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 transition-transform duration-300 hover:rotate-12" />
                   <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
                     The Grand Maharaja&apos;s Bar
                   </h3>
@@ -195,15 +198,15 @@ export function SignatureMenu() {
                 {BAR_DRINKS_MENU.map((drink) => (
                   <div
                     key={drink.title}
-                    className="flex items-start gap-3.5 sm:gap-4 py-3.5 first:pt-1 last:pb-1 group"
+                    className="flex items-start gap-3.5 sm:gap-4 p-2.5 -mx-2.5 rounded-xl hover:bg-[#FAF6EE] dark:hover:bg-[#1D1914] transition-all duration-200 group cursor-pointer"
                   >
                     {/* Drink Thumbnail */}
-                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D]">
+                    <div className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-xl overflow-hidden shrink-0 bg-[#F5F1EB] dark:bg-[#201C16] border border-[#EBE6DC]/80 dark:border-[#2C261D] shadow-xs group-hover:border-[#9B7B34]/50 transition-colors">
                       <Image
                         src={drink.image}
                         alt={drink.alt}
                         fill
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover object-center group-hover:scale-110 transition-transform duration-500"
                         sizes="(max-width: 640px) 56px, 64px"
                       />
                     </div>
@@ -214,7 +217,7 @@ export function SignatureMenu() {
                         <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors">
                           {drink.title}
                         </h4>
-                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0">
+                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 group-hover:scale-105 transition-transform duration-200">
                           {drink.price}
                         </span>
                       </div>
@@ -233,10 +236,10 @@ export function SignatureMenu() {
                 href="/images/menu/the-grand-maharaja-drinks-menu-835.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-6 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#2A241C] dark:hover:bg-[#383126] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm transition-all duration-200 border border-transparent dark:border-[#383126]"
+                className="shimmer-hover w-full py-3.5 px-6 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#2A241C] dark:hover:bg-[#383126] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 border border-transparent dark:border-[#383126] group/btn"
               >
                 <span>VIEW BAR &amp; DRINKS MENU</span>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover/btn:translate-x-1.5" />
               </Link>
             </div>
           </div>

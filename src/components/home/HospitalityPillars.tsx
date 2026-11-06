@@ -70,7 +70,7 @@ export function HospitalityPillars() {
           {PILLARS_DATA.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl border border-[#EBE6DC] dark:border-[#2C261D] overflow-hidden flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:shadow-lg hover:border-[#D4AF37]/50 transition-all duration-300 group"
+              className="card-hover-elevate bg-[#FAF8F5] dark:bg-[#161310] rounded-2xl border border-[#EBE6DC] dark:border-[#2C261D] overflow-hidden flex flex-col justify-between shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] hover:shadow-xl hover:border-[#9B7B34]/60 transition-all duration-500 group cursor-pointer"
             >
               {/* Image Frame with Badges */}
               <div className="relative w-full h-[230px] sm:h-[250px] lg:h-[260px] overflow-hidden bg-[#1A1A1A]">
@@ -79,14 +79,17 @@ export function HospitalityPillars() {
                   alt={pillar.alt}
                   fill
                   priority
-                  className="object-cover object-center group-hover:scale-[1.03] transition-transform duration-500"
+                  className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
 
                 {/* Top Badge */}
                 {pillar.badgeType === "green" ? (
-                  <div className="absolute top-4 left-4 z-10 bg-[#0D3826] text-[#F3E5AB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-1.5">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] inline-block" />
+                  <div className="absolute top-4 left-4 z-10 bg-[#0D3826] text-[#F3E5AB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-2">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]"></span>
+                    </span>
                     <span>{pillar.badge}</span>
                   </div>
                 ) : (
@@ -101,9 +104,12 @@ export function HospitalityPillars() {
                 <div>
                   <div className="flex items-center">
                     {pillar.hasGreenDot && (
-                      <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] inline-block mr-2 shrink-0" />
+                      <span className="relative flex h-2.5 w-2.5 mr-2 shrink-0">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
+                      </span>
                     )}
-                    <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
+                    <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors">
                       {pillar.title}
                     </h3>
                   </div>
@@ -124,7 +130,7 @@ export function HospitalityPillars() {
                     }`}
                   >
                     <span>{pillar.linkText}</span>
-                    <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover/link:translate-x-1" />
+                    <ArrowRight className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-1.5" />
                   </Link>
                 </div>
               </div>

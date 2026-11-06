@@ -32,18 +32,21 @@ export function ServiceSchedule() {
         {/* 3 Schedule Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           {/* Card 1: Weekday Dining */}
-          <div className="bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:shadow-md transition-all duration-200">
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
             <div>
               {/* Header with Green Active Dot */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#666666] dark:text-[#A8A194] font-sans">
                   WEEKDAY DINING
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[#10B981] inline-block shrink-0" />
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#10B981]"></span>
+                </span>
               </div>
 
               {/* Day Subhead */}
-              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-1.5">
+              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors mt-1.5">
                 Monday, Tuesday &amp; Thursday
               </h3>
 
@@ -68,14 +71,14 @@ export function ServiceSchedule() {
           </div>
 
           {/* Card 2: Midweek Rest (Wednesday Closed) */}
-          <div className="bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:shadow-md transition-all duration-200">
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#B91C1C]/40 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
             <div>
               {/* Header with Red REST DAY Badge */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#B91C1C] dark:text-[#F87171] font-sans">
                   MIDWEEK REST
                 </span>
-                <span className="bg-[#FEE2E2] dark:bg-[#7F1D1D]/30 text-[#B91C1C] dark:text-[#FCA5A5] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-transparent dark:border-[#7F1D1D]/50">
+                <span className="bg-[#FEE2E2] dark:bg-[#7F1D1D]/30 text-[#B91C1C] dark:text-[#FCA5A5] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-transparent dark:border-[#7F1D1D]/50 transition-transform duration-200 group-hover:scale-105">
                   REST DAY
                 </span>
               </div>
@@ -106,18 +109,21 @@ export function ServiceSchedule() {
           </div>
 
           {/* Card 3: Weekend Feasts */}
-          <div className="bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] flex flex-col justify-between hover:shadow-md transition-all duration-200">
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
             <div>
               {/* Header with Gold/Amber Dot */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
                   WEEKEND FEASTS
                 </span>
-                <span className="w-2.5 h-2.5 rounded-full bg-[#D4AF37] inline-block shrink-0" />
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D4AF37] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D4AF37]"></span>
+                </span>
               </div>
 
               {/* Day Subhead */}
-              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-1.5">
+              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors mt-1.5">
                 Friday to Sunday
               </h3>
 

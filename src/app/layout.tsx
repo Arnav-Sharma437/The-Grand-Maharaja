@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
-import { Header } from "@/components/layout";
+import { Header, Footer } from "@/components/layout";
 import { constructMetadata } from "@/lib/seo";
 import "./globals.css";
 
@@ -48,6 +48,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col bg-white text-[#1A1A1A] font-sans antialiased selection:bg-[#7D6328] selection:text-white">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

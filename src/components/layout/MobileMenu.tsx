@@ -72,29 +72,22 @@ export function MobileMenu({ items = NAV_LINKS }: MobileMenuProps) {
               transition={{ type: "spring", damping: 28, stiffness: 280 }}
               className="relative z-10 w-full max-w-[340px] h-full bg-white border-l border-[#EBE6DC] flex flex-col justify-between shadow-2xl"
             >
-              {/* Top Drawer Header with Circular Crest */}
-              <div className="flex items-center justify-between px-6 py-5 border-b border-[#F0EBE3]">
+              {/* Top Drawer Header with Prominent Circular Crest */}
+              <div className="flex items-center justify-between px-6 py-4 border-b border-[#F0EBE3]">
                 <Link
                   href="/"
                   onClick={handleClose}
-                  className="flex items-center gap-3 focus:outline-none"
+                  className="flex items-center focus:outline-none"
+                  aria-label="The Grand Maharaja - Home"
                 >
-                  <div className="relative w-9 h-9 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222]">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222]">
                     <Image
-                      src={BRAND_LOGOS.circularSeal}
+                      src={BRAND_LOGOS.circularSealSolid}
                       alt="The Grand Maharaja Crest"
-                      width={36}
-                      height={36}
-                      className="object-contain p-0.5"
+                      width={48}
+                      height={48}
+                      className="object-contain"
                     />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-serif font-bold text-xs tracking-[0.18em] uppercase text-[#1A1A1A] leading-tight">
-                      THE GRAND
-                    </span>
-                    <span className="font-serif font-bold text-xs tracking-[0.18em] uppercase text-[#1A1A1A] leading-tight">
-                      MAHARAJA
-                    </span>
                   </div>
                 </Link>
 

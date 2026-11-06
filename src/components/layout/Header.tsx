@@ -38,33 +38,23 @@ export function Header({ className = "" }: HeaderProps) {
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 h-20 flex items-center justify-between"
         style={{ maxWidth: "1400px" }}
       >
-        {/* Left: Circular Black Crest + Two-Line Brand Title */}
+        {/* Left: Prominent Circular Crest Logo (No side text) */}
         <div className="flex items-center">
           <Link
             href="/"
-            className="flex items-center gap-3 focus:outline-none group"
+            className="flex items-center focus:outline-none group"
             aria-label="The Grand Maharaja - Home"
           >
-            {/* Real Original Circular Crest Logo from Website */}
-            <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222] shadow-sm transition-transform duration-200 group-hover:scale-105">
+            {/* Real Original Circular Crest Logo - Size Enlarged */}
+            <div className="relative w-14 h-14 sm:w-[60px] sm:h-[60px] lg:w-16 lg:h-16 rounded-full overflow-hidden bg-black flex items-center justify-center shrink-0 border border-[#222] shadow-sm transition-transform duration-200 group-hover:scale-105">
               <Image
                 src={BRAND_LOGOS.circularSealSolid}
                 alt="The Grand Maharaja Crest"
-                width={44}
-                height={44}
+                width={64}
+                height={64}
                 className="object-contain"
                 priority
               />
-            </div>
-
-            {/* Two-Line Wordmark */}
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-xs sm:text-[13px] tracking-[0.18em] uppercase text-[#1A1A1A] leading-tight">
-                THE GRAND
-              </span>
-              <span className="font-serif font-bold text-xs sm:text-[13px] tracking-[0.18em] uppercase text-[#1A1A1A] leading-tight">
-                MAHARAJA
-              </span>
             </div>
           </Link>
         </div>

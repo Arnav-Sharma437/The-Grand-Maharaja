@@ -55,9 +55,9 @@ export const BRAND_LOGOS = {
 
 export const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Menu", href: "/menu" },
-  { label: "Banquets & Events", href: "/banquets" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Contact", href: "/contact" },
+  { label: "About", href: "/#about" },
+  { label: "Menu", href: "/#menu" },
+  { label: "Banquets", href: "/#banquets" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ] as const;

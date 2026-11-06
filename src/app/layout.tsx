@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { Header } from "@/components/layout";
 import { constructMetadata } from "@/lib/seo";
 import "./globals.css";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       className={`${cinzel.variable} ${cormorant.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-[#0A0A0A] text-[#FAF7F2] font-sans antialiased selection:bg-[#D4AF37] selection:text-[#0A0A0A]">
+        <Header />
         {children}
       </body>
     </html>

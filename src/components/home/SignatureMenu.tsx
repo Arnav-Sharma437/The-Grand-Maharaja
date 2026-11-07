@@ -170,9 +170,7 @@ export function SignatureMenu() {
             {/* CTA Button */}
             <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16]">
               <Link
-                href="/images/menu/the-grand-maharaja-food-menu-889.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/menu?tab=food"
                 className="shimmer-hover w-full py-3.5 px-6 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm hover:shadow-[0_8px_20px_rgba(125,99,40,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group/btn"
               >
                 <span>VIEW FULL FOOD MENU</span>
@@ -237,9 +235,7 @@ export function SignatureMenu() {
             {/* CTA Button */}
             <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16]">
               <Link
-                href="/images/menu/the-grand-maharaja-drinks-menu-835.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/menu?tab=drinks"
                 className="shimmer-hover w-full py-3.5 px-6 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#2A241C] dark:hover:bg-[#383126] text-[#FAF7F2] text-xs font-semibold uppercase tracking-wider rounded-lg flex items-center justify-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 border border-transparent dark:border-[#383126] group/btn"
               >
                 <span>VIEW BAR &amp; DRINKS MENU</span>

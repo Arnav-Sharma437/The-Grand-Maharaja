@@ -17,7 +17,7 @@ const PILLARS_DATA = [
     description:
       "An imperial symphony of hand-ground spices, slow-simmered daals, rich paneer gravies, and fresh tandoori breads honouring ancient Indian gastronomic heritage.",
     linkText: "EXPLORE THALI MENUS",
-    linkHref: "/#menus",
+    linkHref: "/menu",
     linkColor: "gold",
   },
   {

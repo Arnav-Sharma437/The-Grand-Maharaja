@@ -104,49 +104,49 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 text-xs sm:text-[13px] text-[#666666] dark:text-[#A0988A] font-sans">
               <li>
-                <a
-                  href="#menu"
+                <Link
+                  href="/menu?tab=food"
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
                   Royal Thali Feasts
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#specialties"
+                <Link
+                  href="/menu?tab=food"
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
                   Jain &amp; Swaminarayan Specialties
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#bar"
+                <Link
+                  href="/menu?tab=drinks"
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
                   Maharaja Artisanal Mocktails &amp; Bar
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#banquets"
+                <Link
+                  href="/#banquets"
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
                   Grand Banqueting Packages (Up to 200)
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#private-dining"
+                <Link
+                  href="/#banquets"
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
                   Private Dining Celebrations
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

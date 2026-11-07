@@ -54,7 +54,7 @@ export const BRAND_LOGOS = {
 
 export const NAV_LINKS = [
   { label: "HOME", href: "/" },
-  { label: "MENUS", href: "/#menus" },
+  { label: "MENUS", href: "/menu" },
   { label: "BANQUETING & CATERING", href: "/#banquets" },
   { label: "ABOUT US", href: "/#about" },
   { label: "GALLERY", href: "/#gallery" },

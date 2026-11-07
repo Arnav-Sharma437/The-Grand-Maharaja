@@ -1,0 +1,1361 @@
+[
+  {
+    "id": "cat-starters",
+    "title": "STARTERS",
+    "items": [
+      {
+        "name": "KURKURI BHINDI",
+        "price": "£10.49",
+        "description": "Sliced Okra coated with spiced flour and deep fried, perfectly crunchy on outside and tender inside",
+        "isSignature": true,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "MASALA MOGO",
+        "price": "£6.49",
+        "description": "Fried Mogo tossed in our Chef's special masala sauce elevating the taste with bold & vibrant flavours",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHILLI GARLIC MOGO",
+        "price": "£7.49",
+        "description": "Golden fried Mogo tossed with onion, peppers, chillies & our signature spicy sauce",
+        "isSignature": true,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️🌶️"
+      },
+      {
+        "name": "PLAIN MOGO",
+        "price": "£4.99",
+        "description": "Crispy fried mogo",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "GHUGHRA (2 PCS)",
+        "price": "£5.99",
+        "description": "A fried pie stuffed with mild potatoes and spices, served with chef's special chutneys garnished with sev for perfect street style taste",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CRISPY BHAJIYA",
+        "price": "£7.49",
+        "description": "Thinly sliced potato, coated in gram flour & fried to golden perfection, served with a tangy chutney.",
+        "isSignature": true,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "PERI PERI CHIPS",
+        "price": "£4.49",
+        "description": "Chips seasoned with a tangy and spicy peri-peri masala perfect for those who love a little heat",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHEESE CHIPS",
+        "price": "£4.49",
+        "description": "Golden fries smothered with melted cheese",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "MASALA CHIPS",
+        "price": "£4.99",
+        "description": "Crispy chips tossed in our Chef's special masala sauce bringing a perfect blend of spices to every bite",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHIPS",
+        "price": "£3.99",
+        "description": "Golden crispy chips.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      },
+      {
+        "name": "PUNJABI SAMOSA (2PC)",
+        "price": "£4.99",
+        "description": "Golden, crispy pastry filled with a savoury blend of spiced vegetables – deep-fried to perfection for a delightful crunch.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "DABELI",
+        "price": "£3.99",
+        "description": "Sent off to boarding school and came back gourment – a dabeli of spiced potato, chutney and peanuts, refined but still rebellious.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VADAPAV",
+        "price": "£3.99",
+        "description": "Deep-fried potato dumplings nestled in a soft cob with spicy garlic chutney.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "MASALA PAPAD",
+        "price": "£2.19",
+        "description": "Crispy papad topped with a delightful mix of onions, cucumber, tomatoes & coriander, adding a zesty twist to a classic snack.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PLAIN PAPAD",
+        "price": "£1.49",
+        "description": "Crispy, light and perfectly fried – Simple yet satisfying starter to nibble on",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-soup",
+    "title": "SOUP",
+    "items": [
+      {
+        "name": "MANCHOW SOUP",
+        "price": "£5.99",
+        "description": "A rich and savoury Indo-Chinese broth with fresh vegetables, garlic and soy, finished with a crisp noodle topping.",
+        "isSignature": true,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG. HOT & SOUR",
+        "price": "£5.99",
+        "description": "A tantalising blend of chopped ginger, garlic, green chillies, dried red chillies, onions, spring onions & carrots.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️🌶️"
+      },
+      {
+        "name": "SWEET CORN",
+        "price": "£5.99",
+        "description": "A comforting bowl of golden toasted sweetcorn simmered with smooth, mellow and gently spiced.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-puris",
+    "title": "PURIS",
+    "items": [
+      {
+        "name": "PANI PURI",
+        "price": "£5.49",
+        "description": "Crispy puri's filled with a spicy potato & black chickpea mix, served with tangy, refreshing mint water",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "RAGDA PANI PURI",
+        "price": "£5.99",
+        "description": "Crispy puri's filled with spicy hot peas & potato curry, served with tangy mint water.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "SEV PURI",
+        "price": "£5.99",
+        "description": "Crispy puri's topped with spicy potatoes, black chickpeas, fresh onions, chutneys & a sprinkle of crispy sev.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "DAHI PURI",
+        "price": "£5.99",
+        "description": "Crispy puri filled with spiced potato & black chickpeas, chopped onion with mix of chutneys, topped with thin sev & sweet yogurt.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-chaats",
+    "title": "CHAATS",
+    "items": [
+      {
+        "name": "SPECIAL BHEL",
+        "price": "£6.49",
+        "description": "A spiced mixture of puffed rice and crispy sev, combined with onions, tomatoes, potatoes, pomegranate & our special chutneys.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "SAMOSA CHAAT",
+        "price": "£6.49",
+        "description": "Crispy samosa drenched in spiced chickpeas, tangy chutneys, creamy yoghurt & crunchy sev.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "ALOO TIKKI CHAAT",
+        "price": "£6.99",
+        "description": "Golden potato patties layered with spiced chickpeas, chutneys, sweet yoghurt, onion and pomegranate – soft, spiced and flavour-packed.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PAPDI CHAAT",
+        "price": "£6.99",
+        "description": "Crispy crackers topped with spiced mashed potatoes black chickpeas, chutneys, yoghurt, onion and pomegranate – crunchy, creamy and tangy.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "DAHI VADA",
+        "price": "£6.99",
+        "description": "Tender, fluffy lentil dumplings soaked in sweet and sour yogurt, topped with chutneys & a dusting of chilli powder.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-the-emperor-s-sizzlers",
+    "title": "THE EMPEROR’S SIZZLERS",
+    "items": [
+      {
+        "name": "PANEER SHASHLIK SIZZLER",
+        "price": "£14.99",
+        "description": "Tender cubes of marinated paneer and veg to deliver a royal explosion of flavour in every bite.",
+        "isSignature": true,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "MAHARANI'S SPECIAL MIX",
+        "price": "£16.99",
+        "description": "Crispy aubergine, manchurian and mushrooms – in royal spices for a sizzling feast worthy of her crown.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "THE GOLD MINE",
+        "price": "£16.99",
+        "description": "Chips, mogo and tender paneer – spiced to strike gold in every bite.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-fresh-from-the-wok",
+    "title": "FRESH FROM THE WOK",
+    "items": [
+      {
+        "name": "CHILLI PANEER",
+        "price": "£9.99",
+        "description": "Crispy paneer fired up in a wok with onions, peppers, garlic, ginger & chilli sauce",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️🌶️"
+      },
+      {
+        "name": "PANEER 65",
+        "price": "£10.99",
+        "description": "Crispy paneer cubes in aromatic herbs & spicy flavours, deep-fried to perfection",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CRISPY CHILLI GARLIC MUSHROOM",
+        "price": "£9.99",
+        "description": "Battered mushrooms taken through garlic, spring onion & chillies",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️🌶️"
+      },
+      {
+        "name": "CRISPY AUBERGINE",
+        "price": "£9.99",
+        "description": "Soft inside, crispy outside – aubergine in wok-fired sweet and tangy sauce",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG. MANCHURIAN (DRY/GRAVY)",
+        "price": "£9.49",
+        "description": "An iconic Indo-Chinese dish featuring deep-fried cabbage & carrot balls, tossed in a tangy, special Manchurian sauce.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHINESE BHEL",
+        "price": "£10.99",
+        "description": "Crispy noodles, rice, paneer, manchurian ball, fresh veg, and zesty sauces tossed together in a sweet and spicy Indo-Chinese medley – crunchy, tangy and seriously addictive.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG. HAKKA NOODLES",
+        "price": "£8.49",
+        "description": "Noodles tossed over a high flame with vibrant vegetables, garlic and spring onions – smoky, savoury and bursting with bold flavour.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "VEG MANCHURIAN HAKKA NOODLES",
+        "price": "£9.49",
+        "description": "An exciting fusion of deep-fried cabbage and carrot Manchurian balls tossed with vegetables, noodles & a savoury soy sauce.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "SCHEZWAN HAKKA NOODLES",
+        "price": "£8.99",
+        "description": "Fiery stir-fried noodles tossed with vegetables, garlic, and spring onions in our bold Schezwan sauce – spicy, savoury, and full of punch.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "SCHEZWAN MANCHURIAN HAKKA NOODLES",
+        "price": "£9.99",
+        "description": "Fiery stir-fried noodles tossed with manchurian balls, vegetables, garlic, and spring onions in our bold Schezwan sauce – spicy, savoury, and full of punch.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG FRIED RICE",
+        "price": "£7.99",
+        "description": "Fluffy rice wok-tossed with vibrant vegetables, garlic, and spring onion in our signature seasoning – smoky, aromatic, and bursting with flavour.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG. MANCHURIAN FRIED RICE",
+        "price": "£8.99",
+        "description": "A flavour packed fried rice featuring crispy manchurian tossed with vegetables and special sauce.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "VEG SCHEZWAN FRIED RICE",
+        "price": "£8.49",
+        "description": "A spicy twist on the classic fried rice, stir-fried with mixed vegetables and garlic spiced in a rich Schezwan sauce.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "SCHEZWAN MANCHURIAN FRIED RICE",
+        "price": "£9.49",
+        "description": "Fried rice infused with fiery Schezwan sauce, tossed with spicy Manchurian creating a bold, spicy & utterly addictive dish!",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-mains-weekdays-only-",
+    "title": "MAINS (Weekdays only)",
+    "items": [
+      {
+        "name": "TRIPLE MAHARAJA SPECIAL",
+        "price": "£16.99",
+        "description": "A regal trio of paneer, cashews and green veg served in three distinct curries – nutty, creamy, sweet and spicy – finished with the chef's signature touch.",
+        "isSignature": true,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-kaju-curries",
+    "title": "KAJU CURRIES",
+    "items": [
+      {
+        "name": "ROYAL KAJU LASANIYA",
+        "price": "£11.49",
+        "description": "A very special garlic-infused curry crowned with toasted cashews – rich, aromatic, and a must-try for true flavour royalty.",
+        "isSignature": true,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "KAJU PANEER",
+        "price": "£11.99",
+        "description": "Golden, deep-fried paneer cubes cooked in a rich, cashew-based curry that's bursting with flavour.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "KAJU CURRY",
+        "price": "£11.49",
+        "description": "Buttery cashews simmered in a rich, spiced gravy of tomatoes, onions and warming aromatics – indulgent, comforting, and bursting with flavour.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "KHOYA KAJU",
+        "price": "£11.49",
+        "description": "Toasted cashews simmered in a luxurious khoya and cream gravy – delicately sweet, rich, and made for indulgent moments.",
+        "isSignature": true,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-veg-curries",
+    "title": "VEG CURRIES",
+    "items": [
+      {
+        "name": "VEG SPECIAL MAHARAJA",
+        "price": "£10.49",
+        "description": "A royal mix of vegetables and slightly grated paneer cooked in a rich green chef's special gravy.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "VEG KOLHAPURI",
+        "price": "£9.99",
+        "description": "A fiery, hot & spicy curry made with mixed vegetables & bold red curry base with grated paneer",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️🌶️"
+      },
+      {
+        "name": "METHI MALAI CORN MASALA",
+        "price": "£9.99",
+        "description": "Sweetcorn simmered in a rich, creamy gravy infused with fenugreek leaves and aromatic spices.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "RAJMA MASALA",
+        "price": "£9.99",
+        "description": "A rich medley of red kidney beans, slow-cooked in a spiced tomato-onion base. Hearty, homely, and crowned with comfort.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "DUM ALOO CURRY",
+        "price": "£9.99",
+        "description": "Potatoes slow-cooked in a rich, spiced tomato and onion gravy.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHANA MASALA",
+        "price": "£9.49",
+        "description": "A bold royal blend of slow-cooked chickpeas in a rich, spiced onion-tomato gravy – earthy, hearty, and full of heritage.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "BAINGAN BHARTA",
+        "price": "£9.99",
+        "description": "Smoked and mashed aubergine cooked with onions, tomatoes, and spices.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "DAAL TADKA",
+        "price": "£8.49",
+        "description": "Lentils cooked to perfection on a slow fire, then finished with a tempering of fragrant spices.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "DAAL MAKHANI",
+        "price": "£8.99",
+        "description": "Black lentils simmered slowly in a buttery gravy, creating a rich, creamy dish that's both homely & indulgent.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-paneer-curries",
+    "title": "PANEER CURRIES",
+    "items": [
+      {
+        "name": "PANEER TIKKA MASALA",
+        "price": "£10.99",
+        "description": "Charred paneer, peppers and onions simmered in a spiced tomato cream sauce – smoky, vibrant, and full of depth.",
+        "isSignature": true,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PANEER LAZAWAB",
+        "price": "£10.99",
+        "description": "Soft paneer in a rich tomato-cream gravy – smooth, fragrant, and truly luxurious.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "PANEER TOOFANI",
+        "price": "£10.99",
+        "description": "Bold, fiery and full of flair – soft paneer tossed with peppers and onions in a rich, stormy red curry.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "KADAI PANEER",
+        "price": "£10.99",
+        "description": "Paneer cubes cooked with onions, tomatoes, bell peppers and a blend of homemade Indian spices in a sizzling curry sauce.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PANEER BHURJI",
+        "price": "£10.99",
+        "description": "Crumbled paneer cooked with onions, tomatoes and house spices – rustic, flavourful, and full of comfort.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PALAK PANEER",
+        "price": "£10.99",
+        "description": "Paneer cubes cooked in a luscious green sauce made with fresh spinach & aromatic spices",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "PANEER MAKHANI",
+        "price": "£10.99",
+        "description": "Paneer simmered in a buttery tomato sauce enriched with cashews – smooth, creamy and indulgently spiced.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "SHAHI PANEER",
+        "price": "£10.99",
+        "description": "Deep-fried paneer cooked in a luxurious,royal-style gravy made with a blend of spices,cream & a touch of sweetness",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "MALAI KOFTA",
+        "price": "£10.99",
+        "description": "Soft paneer & dry fruit dumplings served in a creamy gravy that's rich & velvety.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CHEESE ANGOORI",
+        "price": "£10.99",
+        "description": "Delicate cheese cubes bathed in a rich butter-laced gravy, sweet, spiced and dripping in indulgence.",
+        "isSignature": true,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-flavours-of-india",
+    "title": "FLAVOURS OF INDIA",
+    "items": [
+      {
+        "name": "PAV BHAJI",
+        "price": "£8.49",
+        "description": "Silky, spiced vegetable mash and toasted buttered buns – bold, comforting, and fit for a king's street feast.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "CHOLE BHATURE",
+        "price": "£8.49",
+        "description": "Fluffy, golden bhature paired with slow-cooked chickpeas in a rich, spiced masala – a classic done to perfection.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": "🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-fresh-tandoor-naan",
+    "title": "FRESH TANDOOR NAAN",
+    "items": [
+      {
+        "name": "TANDOORI ROTI",
+        "price": "£2.69",
+        "description": "",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      },
+      {
+        "name": "PLAIN NAAN",
+        "price": "£2.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "BUTTER NAAN",
+        "price": "£3.29",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "GARLIC NAAN",
+        "price": "£3.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "GARLIC CORIANDER NAAN",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHILLI GARLIC NAAN",
+        "price": "£3.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CORIANDER CHILLI GARLIC NAAN",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CHEESE NAAN",
+        "price": "£3.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHEESE CHILLI NAAN",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CHEESE GARLIC NAAN",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHEESE CHILLI GARLIC NAAN",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️"
+      }
+    ]
+  },
+  {
+    "id": "cat-south-indian-spices",
+    "title": "SOUTH INDIAN SPICES",
+    "items": [
+      {
+        "name": "TGM SPECIAL DOSA",
+        "price": "£9.99",
+        "description": "Signature dosa packed with a blend of special spices and vegetables with cheese and paneer.",
+        "isSignature": true,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "MYSORE MASALA DOSA",
+        "price": "£7.99",
+        "description": "A zesty Mysore-style dosa filled with spiced potato and onion masala",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "MYSORE PLAIN DOSA",
+        "price": "£5.49",
+        "description": "A plain dosa served with a spread of signature spicy red chutney inside",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "PANEER CHEESE MASALA DOSA",
+        "price": "£5.49",
+        "description": "A soft and crispy dosa filled with a rich paneer and vegetable mixture, paired with cheese",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "PANEER MASALA DOSA",
+        "price": "£7.99",
+        "description": "A soft and crispy dosa filled with a rich paneer and vegetable mixture",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CHEESE MASALA DOSA",
+        "price": "£7.99",
+        "description": "A crispy dosa filled with spiced potato and onion masala, topped with melted cheese",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "SCHEZWAN PANEER CHEESE MASALA DOSA",
+        "price": "£8.99",
+        "description": "Spicy & Cheesy Fusion – Crispy dosa layered with tangy Schezwan sauce, loaded with creamy melted cheese, and filled with spiced potato and paneer masala",
+        "isSignature": true,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "SCHEZWAN PANEER MASALA DOSA",
+        "price": "£8.49",
+        "description": "A crispy dosa filled with spicy Schezwan paneer, potato masala, delivering a bold fusion of South Indian flavours",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": "🌶️🌶️"
+      },
+      {
+        "name": "MASALA DOSA",
+        "price": "£7.49",
+        "description": "A crispy dosa filled with a spiced potato & onion masala filling",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "PLAIN DOSA",
+        "price": "£5.49",
+        "description": "A soft, light rice and lentil crepe that's crispy on the edges",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHEESE DOSA",
+        "price": "£7.49",
+        "description": "A warm dosa with a melted cheese filling.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "NUTELLA DOSA",
+        "price": "£7.99",
+        "description": "A sweet & indulgent twist on the classic dosa, served with a spread of Nutella for a rich, chocolatey delight",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "TOMATO & ONION UTTAPAM",
+        "price": "£7.99",
+        "description": "A delicious, savoury uttapam topped with a mix of fresh tomatoes & onions.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "MIX UTTAPAM",
+        "price": "£7.99",
+        "description": "A savoury South Indian pancake topped with a delightful mix of tomatoes, onions, peppers, green chillies & coriander.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "CHEESE UTTAPAM",
+        "price": "£7.99",
+        "description": "Uttapam made with melted cheese.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "IDLI SAMBHAR",
+        "price": "£6.99",
+        "description": "Steamed soft idli paired with a rich & tangy sambhar & coconut chutney.",
+        "isSignature": false,
+        "tags": [
+          "OG"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-rice-delights",
+    "title": "RICE DELIGHTS",
+    "items": [
+      {
+        "name": "TGM SPECIAL BIRYANI (WITH RAITA)",
+        "price": "£10.99",
+        "description": "A fragrant rice dish made with fresh vegetables, herbs, and spices, where each bite offers a delightful medley of Flavors.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "VEG TAWA PULAO",
+        "price": "£8.99",
+        "description": "Fragrant basmati rice tossed on a sizzling tawa with spiced vegetables, butter and house masala- bold, buttery and bursting with street-side charm.",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": "🌶️"
+      },
+      {
+        "name": "JEERA RICE",
+        "price": "£4.49",
+        "description": "Rice cooked with Jeera / Cumin.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      },
+      {
+        "name": "STEAM RICE",
+        "price": "£3.99",
+        "description": "Plain cooked rice.",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-royal-refreshments",
+    "title": "ROYAL REFRESHMENTS",
+    "items": [
+      {
+        "name": "MASALA CHAAS",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "SALTED LASSI",
+        "price": "£4.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "SWEET LASSI",
+        "price": "£4.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "MANGO LASSI",
+        "price": "£4.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "ROSE FALOODA",
+        "price": "£5.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "PISTA FALOODA",
+        "price": "£5.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-milkshake",
+    "title": "MILKSHAKE",
+    "items": [
+      {
+        "name": "VANILLA MILKSHAKE",
+        "price": "£5.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "STRAWBERRY MILKSHAKE",
+        "price": "£5.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHOCOLATE MILKSHAKE",
+        "price": "£5.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-sides",
+    "title": "SIDES",
+    "items": [
+      {
+        "name": "CUCUMBER RAITA",
+        "price": "£2.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "BOONDI RAITA",
+        "price": "£2.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "MIX RAITA",
+        "price": "£2.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "GREEN SALAD PLATE",
+        "price": "£4.49",
+        "description": "",
+        "isSignature": false,
+        "tags": [],
+        "chilli": ""
+      },
+      {
+        "name": "PLAIN YOGURT",
+        "price": "£1.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "OG",
+          "D"
+        ],
+        "chilli": ""
+      }
+    ]
+  },
+  {
+    "id": "cat-dessert-sweet-temptation",
+    "title": "DESSERT – SWEET TEMPTATION",
+    "items": [
+      {
+        "name": "GULAB JAMUN",
+        "price": "£4.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "CHOCOLATE ICE CREAM",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "PISTA ICE CREAM",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "STRAWBERRY ICE CREAM",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "VANILLA ICE CREAM",
+        "price": "£3.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "THE ROYAL KULFI DELIGHT",
+        "price": "£4.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      },
+      {
+        "name": "GAJAR HALWA",
+        "price": "£4.99",
+        "description": "",
+        "isSignature": false,
+        "tags": [
+          "D",
+          "N"
+        ],
+        "chilli": ""
+      }
+    ]
+  }
+]

@@ -12,6 +12,13 @@ const nextConfig: NextConfig = {
       },
     },
   },
+  async redirects() {
+    return [
+      { source: "/menus", destination: "/menu", permanent: true },
+      { source: "/food-menu", destination: "/menu", permanent: true },
+      { source: "/drinks-menu", destination: "/menu", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

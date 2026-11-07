@@ -128,7 +128,7 @@ export function HeroBanner() {
               </Link>
 
               <Link
-                href="/#menus"
+                href="/menu"
                 className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-white hover:bg-[#FAF7F2] dark:bg-[#1C1813] dark:hover:bg-[#252019] text-[#1A1A1A] dark:text-[#F5F1EB] border border-[#E0D9CE] dark:border-[#2C261D] hover:border-[#9B7B34] hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm transition-all duration-200 group/menu"
               >
                 <span>EXPLORE FOOD &amp; BAR MENUS</span>

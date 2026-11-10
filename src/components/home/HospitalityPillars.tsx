@@ -30,7 +30,7 @@ const PILLARS_DATA = [
     description:
       "Strictly prepared in dedicated cookware without onions, garlic, or root vegetables. Honouring ancient dietary sanctity with zero compromise on taste.",
     linkText: "KITCHEN SANCTUM DETAILS",
-    linkHref: "/#about",
+    linkHref: "/about#sanctum",
     linkColor: "green",
   },
   {

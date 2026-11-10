@@ -218,13 +218,17 @@ export function Footer() {
             Hospitality.
           </p>
 
-          <div className="flex items-center gap-4 text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-semibold">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-semibold">
             <Link href="/" className="hover:underline">
               Home
             </Link>
             <span>&bull;</span>
             <Link href="/menu" className="hover:underline">
               Menus
+            </Link>
+            <span>&bull;</span>
+            <Link href="/banqueting" className="hover:underline">
+              Banqueting
             </Link>
             <span>&bull;</span>
             <Link href="/about" className="hover:underline">

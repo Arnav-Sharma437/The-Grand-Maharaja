@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
       { source: "/about-us", destination: "/about", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/gallery-page", destination: "/gallery", permanent: true },
+      { source: "/banquets", destination: "/banqueting", permanent: true },
+      { source: "/catering", destination: "/banqueting", permanent: true },
+      { source: "/banqueting-catering", destination: "/banqueting", permanent: true },
+      { source: "/banqueting-and-catering", destination: "/banqueting", permanent: true },
     ];
   },
 };

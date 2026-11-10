@@ -19,6 +19,11 @@ export const SITE_CONFIG = {
     address: "209 Catherine St, Leicester LE4 6GE",
     shortAddress: "209 Catherine St, Leicester",
   },
+  social: {
+    facebook: "https://www.facebook.com/profile.php?id=61574447404571",
+    instagram: "https://www.instagram.com/thegrandmaharaja?cplk=amk1bTA4cXRwNjBy",
+    instagramHandle: "@thegrandmaharaja",
+  },
 } as const;
 
 export const BRAND_COLORS = {
@@ -58,5 +63,5 @@ export const NAV_LINKS = [
   { label: "BANQUETING & CATERING", href: "/#banquets" },
   { label: "ABOUT US", href: "/about" },
   { label: "GALLERY", href: "/#gallery" },
-  { label: "CONTACT", href: "/#contact" },
+  { label: "CONTACT", href: "/contact" },
 ] as const;

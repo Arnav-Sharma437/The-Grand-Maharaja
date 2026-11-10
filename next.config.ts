@@ -19,6 +19,7 @@ const nextConfig: NextConfig = {
       { source: "/drinks-menu", destination: "/menu", permanent: true },
       { source: "/about-us", destination: "/about", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
+      { source: "/gallery-page", destination: "/gallery", permanent: true },
     ];
   },
 };

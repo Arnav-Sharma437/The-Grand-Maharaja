@@ -231,6 +231,10 @@ export function Footer() {
               About Us
             </Link>
             <span>&bull;</span>
+            <Link href="/gallery" className="hover:underline">
+              Gallery
+            </Link>
+            <span>&bull;</span>
             <Link href="/contact" className="hover:underline">
               Contact Us
             </Link>

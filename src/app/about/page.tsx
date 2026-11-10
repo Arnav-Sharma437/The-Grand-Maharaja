@@ -34,25 +34,29 @@ export const metadata: Metadata = constructMetadata({
 const HERITAGE_STATS = [
   {
     icon: ShieldCheck,
-    title: "100% Pure Vegetarian",
+    statNumber: "100%",
+    title: "Pure Vegetarian",
     description: "Authentic plant-based culinary art with zero compromise",
     highlight: "Dedicated Sanctum",
   },
   {
     icon: Utensils,
-    title: "Dedicated Jain & Swaminarayan",
+    statNumber: "Dedicated",
+    title: "Jain & Swaminarayan",
     description: "Strict dietary care with specialized cookware & utensils",
     highlight: "Zero Alliums",
   },
   {
     icon: Users,
-    title: "200+ Banquet Capacity",
+    statNumber: "200+",
+    title: "Banquet Capacity",
     description: "Opulent private suite for royal weddings & celebrations",
     highlight: "Regal Elegance",
   },
   {
     icon: Clock,
-    title: "Daily Regal Hospitality",
+    statNumber: "Daily",
+    title: "Regal Hospitality",
     description: "Lunch & dinner served 12:00 – 22:00 (Wednesday Closed)",
     highlight: "Authentic Taste",
   },
@@ -93,70 +97,134 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen flex flex-col w-full bg-white dark:bg-[#0D0C0A] transition-colors duration-200">
       {/* ─────────────────────────────────────────────────────────────
-          SECTION 1: HERO & HERITAGE PILLARS
-          Background: #F5F1EB/60 (Light) | #14120E (Dark)
+          SECTION 1: GRAND ROYAL HERO BANNER (Cinematic Banquet Atmosphere)
+          Background: catering_feast.jpg with Dark Golden Regal Vignette
       ───────────────────────────────────────────────────────────── */}
-      <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] pt-10 sm:pt-14 pb-16 sm:pb-20 overflow-hidden transition-colors duration-200 border-b border-[#EAE3D6] dark:border-[#262017]">
-        {/* Live Royal Ambient Background */}
-        <RoyalBackgroundGlow variant="hero" particleCount={42} showMandala={true} mandalaPosition="right" />
+      <section className="relative w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[540px] flex items-center justify-center py-16 sm:py-20 lg:py-24 overflow-hidden border-b-2 border-[#D4AF37]/40 shadow-[0_4px_30px_rgba(212,175,55,0.15)]">
+        {/* Authentic Background Photo with Next.js Image Optimization */}
+        <Image
+          src="/images/banquet/catering_feast.jpg"
+          alt="The Grand Maharaja Royal Catering Feast & Fine Dining Hall"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+
+        {/* Deep Royal Vignette & Dark Golden Gradients */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A0806]/85 via-[#120E0B]/90 to-[#0A0806]/98 pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(6,5,4,0.7)_100%)] pointer-events-none" />
+
+        {/* Live Royal Ambient Background (Floating Gold Embers & Sacred Mandala) */}
+        <RoyalBackgroundGlow variant="hero" particleCount={48} showMandala={true} mandalaPosition="right" />
 
         <div
-          className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+          className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 text-center"
           style={{ maxWidth: "1400px" }}
         >
           {/* Breadcrumb Navigation */}
           <nav
             aria-label="Breadcrumb"
-            className="inline-flex items-center gap-2 text-xs text-[#777] dark:text-[#999] mb-6 font-sans"
+            className="inline-flex items-center gap-2 text-xs text-[#D5CFC5]/80 mb-5 font-sans"
           >
             <Link
               href="/"
-              className="inline-flex items-center gap-1 hover:text-[#7D6328] dark:hover:text-[#D4AF37] transition-colors"
+              className="inline-flex items-center gap-1 text-[#E0D8CA] hover:text-[#D4AF37] transition-colors"
             >
               <Home className="w-3.5 h-3.5" />
               <span>Home</span>
             </Link>
-            <ChevronRight className="w-3 h-3 text-[#BBB] dark:text-[#555]" />
-            <span className="text-[#1A1A1A] dark:text-[#F5F1EB] font-semibold">
-              About Us
+            <ChevronRight className="w-3 h-3 text-[#999]" />
+            <span className="text-[#F5F1EB] font-semibold">
+              About Our Heritage
             </span>
           </nav>
 
-          {/* Eyebrow Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white dark:bg-[#1E1A14] border border-[#E0D8CA] dark:border-[#2C261D] shadow-sm mb-5">
-            <Sparkles className="w-3.5 h-3.5 text-[#9B7B34] dark:text-[#D4AF37]" />
-            <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#9B7B34] dark:text-[#D4AF37]">
-              HERITAGE &amp; ROYAL FLAVOURS
+          {/* Royal Eyebrow Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#1F1912]/80 backdrop-blur-md border border-[#D4AF37]/40 shadow-sm mb-4">
+            <Sparkles className="w-3.5 h-3.5 text-[#D4AF37]" />
+            <span className="text-[11px] font-bold uppercase tracking-[0.22em] text-[#F3E5AB]">
+              EST. LEICESTER &bull; PURE VEGETARIAN SANCTUARY
             </span>
           </div>
 
-          {/* Main Headline (Exact Copy from live site) */}
-          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-bold text-[#1A1A1A] dark:text-[#F5F1EB] tracking-tight leading-[1.18] max-w-5xl">
-            A regal sanctuary of authentic North Indian &amp; Gujarati fine vegetarian gastronomy,
-            sacred hand-ground spices, and generational Indian warmth in the heart of Leicester.
+          {/* Grand Page Title (Cinzel Majestic Typography) */}
+          <h1 className="font-cinzel text-3xl sm:text-5xl lg:text-6xl font-bold text-white tracking-[0.06em] leading-tight">
+            Heritage &amp; Royal Flavours
           </h1>
 
+          {/* Decorative Golden Leaf & Line Ornament */}
+          <div className="flex items-center justify-center gap-3 my-4">
+            <span className="w-12 sm:w-20 h-[1.5px] bg-[#D4AF37]/70" />
+            <span className="text-[#D4AF37] text-lg sm:text-xl select-none">&#10086;</span>
+            <span className="w-12 sm:w-20 h-[1.5px] bg-[#D4AF37]/70" />
+          </div>
+
+          {/* Authentic Hero Lead Paragraph */}
+          <p className="font-playfair text-base sm:text-xl lg:text-[22px] text-[#F3E5AB] max-w-4xl mx-auto leading-relaxed italic font-normal">
+            &ldquo;A regal sanctuary of authentic North Indian &amp; Gujarati fine vegetarian gastronomy,
+            sacred hand-ground spices, and generational Indian warmth in the heart of Leicester.&rdquo;
+          </p>
+
+          {/* Dual Royal CTAs */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="tel:+01165070296"
+              className="shimmer-hover inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#9B7B34] hover:bg-[#836729] text-white text-xs sm:text-[13px] font-bold uppercase tracking-wider rounded-xl shadow-[0_8px_25px_rgba(155,123,52,0.4)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            >
+              <Phone className="w-4 h-4" />
+              <span>BOOK A TABLE &bull; +0116 507 0296</span>
+            </a>
+
+            <Link
+              href="/menu"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-white/10 hover:bg-white/15 backdrop-blur-md text-white border border-[#E0D8CA]/50 hover:border-[#D4AF37] text-xs sm:text-[13px] font-bold uppercase tracking-wider rounded-xl shadow-sm hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
+            >
+              <Utensils className="w-4 h-4 text-[#D4AF37]" />
+              <span>EXPLORE OUR MENUS</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─────────────────────────────────────────────────────────────
+          SECTION 1B: HERITAGE HIGHLIGHTS & STATS BAR
+          Background: #F5F1EB/60 (Light) | #14120E (Dark)
+      ───────────────────────────────────────────────────────────── */}
+      <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-12 sm:py-14 border-b border-[#EAE3D6] dark:border-[#262017] transition-colors duration-200">
+        <div
+          className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10"
+          style={{ maxWidth: "1400px" }}
+        >
           {/* 4 Core Heritage Stat Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12 sm:mt-14 items-stretch">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6 items-stretch">
             {HERITAGE_STATS.map((stat, idx) => {
               const Icon = stat.icon;
               return (
                 <div
                   key={idx}
-                  className="card-hover-elevate bg-white dark:bg-[#1A1611] rounded-2xl p-6 border border-[#E8E2D5] dark:border-[#2A241C] shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-all duration-300"
+                  className="card-hover-elevate bg-white dark:bg-[#1A1611] rounded-2xl p-6 border border-[#E8E2D5] dark:border-[#2A241C] border-t-[3px] border-t-[#9B7B34] dark:border-t-[#D4AF37] shadow-[0_4px_20px_rgba(0,0,0,0.03)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.4)] flex flex-col justify-between transition-all duration-300"
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#FAF5EB] dark:bg-[#231D16] border border-[#E8DFD0] dark:border-[#352B1F] flex items-center justify-center text-[#9B7B34] dark:text-[#D4AF37] mb-4">
-                      <Icon className="w-6 h-6" />
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-11 h-11 rounded-xl bg-[#FAF5EB] dark:bg-[#231D16] border border-[#E8DFD0] dark:border-[#352B1F] flex items-center justify-center text-[#9B7B34] dark:text-[#D4AF37]">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8C6E2E] dark:text-[#D4AF37] px-2.5 py-1 rounded-full bg-[#FAF5EB] dark:bg-[#231D16] border border-[#E8DFD0] dark:border-[#352B1F]">
+                        {stat.highlight}
+                      </span>
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#8C6E2E] dark:text-[#D4AF37] block">
-                      {stat.highlight}
-                    </span>
+
+                    <div className="font-cinzel text-2xl sm:text-3xl font-bold text-[#9B7B34] dark:text-[#D4AF37] tracking-tight">
+                      {stat.statNumber}
+                    </div>
+
                     <h3 className="font-playfair text-lg sm:text-xl font-bold text-[#1A1A1A] dark:text-[#F5F1EB] mt-1 leading-snug">
                       {stat.title}
                     </h3>
                   </div>
-                  <p className="font-sans text-xs sm:text-[13px] text-[#666666] dark:text-[#A8A194] leading-relaxed mt-3 pt-3 border-t border-[#F0EAE0] dark:border-[#262017]">
+
+                  <p className="font-sans text-xs sm:text-[13px] text-[#666666] dark:text-[#A8A194] leading-relaxed mt-4 pt-3 border-t border-[#F0EAE0] dark:border-[#262017]">
                     {stat.description}
                   </p>
                 </div>

@@ -16,11 +16,8 @@ import {
   Heart,
   Eye,
   ExternalLink,
-  PlusCircle,
   Film,
   Camera,
-  CheckCircle2,
-  Share2,
 } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
@@ -313,7 +310,7 @@ const CATEGORIES = [
 
 export function GalleryExplorer() {
   const [activeCategory, setActiveCategory] = useState<MediaCategory>("all");
-  const [items, setItems] = useState<GalleryItem[]>(INITIAL_MEDIA_ITEMS);
+  const [items] = useState<GalleryItem[]>(INITIAL_MEDIA_ITEMS);
 
   // Modal Lightbox state for Photos
   const [activePhoto, setActivePhoto] = useState<GalleryItem | null>(null);
@@ -323,12 +320,6 @@ export function GalleryExplorer() {
   const [isReelMuted, setIsReelMuted] = useState(false);
   const [isReelPlaying, setIsReelPlaying] = useState(true);
   const modalVideoRef = useRef<HTMLVideoElement | null>(null);
-
-  // Live Instagram Embed Sync input tool state
-  const [newReelUrl, setNewReelUrl] = useState("");
-  const [newReelTitle, setNewReelTitle] = useState("");
-  const [isAddingReel, setIsAddingReel] = useState(false);
-  const [addSuccessMessage, setAddSuccessMessage] = useState("");
 
   // Load Instagram Embed.js script once for live embeds
   useEffect(() => {
@@ -390,40 +381,10 @@ export function GalleryExplorer() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Handle Dynamic Instagram Reel Embedding
-  const handleAddLiveReel = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!newReelUrl.trim()) return;
-
-    // Build fresh item from user input
-    const cleanUrl = newReelUrl.trim();
-    const cleanTitle = newReelTitle.trim() || "Latest Instagram Reel";
-
-    const newReelItem: GalleryItem = {
-      id: `reel-user-${Date.now()}`,
-      type: "reel",
-      title: cleanTitle,
-      category: "dining",
-      imageUrl: "/images/gallery/gallery-interior-738.jpg",
-      videoUrl: "/images/gallery/3594037010001002071.mp4",
-      caption: `Live synced from official Instagram @thegrandmaharaja (${cleanUrl})`,
-      likes: "New",
-      views: "Live",
-      instagramUrl: cleanUrl,
-    };
-
-    setItems([newReelItem, ...items]);
-    setNewReelUrl("");
-    setNewReelTitle("");
-    setIsAddingReel(false);
-    setAddSuccessMessage("Reel successfully added to the live gallery feed!");
-    setTimeout(() => setAddSuccessMessage(""), 5000);
-  };
-
   return (
     <div className="w-full flex flex-col items-center">
       {/* ─────────────────────────────────────────────────────────────
-          1. LIVE INSTAGRAM ACCOUNT HEADER & SYNC BAR
+          1. LIVE INSTAGRAM ACCOUNT HEADER & CHANNEL BAR
       ───────────────────────────────────────────────────────────── */}
       <div className="w-full bg-[#FAF8F5] dark:bg-[#14120E] border-y border-[#EBE6DC] dark:border-[#2C261D] py-6 sm:py-8 px-4 sm:px-6">
         <div
@@ -453,7 +414,7 @@ export function GalleryExplorer() {
                   &#10003;
                 </span>
                 <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-[#EBE6DC] dark:bg-[#2C261D] text-[#8C6E2E] dark:text-[#D4AF37]">
-                  OFFICIAL
+                  OFFICIAL FEED
                 </span>
               </div>
               <p className="text-xs text-[#666666] dark:text-[#A0988A] font-sans mt-0.5">
@@ -462,15 +423,13 @@ export function GalleryExplorer() {
             </div>
           </div>
 
-          {/* Social Stats & Direct Actions */}
+          {/* Social Stats & Direct Instagram Actions */}
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <button
-              onClick={() => setIsAddingReel(!isAddingReel)}
-              className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-white dark:bg-[#1E1B16] border border-[#DDD4BF] dark:border-[#382F22] text-[#8C6E2E] dark:text-[#D4AF37] text-xs font-bold uppercase tracking-wider hover:bg-[#F5F1EB] dark:hover:bg-[#2A241B] transition-all shadow-xs cursor-pointer"
-            >
-              <PlusCircle className="w-4 h-4" />
-              <span>Embed New Reel</span>
-            </button>
+            <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-[#1E1B16] border border-[#DDD4BF] dark:border-[#382F22] text-[#8C6E2E] dark:text-[#D4AF37] text-xs font-bold font-sans">
+              <Film className="w-4 h-4 text-[#E1306C]" />
+              <span>12 Exclusive Reels</span>
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse ml-0.5" />
+            </div>
 
             <a
               href={SITE_CONFIG.social.instagram}
@@ -479,76 +438,11 @@ export function GalleryExplorer() {
               className="shimmer-hover inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#E1306C] via-[#FD1D1D] to-[#F77737] text-white text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all cursor-pointer"
             >
               <InstagramIcon className="w-4 h-4" />
-              <span>Follow on Instagram</span>
+              <span>Follow @thegrandmaharaja</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
         </div>
-
-        {/* Dynamic Embed Drawer */}
-        {isAddingReel && (
-          <div className="max-w-2xl mx-auto mt-6 p-5 sm:p-6 bg-white dark:bg-[#1A1612] rounded-2xl border border-[#D4AF37]/40 shadow-xl animate-fade-in">
-            <div className="flex items-center justify-between mb-3">
-              <h4 className="font-playfair text-base sm:text-lg font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">
-                Embed a New Instagram Reel
-              </h4>
-              <button
-                onClick={() => setIsAddingReel(false)}
-                className="text-[#888] hover:text-[#111] dark:hover:text-white p-1"
-              >
-                <X className="w-4 h-4" />
-              </button>
-            </div>
-            <p className="text-xs text-[#666666] dark:text-[#A0988A] mb-4">
-              Enter the Instagram Reel URL or permalink (e.g.{" "}
-              <code className="text-[#8C6E2E] dark:text-[#D4AF37]">
-                https://www.instagram.com/reel/XXXX/
-              </code>
-              ) to display it immediately on the website gallery.
-            </p>
-
-            <form onSubmit={handleAddLiveReel} className="space-y-3">
-              <input
-                type="url"
-                required
-                placeholder="https://www.instagram.com/reel/..."
-                value={newReelUrl}
-                onChange={(e) => setNewReelUrl(e.target.value)}
-                className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] placeholder-[#999] focus:outline-none focus:border-[#8C6E2E] dark:focus:border-[#D4AF37]"
-              />
-              <input
-                type="text"
-                placeholder="Title or Caption (e.g. Chef's Special Chaat)"
-                value={newReelTitle}
-                onChange={(e) => setNewReelTitle(e.target.value)}
-                className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] placeholder-[#999] focus:outline-none focus:border-[#8C6E2E] dark:focus:border-[#D4AF37]"
-              />
-              <div className="flex justify-end gap-3 pt-2">
-                <button
-                  type="button"
-                  onClick={() => setIsAddingReel(false)}
-                  className="px-4 py-2 text-xs font-bold uppercase tracking-wider text-[#666] dark:text-[#AAA]"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="px-5 py-2.5 rounded-xl bg-[#8C6E2E] dark:bg-[#D4AF37] text-white dark:text-[#12100D] text-xs font-bold uppercase tracking-wider shadow-sm hover:brightness-110"
-                >
-                  Sync &amp; Add Reel
-                </button>
-              </div>
-            </form>
-          </div>
-        )}
-
-        {/* Success Alert */}
-        {addSuccessMessage && (
-          <div className="max-w-md mx-auto mt-4 p-3 bg-green-50 dark:bg-green-950/40 border border-green-200 dark:border-green-800 rounded-xl text-xs text-green-800 dark:text-green-300 flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-green-600 shrink-0" />
-            <span>{addSuccessMessage}</span>
-          </div>
-        )}
       </div>
 
       {/* ─────────────────────────────────────────────────────────────

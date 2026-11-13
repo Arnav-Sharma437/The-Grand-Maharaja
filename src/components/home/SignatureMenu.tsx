@@ -16,71 +16,71 @@ const SIGNATURE_FOOD_DISHES = [
     alt: "Paneer Shashlik Sizzler freshly prepared at The Grand Maharaja",
   },
   {
-    title: "Veg Special Maharaja",
+    title: "Royal Kaju Lasaniya",
+    price: "£12.99",
+    description: "Whole roasted cashews in a fiery garlic and rich tomato gravy, an imperial delicacy",
+    image: "/images/food/Kaju-Paneer.png",
+    alt: "Royal Kaju Lasaniya curry at The Grand Maharaja",
+  },
+  {
+    title: "Paneer Tikka Masala",
     price: "£10.99",
-    description: "Assorted garden vegetables cooked in our Chef's signature rich spiced royal gravy",
-    image: "/images/food/veg-maharaja.jpg",
-    alt: "Veg Special Maharaja royal curry at The Grand Maharaja",
+    description: "Grilled cottage cheese simmered in a velvety spiced tomato and butter gravy",
+    image: "/images/food/restaurant-style-paneer-makhani-recipe.webp",
+    alt: "Paneer Tikka Masala at The Grand Maharaja",
+  },
+  {
+    title: "TGM Special Biryani (with Raita)",
+    price: "£10.49",
+    description: "Fragrant basmati rice layered with garden vegetables & saffron, served with cooling raita",
+    image: "/images/food/veg-biryani-and-raita.jpg",
+    alt: "TGM Special Biryani with Raita at The Grand Maharaja",
   },
   {
     title: "Daal Makhani",
     price: "£8.99",
-    description: "Whole black lentils slow-cooked with tomatoes, cream, and butter for a velvety texture",
+    description: "Whole black lentils slow-cooked with tomatoes, fresh dairy cream, and churned butter",
     image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
     alt: "Daal Makhani slow-simmered black lentils at The Grand Maharaja",
   },
-  {
-    title: "Dahi Puri",
-    price: "£6.49",
-    description: "Crispy puris loaded with spiced potatoes, sweetened yogurt, tangy chutneys and sev",
-    image: "/images/food/food-tgm-royal-street-chaat.jpg",
-    alt: "Dahi Puri freshly served at The Grand Maharaja",
-  },
-  {
-    title: "The Royal Kulfi Delight",
-    price: "£5.99",
-    description: "Traditional Indian ice cream, rich, creamy, and infused with saffron and pistachios",
-    image: "/images/food/food-tgm-royal-dessert.jpg",
-    alt: "The Royal Kulfi Delight dessert at The Grand Maharaja",
-  },
 ];
 
-// Authentic Bar & Drinks Menu from The Grand Maharaja Official Drinks Menu
+// Authentic Premium Spirits & Draught Bar Menu from The Grand Maharaja Official Drinks Menu
 const BAR_DRINKS_MENU = [
   {
-    title: "Madri (Draught)",
-    price: "£5.49",
-    description: "Crisp European draught lager poured fresh from tap (Pint: £5.49 / Half: £3.49)",
-    image: "/images/icons/partner-beverage-madri.jpg",
-    alt: "Madri Draught Beer at The Grand Maharaja",
+    title: "JW Black Label (12 Year)",
+    price: "£3.99 / £5.99",
+    description: "Iconic 12-year blended Scotch whisky with rich smokiness and complex malt character",
+    image: "/images/icons/partner-beverage-jw-black-label.jpg",
+    alt: "Johnnie Walker Black Label 12 Year Scotch Whisky at The Grand Maharaja",
   },
   {
-    title: "Famous Grouse",
-    price: "£3.49",
-    description: "Fine blended Scotch whisky served neat, with ice, or mixer (Single: £3.49 / Double: £5.99)",
-    image: "/images/icons/partner-beverage-famous_grouse.jpg",
-    alt: "Famous Grouse Scotch Whisky at The Grand Maharaja",
+    title: "Glenfiddich (12 Year Single Malt)",
+    price: "£4.99 / £7.49",
+    description: "Prestige Speyside single malt Scotch aged in fine American oak and European sherry casks",
+    image: "/images/icons/partner-beverage-glenfiddich.jpg",
+    alt: "Glenfiddich 12 Year Single Malt Scotch at The Grand Maharaja",
   },
   {
-    title: "Courvoisier VS",
-    price: "£4.49",
-    description: "Prestige French brandy with oak notes and floral bouquet (Single: £4.49 / Double: £7.49)",
+    title: "Courvoisier VS Cognac",
+    price: "£4.99 / £6.99",
+    description: "Prestige French luxury Cognac with subtle notes of spring blossoms and toasted oak",
     image: "/images/icons/partner-beverage-courvoisier.jpg",
-    alt: "Courvoisier French Brandy at The Grand Maharaja",
+    alt: "Courvoisier VS French Cognac at The Grand Maharaja",
   },
   {
-    title: "Virgin Passionfruit Mojito",
-    price: "£6.49",
-    description: "Refreshing crushed mint, fresh lime, and aromatic passionfruit with sparkling soda",
-    image: "/images/food/food-tgm-royal-mocktails.jpg",
-    alt: "Virgin Passionfruit Mojito Mocktail at The Grand Maharaja",
+    title: "Grey Goose Luxury Vodka",
+    price: "£5.49 / £6.99",
+    description: "Top-shelf French wheat vodka distilled in Cognac region for unmatched velvety smoothness",
+    image: "/images/icons/partner-beverage-grey-goose.jpg",
+    alt: "Grey Goose Luxury French Vodka at The Grand Maharaja",
   },
   {
-    title: "J2O Apple & Raspberry",
-    price: "£3.49",
-    description: "Signature fruit blend, artisanal juice cordials & refreshing cold beverages",
-    image: "/images/icons/partner-beverage-j20.jpg",
-    alt: "J2O Apple and Raspberry Drink at The Grand Maharaja",
+    title: "Kingfisher Premium Draught",
+    price: "£4.99 / £3.49",
+    description: "The King of Indian draught lagers poured ice-cold fresh from the bar tap (Pint / Half)",
+    image: "/images/icons/partner-beverage-kingfisher.jpg",
+    alt: "Kingfisher Premium Draught Beer at The Grand Maharaja",
   },
 ];
 
@@ -104,8 +104,8 @@ export function SignatureMenu() {
             Signature &Agrave; La Carte &amp; Bar
           </h2>
           <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed mt-3">
-            Purity-certified vegetarian dining with genuine North &amp; South Indian flavours, street
-            delicacies, and sizzlers paired with a fully licensed international bar.
+            Purity-certified vegetarian dining featuring royal sizzlers, cashew gravies, and biryanis paired
+            with our fully licensed premium spirits &amp; international bar.
           </p>
         </div>
 
@@ -219,7 +219,7 @@ export function SignatureMenu() {
                         <h4 className="font-playfair text-base sm:text-[17px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors">
                           {drink.title}
                         </h4>
-                        <span className="font-playfair font-semibold text-base sm:text-[17px] text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 group-hover:scale-105 transition-transform duration-200">
+                        <span className="font-playfair font-semibold text-xs sm:text-sm text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 whitespace-nowrap group-hover:scale-105 transition-transform duration-200">
                           {drink.price}
                         </span>
                       </div>

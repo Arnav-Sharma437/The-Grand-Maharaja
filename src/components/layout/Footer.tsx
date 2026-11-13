@@ -168,7 +168,7 @@ export function Footer() {
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1.5 transition-all duration-200 block group"
                 >
                   <span className="text-[#8C6E2E] dark:text-[#D4AF37] opacity-0 group-hover:opacity-100 mr-1.5 transition-opacity duration-200">&rsaquo;</span>
-                  Royal Thali Feasts
+                  Royal North Indian Curries
                 </Link>
               </li>
               <li>

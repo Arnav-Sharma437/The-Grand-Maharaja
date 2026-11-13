@@ -148,14 +148,14 @@ export function ContactForm() {
               className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3.5 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] focus:outline-none focus:border-[#9B7B34] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] transition-all duration-200 cursor-pointer"
             >
               <option value="Table Dining Reservation">Table Dining Reservation</option>
-              <option value="Private Banquet Hall Hire (Up to 200)">
-                Private Banquet Hall Hire (Up to 200)
+              <option value="Private Banquet Suite Hire (Approx 80 Guests)">
+                Private Banquet Suite Hire (Approx 80 Guests)
               </option>
               <option value="Outdoor Event Catering Across UK">
-                Outdoor Event Catering Across UK
+                Outdoor Event Catering Across UK (50 to 500+)
               </option>
-              <option value="Strict Jain / Swaminarayan Catering">
-                Strict Jain / Swaminarayan Catering
+              <option value="No Onion & Garlic / Swaminarayan / Jain Catering">
+                No Onion &amp; Garlic / Swaminarayan / Jain Catering
               </option>
               <option value="Birthday / Anniversary Celebration">
                 Birthday / Anniversary Celebration
@@ -182,9 +182,9 @@ export function ContactForm() {
               <option value="5–10 Guests">5–10 Guests</option>
               <option value="11–25 Guests">11–25 Guests</option>
               <option value="26–50 Guests">26–50 Guests</option>
-              <option value="51–100 Guests">51–100 Guests</option>
-              <option value="101–200 Guests (Grand Hall)">101–200 Guests (Grand Hall)</option>
-              <option value="200+ Guests (Outdoor Catering)">200+ Guests (Outdoor Catering)</option>
+              <option value="51–80 Guests (Full Banquet Suite)">51–80 Guests (Full Banquet Suite)</option>
+              <option value="80–150 Guests (UK Outdoor Catering)">80–150 Guests (UK Outdoor Catering)</option>
+              <option value="150+ Guests (Grand Outdoor Feast)">150+ Guests (Grand Outdoor Feast)</option>
             </select>
           </div>
         </div>

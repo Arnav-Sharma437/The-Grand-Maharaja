@@ -17,6 +17,14 @@ const REVIEWS_DATA = [
   },
   {
     id: 2,
+    name: "David Robinson",
+    time: "4 months ago",
+    stars: 5,
+    quote:
+      "As someone exploring authentic Indian vegetarian cuisine, The Grand Maharaja completely blew me away. The depth of flavour in the Dal Makhani and the fresh tandoori naan was second to none. Fantastic service and lovely warm atmosphere in Leicester.",
+  },
+  {
+    id: 3,
     name: "Animesh Patel",
     time: "1 year ago",
     stars: 5,
@@ -24,7 +32,15 @@ const REVIEWS_DATA = [
       "Wonderful ambience and great service. We ordered crispy bhajia, Dahi Puri and chilli paneer along with Punjabi food which was great match up to the taste of India.",
   },
   {
-    id: 3,
+    id: 4,
+    name: "Charlotte Davies",
+    time: "6 months ago",
+    stars: 5,
+    quote:
+      "Visited with my family on a Saturday evening. The hospitality was exceptional from the moment we walked in. The street chaat starters and paneer curries were vibrant, fresh, and not overly oily. A real hidden gem in Leicester!",
+  },
+  {
+    id: 5,
     name: "Khushi Shah",
     time: "1 year ago",
     stars: 5,

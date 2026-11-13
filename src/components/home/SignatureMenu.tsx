@@ -6,42 +6,42 @@ import Link from "next/link";
 import { ArrowRight, Wine } from "lucide-react";
 import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
-// Authentic Signature Food Dishes from thegrandmaharaja.co.uk
+// Authentic Signature Food Dishes freshly served at The Grand Maharaja Leicester
 const SIGNATURE_FOOD_DISHES = [
   {
-    title: "Manchow Soup",
-    price: "£5.99",
-    description: "Chinese Vegetarian soup made with mixed vegetables & crispy noodles",
-    image: "/images/food/msoup.jpg",
-    alt: "The Grand Maharaja Manchow Soup",
-  },
-  {
-    title: "Cheese Chips",
-    price: "£4.49",
-    description: "Chips come with freshly grated bubbling cheese",
-    image: "/images/food/Cheesy-Chips.jpg",
-    alt: "The Grand Maharaja Cheese Chips",
-  },
-  {
-    title: "Malai Kofta",
+    title: "Shahi Tandoori Paneer Tikka",
     price: "£10.99",
-    description: "Paneer (Indian Cheese) Dumplings in Creamy Royal Cashew Sauce",
-    image: "/images/food/Best-Malai-Kofta-recipe.jpg",
-    alt: "The Grand Maharaja Royal Malai Kofta",
+    description: "Charcoal-fired cottage cheese skewers with spiced peppers & mint chutney",
+    image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
+    alt: "Shahi Tandoori Paneer Tikka freshly prepared at The Grand Maharaja",
   },
   {
-    title: "Boondi Raita",
-    price: "£2.99",
-    description: "Yogurt with soft mini bread puffs and authentic Indian seasoning",
-    image: "/images/food/BOONDI-RAITA-500x500-1.jpg",
-    alt: "The Grand Maharaja Boondi Raita",
+    title: "Dal Maharaja Signature",
+    price: "£9.49",
+    description: "Slow-simmered rich black lentils finished with fresh cream & churned butter",
+    image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
+    alt: "Dal Maharaja Signature slow-simmered black lentils at The Grand Maharaja",
   },
   {
-    title: "Plain Dosa",
-    price: "£5.49",
-    description: "Crisp & soft golden rice & lentil crepe with traditional accompaniments",
-    image: "/images/food/Plain-Dosa.jpg",
-    alt: "The Grand Maharaja Plain Dosa",
+    title: "Royal Dahi Puri Chaat",
+    price: "£6.49",
+    description: "Crisp puris loaded with spiced potatoes, sweet yogurt & tangy pomegranate",
+    image: "/images/food/food-tgm-royal-street-chaat.jpg",
+    alt: "Royal Dahi Puri Chaat freshly served at The Grand Maharaja",
+  },
+  {
+    title: "Grand Imperial Feast",
+    price: "£14.99",
+    description: "A feast of royal curries, fragrant basmati rice & clay-oven tandoori breads",
+    image: "/images/gallery/gallery-gourmet-feast-spread.png",
+    alt: "Grand Imperial Feast table spread at The Grand Maharaja",
+  },
+  {
+    title: "Kesari Shahi Rasmalai",
+    price: "£5.95",
+    description: "Delicate saffron-infused cottage cheese discs in chilled cardamom pistachio milk",
+    image: "/images/food/food-tgm-royal-dessert.jpg",
+    alt: "Kesari Shahi Rasmalai fresh dessert at The Grand Maharaja",
   },
 ];
 

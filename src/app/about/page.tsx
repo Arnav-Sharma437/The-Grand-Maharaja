@@ -48,9 +48,9 @@ const HERITAGE_STATS = [
   },
   {
     icon: Users,
-    statNumber: "200+",
-    title: "Banquet Capacity",
-    description: "Opulent private suite for royal weddings & celebrations",
+    statNumber: "80 Approx",
+    title: "Banquet Suite",
+    description: "Opulent private suite for celebrations & milestone events",
     highlight: "Regal Elegance",
   },
   {
@@ -78,7 +78,7 @@ const KITCHEN_MASTERPIECES = [
     title: "Sizzling Clay-Oven Specialties",
     description:
       "Charcoal-fired artisanal skewers of marinated cottage cheese, charred bell peppers, and fragrant tandoori spices infused with rich smoky hickory aromas.",
-    image: "/images/about/about-royal-indian-spices-condiments.jpg",
+    image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
     alt: "Sizzling Clay-Oven Specialties at The Grand Maharaja",
     tag: "Live Charcoal Hearth",
   },
@@ -437,8 +437,8 @@ export default function AboutPage() {
                   royal culinary traditions passed down through generations of culinary masters.
                 </p>
                 <p>
-                  From the velvety richness of Shahi Paneer and rich Kaju curries to traditional
-                  Gujarati Thali delicacies, sizzling tandoor naans, and vibrant street chaats, our
+                  From the velvety richness of Shahi Paneer and rich Kaju curries to regional
+                  North Indian delicacies, sizzling tandoor naans, and vibrant street chaats, our
                   kitchen celebrates the richness of Indian regional cooking with modern luxury
                   refinement.
                 </p>
@@ -504,13 +504,13 @@ export default function AboutPage() {
               <div className="space-y-4 mt-6 font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed">
                 <p>
                   We understand the sacred sanctity of pure dietary discipline. For our Jain and
-                  Swaminarayan guests, we provide an extensive dedicated menu prepared without onions,
-                  garlic, or root vegetables, honoring age-old spiritual principles with culinary
-                  excellence.
+                  Swaminarayan guests, we provide an extensive dedicated menu prepared without onions
+                  and garlic, utilizing fresh, raw vegetables—including fresh potatoes—cooked to order
+                  honoring spiritual principles with culinary excellence.
                 </p>
                 <p>
                   Our kitchen observes meticulous separation, ensuring that your meals are cooked
-                  with separate cookware and utensils, giving our guests complete trust and
+                  with dedicated cookware and utensils, giving our guests complete trust and
                   reassurance.
                 </p>
               </div>
@@ -520,11 +520,11 @@ export default function AboutPage() {
                 <div className="p-4 sm:p-5 rounded-2xl bg-[#FAF8F5] dark:bg-[#161310] border border-[#E8E2D5] dark:border-[#2A241C] shadow-xs">
                   <h4 className="font-playfair font-bold text-sm sm:text-base text-[#1A1A1A] dark:text-[#F5F1EB] flex items-center gap-2">
                     <span className="text-[#059669] dark:text-[#34D399]">✦</span>
-                    Strict Allium-Free &amp; Root-Free Specialization
+                    No Onion &amp; No Garlic (Fresh Raw Veg &amp; Potatoes)
                   </h4>
                   <p className="font-sans text-xs sm:text-[13px] text-[#666] dark:text-[#A8A194] leading-relaxed mt-1.5 pl-5">
-                    Prepared strictly without onion, garlic, potatoes, or root vegetables, celebrated
-                    for rich sattvic taste.
+                    Prepared with zero onion and zero garlic using fresh raw garden vegetables and
+                    potatoes in dedicated cookware, celebrated for authentic sattvic taste.
                   </p>
                 </div>
 
@@ -582,7 +582,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="group relative rounded-3xl overflow-hidden border border-[#E6E0D4] dark:border-[#2C261D] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] h-[360px] sm:h-[440px]">
                 <Image
-                  src="/images/banquet/banquet-royal-hall-setup.png"
+                  src="/images/gallery/gallery-dining-hall-742.jpg"
                   alt="Grand Celebrations and Banqueting Hall Setup at The Grand Maharaja"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -591,7 +591,7 @@ export default function AboutPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-white/90 dark:bg-[#181511]/90 backdrop-blur-md border border-[#EAE3D6] dark:border-[#2E281F]">
                   <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#9B7B34] dark:text-[#D4AF37] block">
-                    UP TO 200 ROYAL GUESTS
+                    APPROX 80 ROYAL GUESTS
                   </span>
                   <p className="text-xs sm:text-[13px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-0.5">
                     Weddings, receptions, milestone anniversaries &amp; corporate celebrations
@@ -616,9 +616,9 @@ export default function AboutPage() {
                   hall offers an opulent setting bathed in regal elegance.
                 </p>
                 <p>
-                  Accommodating up to 200 guests with bespoke table layouts, attentive silver service,
-                  and fully personalized multi-course banqueting menus, our events team ensures every
-                  detail reflects your unique celebration.
+                  Accommodating approximately 80 seated guests with bespoke table layouts, attentive silver service,
+                  and fully personalized multi-course banqueting menus (plus outdoor catering for 200+ across the UK),
+                  our events team ensures every detail reflects your unique celebration.
                 </p>
               </div>
 

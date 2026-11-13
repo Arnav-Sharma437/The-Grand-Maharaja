@@ -32,28 +32,28 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Royal Banqueting Hall Hire & Outdoor Catering UK | The Grand Maharaja",
   description:
-    "Host grand weddings, milestone celebrations, and private banquets at The Grand Maharaja in Leicester. Luxury 200-guest banquet hall hire and nationwide pure vegetarian outdoor catering across the UK.",
+    "Host celebrations and private banquets at The Grand Maharaja in Leicester. Luxury 80-guest banquet hall hire and nationwide pure vegetarian outdoor catering across the UK.",
   pathname: "/banqueting",
 });
 
 const BANQUET_HIGHLIGHTS = [
   {
     icon: Users,
-    number: "200+",
-    title: "Seated Guests Capacity",
-    description: "Opulent Leicester private suite configured for weddings & grand celebrations.",
+    number: "80 Approx",
+    title: "Suite Seated Capacity",
+    description: "Opulent Leicester private suite configured for celebrations & intimate milestone gatherings.",
   },
   {
     icon: ShieldCheck,
     number: "100%",
     title: "Pure Vegetarian & Jain",
-    description: "Strict dietary sanctum with dedicated cookware for Jain & Swaminarayan guests.",
+    description: "No onion & garlic dishes prepared with fresh raw vegetables & potatoes in dedicated cookware.",
   },
   {
     icon: MapPin,
     number: "UK-Wide",
     title: "Bespoke Outdoor Catering",
-    description: "Delivering live cooking stations & silver-service across London, Midlands & the UK.",
+    description: "Delivering live cooking stations & silver-service across London, Midlands & the UK (50 to 500+).",
   },
   {
     icon: Award,
@@ -154,17 +154,17 @@ const CELEBRATIONS = [
   {
     title: "Indian Weddings & Receptions",
     description: "Opulent settings with bespoke stage decor, mandap staging, and silver-service catering.",
-    image: "/images/banquet/banquet-royal-hall-setup.png",
+    image: "/images/gallery/gallery-dining-hall-742.jpg",
   },
   {
     title: "Sanji, Mehndi & Sangeet Nights",
     description: "Vibrant celebratory evenings with spacious dance floor, live chaat counters, and mocktail bar.",
-    image: "/images/banquet/banquet-teal-and-gold-dining-hall.png",
+    image: "/images/gallery/gallery-interior-737.jpg",
   },
   {
     title: "Milestone Birthdays & Anniversaries",
-    description: "Intimate family banqueting or grand 200-guest galas tailored with personalized menus.",
-    image: "/images/banquet/banquet-luxury-dining-room.png",
+    description: "Intimate family banqueting or private celebratory galas tailored with personalized menus.",
+    image: "/images/gallery/gallery-interior-738.jpg",
   },
   {
     title: "Baby Showers & Srimant Ceremonies",
@@ -187,12 +187,12 @@ const FAQS = [
   {
     question: "What is the guest capacity of The Grand Maharaja Banquet Hall?",
     answer:
-      "Our private banquet suite comfortably accommodates up to 200 seated dining guests with round banquet tables, ceremonial stage, and dance floor. For outdoor catering across the UK, we can cater for gatherings from 50 to 1,000+ guests.",
+      "Our private banquet suite comfortably accommodates approximately 80 seated dining guests with round banquet tables, ceremonial staging, and ambient mood lighting. For outdoor catering across the UK, we can cater for gatherings from 50 to 500+ guests.",
   },
   {
     question: "Do you guarantee 100% strict Jain & Swaminarayan food?",
     answer:
-      "Yes, absolutely. We maintain a dedicated kitchen sanctum with separate cookware, utensils, and dedicated chefs ensuring zero onion, garlic, or root vegetable contamination for Jain and Swaminarayan guests.",
+      "Yes, absolutely. We prepare our dedicated No Onion & No Garlic dishes using fresh, raw vegetables, including fresh potatoes, with dedicated cookware and separate utensils to honor complete dietary purity for Jain and Swaminarayan guests.",
   },
   {
     question: "Can we bring our own external decorators, DJ, or live musicians?",
@@ -215,7 +215,7 @@ export default function BanquetingPage() {
       <section className="relative w-full min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] flex items-center justify-center py-16 sm:py-20 lg:py-24 overflow-hidden border-b-2 border-[#D4AF37]/40 shadow-[0_4px_30px_rgba(212,175,55,0.15)]">
         {/* Authentic Background Photo */}
         <Image
-          src="/images/banquet/banquet-royal-hall-setup.png"
+          src="/images/gallery/gallery-dining-hall-742.jpg"
           alt="The Grand Maharaja Royal Banqueting Suite Leicester"
           fill
           priority
@@ -278,7 +278,7 @@ export default function BanquetingPage() {
 
           {/* Hero Subtitle */}
           <p className="font-sans text-sm sm:text-base md:text-lg text-[#E5DFD5] max-w-2xl leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
-            An opulent 200-guest luxury banquet suite in Leicester honoring sacred vegetarian
+            An intimate 80-guest luxury banquet suite in Leicester honoring sacred vegetarian
             culinary traditions, paired with bespoke outdoor catering delivered anywhere across the
             United Kingdom.
           </p>
@@ -379,10 +379,10 @@ export default function BanquetingPage() {
                 </h2>
                 <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A0988A] leading-relaxed mt-4">
                   Nestled within our flagship sanctuary on Catherine Street, Leicester, our luxury
-                  banquet suite offers an unforgettable setting for up to 200 dining guests. Crafted
+                  banquet suite offers an unforgettable setting for approximately 80 seated dining guests. Crafted
                   with shimmering gold trim, crystal chandeliers, and complete privacy, it is the
-                  preferred hall for Hindu &amp; Jain weddings, pre-wedding sangeets, and milestone
-                  anniversaries.
+                  preferred hall for celebrations, pre-wedding sangeets, and milestone
+                  anniversaries (with bespoke outdoor catering for 200+ guests across the UK).
                 </p>
               </div>
 
@@ -425,8 +425,8 @@ export default function BanquetingPage() {
             <div className="lg:col-span-6 grid grid-cols-2 gap-4">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/banquet/banquet-royal-hall-setup.png"
-                  alt="Royal Hall Setup at The Grand Maharaja"
+                  src="/images/gallery/gallery-dining-hall-742.jpg"
+                  alt="Royal Dining Hall at The Grand Maharaja Leicester"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"
@@ -435,8 +435,8 @@ export default function BanquetingPage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/banquet/banquet-luxury-dining-room.png"
-                  alt="Luxury Dining Room at The Grand Maharaja"
+                  src="/images/gallery/gallery-interior-738.jpg"
+                  alt="Luxury Banquet Seating at The Grand Maharaja"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"
@@ -445,8 +445,8 @@ export default function BanquetingPage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/banquet/banquet-teal-and-gold-dining-hall.png"
-                  alt="Teal and Gold Private Suite"
+                  src="/images/gallery/gallery-interior-737.jpg"
+                  alt="Private Dining Suite at The Grand Maharaja"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"

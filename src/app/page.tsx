@@ -4,6 +4,7 @@ import {
   SignatureMenu,
   HospitalityPillars,
   ServiceSchedule,
+  GalleryPreview,
   ReviewsSlider,
   BanquetingInquiry,
 } from "@/components/home";
@@ -26,13 +27,14 @@ export default function Home() {
       {/* 5. Royal Hospitality / Opening Hours & Service Schedule with #F5F1EB (60%) warm ivory background */}
       <ServiceSchedule />
 
-      {/* 6. What Our Customers Say / Customer Reviews Slider with White (#FFFFFF) background */}
+      {/* 6. Royal Visuals & Live Instagram Reels / Gallery Section with White (#FFFFFF) background */}
+      <GalleryPreview />
+
+      {/* 7. What Our Customers Say / Customer Reviews Slider with #F5F1EB (60%) background */}
       <ReviewsSlider />
 
-      {/* 7. Banqueting & Direct Inquiries / Contact Form with #F5F1EB (60%) warm ivory background */}
+      {/* 8. Banqueting & Direct Inquiries / Contact Form with White (#FFFFFF) background */}
       <BanquetingInquiry />
-
-      {/* Subsequent sections will continue to alternate backgrounds */}
     </main>
   );
 }

@@ -178,12 +178,18 @@ export function BanquetingForm() {
               className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3.5 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] focus:outline-none focus:border-[#9B7B34] dark:focus:border-[#D4AF37] cursor-pointer"
             >
               <option value="30 – 50 Guests">30 – 50 Guests</option>
-              <option value="50 – 80 Guests">50 – 80 Guests</option>
-              <option value="80 – 120 Guests">80 – 120 Guests</option>
-              <option value="120 – 160 Guests">120 – 160 Guests</option>
-              <option value="160 – 200 Guests (Full Banquet Suite)">160 – 200 Guests (Full Banquet Suite)</option>
-              <option value="200 – 350 Guests (UK Outdoor Catering)">200 – 350 Guests (UK Outdoor Catering)</option>
-              <option value="350+ Guests (Grand Outdoor Feast)">350+ Guests (Grand Outdoor Feast)</option>
+              <option value="50 – 80 Guests (Full Banquet Suite - Approx 80 Max)">
+                50 – 80 Guests (Full Banquet Suite - Approx 80 Max)
+              </option>
+              <option value="80 – 150 Guests (UK Outdoor Catering)">
+                80 – 150 Guests (UK Outdoor Catering)
+              </option>
+              <option value="150 – 300 Guests (UK Outdoor Catering)">
+                150 – 300 Guests (UK Outdoor Catering)
+              </option>
+              <option value="300+ Guests (Grand Outdoor Feast)">
+                300+ Guests (Grand Outdoor Feast)
+              </option>
             </select>
           </div>
         </div>
@@ -204,10 +210,10 @@ export function BanquetingForm() {
               className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3.5 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] focus:outline-none focus:border-[#9B7B34] dark:focus:border-[#D4AF37] cursor-pointer"
             >
               <option value="Leicester Banqueting Suite + Royal Catering">
-                The Grand Maharaja Suite Leicester (Up to 200)
+                The Grand Maharaja Suite Leicester (Approx 80 Guests)
               </option>
               <option value="Outdoor Catering at My Venue across the UK">
-                Outdoor Catering at My Venue across the UK
+                Outdoor Catering at My Venue across the UK (50 to 500+)
               </option>
               <option value="Banqueting Suite Hire Only (Leicester)">
                 Banqueting Suite Hire Only (Leicester)
@@ -231,11 +237,11 @@ export function BanquetingForm() {
               <option value="Standard Pure Vegetarian + Jain Options">
                 Standard Pure Vegetarian + Jain Options
               </option>
-              <option value="100% Strict Jain Sanctum (Zero Root Veg/Onion/Garlic)">
-                100% Strict Jain Sanctum (No Onion / Garlic / Root Veg)
+              <option value="No Onion & Garlic (Fresh Raw Veg & Potatoes - Jain/Swaminarayan)">
+                No Onion &amp; Garlic (Fresh Raw Veg &amp; Potatoes - Jain/Swaminarayan)
               </option>
-              <option value="100% Swaminarayan Sanctum">
-                100% Swaminarayan Sanctum
+              <option value="100% Swaminarayan Sanctum (No Onion & Garlic)">
+                100% Swaminarayan Sanctum (No Onion &amp; Garlic)
               </option>
               <option value="Pure Vegetarian with Vegan Specialities">
                 Pure Vegetarian with Vegan Specialities

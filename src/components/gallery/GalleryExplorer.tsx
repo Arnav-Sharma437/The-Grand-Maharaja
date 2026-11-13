@@ -105,12 +105,12 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
   {
     id: "reel-5",
     type: "reel",
-    title: "Chef's Gujarati Thali Presentation",
+    title: "Chef's Special Vegetarian Feast",
     videoUrl: "/images/gallery/3605031425192442853.mp4",
     imageUrl: "/images/gallery/3605031425192442853.jpg",
     category: "culinary",
     caption:
-      "Authentic Gujarati vegetarian feast featuring slow-simmered dal, fresh phulkas, and fragrant kadhi.",
+      "Authentic Indian vegetarian feast featuring slow-simmered dal, fresh rotlis, and fragrant curries.",
     likes: "4.2K",
     views: "31.0K",
     instagramUrl: "https://www.instagram.com/thegrandmaharaja?cplk=amk1bTA4cXRwNjBy",
@@ -123,7 +123,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     imageUrl: "/images/gallery/3615254849588118892.jpg",
     category: "banquets",
     caption:
-      "A grand royal wedding reception hosted in our 200-guest luxury banquet suite.",
+      "A celebration setup hosted in our 80-guest luxury banquet suite in Leicester.",
     likes: "2.7K",
     views: "19.3K",
     instagramUrl: "https://www.instagram.com/thegrandmaharaja?cplk=amk1bTA4cXRwNjBy",
@@ -221,10 +221,10 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-2",
     type: "photo",
     title: "Regal Banquet Hall Grand Layout",
-    imageUrl: "/images/banquet/banquet-royal-hall-setup.png",
+    imageUrl: "/images/gallery/gallery-dining-hall-742.jpg",
     category: "banquets",
     caption:
-      "Spacious luxury banquet dining room configured for grand wedding receptions and anniversary parties.",
+      "Spacious luxury banquet dining room configured for celebratory receptions and anniversary parties.",
   },
   {
     id: "photo-3",
@@ -239,7 +239,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-4",
     type: "photo",
     title: "Luxury Dining Room & Chandeliers",
-    imageUrl: "/images/banquet/banquet-luxury-dining-room.png",
+    imageUrl: "/images/gallery/gallery-interior-738.jpg",
     category: "dining",
     caption:
       "Intimate family dining tables adorned with warm amber lighting and regal gold trim.",
@@ -293,7 +293,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-10",
     type: "photo",
     title: "Teal & Gold Royal Suite",
-    imageUrl: "/images/banquet/banquet-teal-and-gold-dining-hall.png",
+    imageUrl: "/images/gallery/gallery-interior-737.jpg",
     category: "banquets",
     caption:
       "Imperial teal velvet seating paired with royal golden accents for private celebrations.",

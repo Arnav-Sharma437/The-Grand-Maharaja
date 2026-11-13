@@ -27,7 +27,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Contact & Table Reservations | The Grand Maharaja Leicester",
   description:
-    "Contact The Grand Maharaja in Leicester for table bookings, banquet hall hire (up to 200 guests), and pure vegetarian outdoor catering across the UK. Visit 209 Catherine St or call 0116 507 0296.",
+    "Contact The Grand Maharaja in Leicester for table bookings, banquet hall hire (approx 80 guests), and pure vegetarian outdoor catering across the UK. Visit 209 Catherine St or call 0116 507 0296.",
   pathname: "/contact",
 });
 
@@ -98,12 +98,12 @@ const FAQS = [
   {
     question: "Can you accommodate strict Jain and Swaminarayan diets?",
     answer:
-      "Yes, absolutely. We maintain a dedicated kitchen sanctum with separate cookware, knives, and preparation surfaces completely free from onion, garlic, and root vegetables.",
+      "Yes, absolutely. We prepare dedicated No Onion & No Garlic dishes using fresh, raw vegetables, including fresh potatoes, with dedicated cookware and separate preparation surfaces to honor complete dietary purity.",
   },
   {
     question: "What is the capacity of your private banquet hall?",
     answer:
-      "Our Grand Maharaja Banquet Suite comfortably hosts up to 200 guests with bespoke staging, royal lighting, customizable floral decor, and complete silver-service catering.",
+      "Our Grand Maharaja Banquet Suite comfortably hosts approximately 80 seated guests with bespoke staging, royal lighting, customizable floral decor, and complete silver-service catering (plus outdoor catering for 200+ guests across the UK).",
   },
   {
     question: "Do you offer pure vegetarian catering outside Leicester?",
@@ -320,7 +320,7 @@ export default function ContactPage() {
 
                 <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A0988A] leading-relaxed mt-4">
                   At The Grand Maharaja, every table reservation and event booking is prepared with
-                  meticulous care. Whether you are craving an evening of authentic Gujarati thali,
+                  meticulous care. Whether you are craving an evening of authentic Indian vegetarian cuisine,
                   celebrating a wedding anniversary, or coordinating an outdoor banquet of hundreds,
                   our staff will orchestrate an unforgettable experience.
                 </p>
@@ -335,8 +335,7 @@ export default function ContactPage() {
                       100% Dedicated Pure Vegetarian
                     </h4>
                     <p className="text-xs text-[#666666] dark:text-[#A0988A] font-sans mt-0.5">
-                      Authentic kitchen sanctum with strict separation for Jain and Swaminarayan
-                      preparations.
+                      Authentic kitchen sanctum with strict No Onion &amp; No Garlic options (fresh raw vegetables &amp; potatoes).
                     </p>
                   </div>
                 </div>
@@ -345,7 +344,7 @@ export default function ContactPage() {
                   <Users className="w-5 h-5 text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-playfair text-sm font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">
-                      Up to 200 Capacity Private Banquet Suite
+                      Approx 80 Guests Private Banquet Suite
                     </h4>
                     <p className="text-xs text-[#666666] dark:text-[#A0988A] font-sans mt-0.5">
                       Full audio-visual setup, custom seating layouts, and dedicated silver banquet service.

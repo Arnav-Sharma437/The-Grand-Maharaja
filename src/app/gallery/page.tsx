@@ -163,7 +163,7 @@ export default function GalleryPage() {
           </h2>
 
           <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A0988A] max-w-2xl mx-auto leading-relaxed mt-4">
-            From intimate table dining to opulent 200-guest private banquet celebrations and nationwide
+            From intimate table dining to our 80-guest private banquet suite and nationwide
             pure vegetarian catering across the UK, our royal hospitality team awaits your presence.
           </p>
 

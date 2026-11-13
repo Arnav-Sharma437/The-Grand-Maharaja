@@ -66,7 +66,7 @@ export function ServiceSchedule() {
                 Lunch &amp; Royal Dinner Service
               </p>
               <p className="text-xs text-[#666666] dark:text-[#A0988A]">
-                Full &Agrave; La Carte &amp; Authentic Thalis
+                Full &Agrave; La Carte &amp; Royal Specialties
               </p>
               <p className="text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-medium pt-0.5">
                 Last Seating: 21:30

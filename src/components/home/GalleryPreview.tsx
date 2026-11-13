@@ -31,7 +31,7 @@ const FEATURED_MOMENTS = [
   {
     title: "The Grand Maharaja Dining Hall",
     category: "Ambiance",
-    image: "/images/gallery/gallery-dining-hall-742.jpg",
+    image: "/images/banquet/banquet-royal-hall-setup.png",
     isReel: false,
   },
   {

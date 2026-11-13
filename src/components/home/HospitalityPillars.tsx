@@ -36,7 +36,7 @@ const PILLARS_DATA = [
   {
     badge: "APPROX 80 GUESTS",
     badgeType: "white",
-    image: "/images/gallery/gallery-dining-hall-742.jpg",
+    image: "/images/banquet/banquet-royal-hall-setup.png",
     alt: "Royal Banqueting Hall Celebrations at The Grand Maharaja",
     title: "Royal Banqueting",
     hasGreenDot: false,

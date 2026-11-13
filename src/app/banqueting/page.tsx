@@ -154,22 +154,22 @@ const CELEBRATIONS = [
   {
     title: "Indian Weddings & Receptions",
     description: "Opulent settings with bespoke stage decor, mandap staging, and silver-service catering.",
-    image: "/images/gallery/gallery-dining-hall-742.jpg",
+    image: "/images/banquet/banquet-royal-hall-setup.png",
   },
   {
     title: "Sanji, Mehndi & Sangeet Nights",
     description: "Vibrant celebratory evenings with spacious dance floor, live chaat counters, and mocktail bar.",
-    image: "/images/gallery/gallery-interior-737.jpg",
+    image: "/images/hero/hero-slider-royal-ambiance-1.jpg",
   },
   {
     title: "Milestone Birthdays & Anniversaries",
     description: "Intimate family banqueting or private celebratory galas tailored with personalized menus.",
-    image: "/images/gallery/gallery-interior-738.jpg",
+    image: "/images/banquet/banquet-teal-and-gold-dining-hall.png",
   },
   {
     title: "Baby Showers & Srimant Ceremonies",
     description: "Traditional rituals accompanied by sacred pure vegetarian and Jain auspicious feasts.",
-    image: "/images/gallery/gallery-decor-741.png",
+    image: "/images/banquet/banquet-luxury-dining-room.png",
   },
   {
     title: "Nationwide UK Outdoor Catering",
@@ -215,7 +215,7 @@ export default function BanquetingPage() {
       <section className="relative w-full min-h-[460px] sm:min-h-[520px] lg:min-h-[560px] flex items-center justify-center py-16 sm:py-20 lg:py-24 overflow-hidden border-b-2 border-[#D4AF37]/40 shadow-[0_4px_30px_rgba(212,175,55,0.15)]">
         {/* Authentic Background Photo */}
         <Image
-          src="/images/gallery/gallery-dining-hall-742.jpg"
+          src="/images/banquet/banquet-royal-hall-setup.png"
           alt="The Grand Maharaja Royal Banqueting Suite Leicester"
           fill
           priority
@@ -425,8 +425,8 @@ export default function BanquetingPage() {
             <div className="lg:col-span-6 grid grid-cols-2 gap-4">
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/gallery/gallery-dining-hall-742.jpg"
-                  alt="Royal Dining Hall at The Grand Maharaja Leicester"
+                  src="/images/banquet/banquet-royal-hall-setup.png"
+                  alt="Royal Banquet Suite Setup at The Grand Maharaja Leicester"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"
@@ -435,8 +435,8 @@ export default function BanquetingPage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/gallery/gallery-interior-738.jpg"
-                  alt="Luxury Banquet Seating at The Grand Maharaja"
+                  src="/images/banquet/banquet-teal-and-gold-dining-hall.png"
+                  alt="Luxury Banquet Seating & Ambience at The Grand Maharaja"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"
@@ -445,7 +445,7 @@ export default function BanquetingPage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/gallery/gallery-interior-737.jpg"
+                  src="/images/banquet/banquet-luxury-dining-room.png"
                   alt="Private Dining Suite at The Grand Maharaja"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
@@ -455,8 +455,8 @@ export default function BanquetingPage() {
 
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#D4AF37]/30 shadow-lg">
                 <Image
-                  src="/images/gallery/gallery-decor-741.png"
-                  alt="Ceremonial Mandap & Stage Decor"
+                  src="/images/about/about-royal-golden-backlit-bar.png"
+                  alt="The Grand Maharaja Golden Backlit Bar & Lounge"
                   fill
                   className="object-cover hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 50vw, 25vw"

@@ -582,7 +582,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="group relative rounded-3xl overflow-hidden border border-[#E6E0D4] dark:border-[#2C261D] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] h-[360px] sm:h-[440px]">
                 <Image
-                  src="/images/gallery/gallery-dining-hall-742.jpg"
+                  src="/images/banquet/banquet-royal-hall-setup.png"
                   alt="Grand Celebrations and Banqueting Hall Setup at The Grand Maharaja"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

@@ -20,9 +20,9 @@ const REAL_HERO_IMAGES = [
     label: "Imperial Dining Hall",
   },
   {
-    src: "/images/hero/hero-slider-cuisine-spread-2.jpg",
+    src: "/images/gallery/gallery-gourmet-feast-spread.png",
     alt: "The Grand Maharaja Royal Indian Vegetarian Culinary Feast",
-    label: "Royal Cuisine Spread",
+    label: "Royal Gourmet Feast Spread",
   },
   {
     src: "/images/about/about-royal-golden-backlit-bar.png",

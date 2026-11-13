@@ -6,79 +6,79 @@ import Link from "next/link";
 import { ArrowRight, Wine } from "lucide-react";
 import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
-// Authentic Signature Food Dishes freshly served at The Grand Maharaja Leicester
+// Authentic Signature Food Dishes from The Grand Maharaja Official Menu
 const SIGNATURE_FOOD_DISHES = [
   {
-    title: "Shahi Tandoori Paneer Tikka",
-    price: "£10.99",
-    description: "Tandoor-fired cottage cheese skewers with spiced peppers & mint chutney",
+    title: "Paneer Shashlik Sizzler",
+    price: "£12.99",
+    description: "Marinated cottage cheese skewered with bell peppers and onions on a sizzling hot plate",
     image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
-    alt: "Shahi Tandoori Paneer Tikka freshly prepared at The Grand Maharaja",
+    alt: "Paneer Shashlik Sizzler freshly prepared at The Grand Maharaja",
   },
   {
-    title: "Dal Maharaja Signature",
-    price: "£9.49",
-    description: "Slow-simmered rich black lentils finished with fresh cream & churned butter",
+    title: "Veg Special Maharaja",
+    price: "£10.99",
+    description: "Assorted garden vegetables cooked in our Chef's signature rich spiced royal gravy",
+    image: "/images/food/veg-maharaja.jpg",
+    alt: "Veg Special Maharaja royal curry at The Grand Maharaja",
+  },
+  {
+    title: "Daal Makhani",
+    price: "£8.99",
+    description: "Whole black lentils slow-cooked with tomatoes, cream, and butter for a velvety texture",
     image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
-    alt: "Dal Maharaja Signature slow-simmered black lentils at The Grand Maharaja",
+    alt: "Daal Makhani slow-simmered black lentils at The Grand Maharaja",
   },
   {
-    title: "Royal Dahi Puri Chaat",
+    title: "Dahi Puri",
     price: "£6.49",
-    description: "Crisp puris loaded with spiced potatoes, sweet yogurt & tangy pomegranate",
+    description: "Crispy puris loaded with spiced potatoes, sweetened yogurt, tangy chutneys and sev",
     image: "/images/food/food-tgm-royal-street-chaat.jpg",
-    alt: "Royal Dahi Puri Chaat freshly served at The Grand Maharaja",
+    alt: "Dahi Puri freshly served at The Grand Maharaja",
   },
   {
-    title: "Grand Imperial Feast",
-    price: "£14.99",
-    description: "A feast of royal curries, fragrant basmati rice & clay-oven tandoori breads",
-    image: "/images/gallery/gallery-gourmet-feast-spread.png",
-    alt: "Grand Imperial Feast table spread at The Grand Maharaja",
-  },
-  {
-    title: "Kesari Shahi Rasmalai",
-    price: "£5.95",
-    description: "Delicate saffron-infused cottage cheese discs in chilled cardamom pistachio milk",
+    title: "The Royal Kulfi Delight",
+    price: "£5.99",
+    description: "Traditional Indian ice cream, rich, creamy, and infused with saffron and pistachios",
     image: "/images/food/food-tgm-royal-dessert.jpg",
-    alt: "Kesari Shahi Rasmalai fresh dessert at The Grand Maharaja",
+    alt: "The Royal Kulfi Delight dessert at The Grand Maharaja",
   },
 ];
 
-// Authentic Bar & Drinks Menu from thegrandmaharaja.co.uk
+// Authentic Bar & Drinks Menu from The Grand Maharaja Official Drinks Menu
 const BAR_DRINKS_MENU = [
   {
     title: "Madri (Draught)",
-    price: "£3.95",
-    description: "Crisp European draught beer poured fresh from tap",
+    price: "£5.49",
+    description: "Crisp European draught lager poured fresh from tap (Pint: £5.49 / Half: £3.49)",
     image: "/images/icons/partner-beverage-madri.jpg",
     alt: "Madri Draught Beer at The Grand Maharaja",
   },
   {
     title: "Famous Grouse",
     price: "£3.49",
-    description: "Fine blended Scotch whisky served neat, with ice, or chosen mixer",
+    description: "Fine blended Scotch whisky served neat, with ice, or mixer (Single: £3.49 / Double: £5.99)",
     image: "/images/icons/partner-beverage-famous_grouse.jpg",
     alt: "Famous Grouse Scotch Whisky at The Grand Maharaja",
   },
   {
-    title: "Courvoisier",
-    price: "£4.45",
-    description: "Prestige French brandy with oak notes and floral bouquet",
+    title: "Courvoisier VS",
+    price: "£4.49",
+    description: "Prestige French brandy with oak notes and floral bouquet (Single: £4.49 / Double: £7.49)",
     image: "/images/icons/partner-beverage-courvoisier.jpg",
     alt: "Courvoisier French Brandy at The Grand Maharaja",
   },
   {
-    title: "Smirnoff Vodka",
-    price: "£3.75",
-    description: "Triple-distilled pure vodka served with citrus or selected cordials",
-    image: "/images/icons/partner-beverage-smirnoff.jpg",
-    alt: "Smirnoff Vodka at The Grand Maharaja",
+    title: "Virgin Passionfruit Mojito",
+    price: "£6.49",
+    description: "Refreshing crushed mint, fresh lime, and aromatic passionfruit with sparkling soda",
+    image: "/images/food/food-tgm-royal-mocktails.jpg",
+    alt: "Virgin Passionfruit Mojito Mocktail at The Grand Maharaja",
   },
   {
     title: "J2O Apple & Raspberry",
-    price: "£3.25",
-    description: "Signature soft drink, artisanal juice blends & sparkling refreshments",
+    price: "£3.49",
+    description: "Signature fruit blend, artisanal juice cordials & refreshing cold beverages",
     image: "/images/icons/partner-beverage-j20.jpg",
     alt: "J2O Apple and Raspberry Drink at The Grand Maharaja",
   },
@@ -104,8 +104,8 @@ export function SignatureMenu() {
             Signature &Agrave; La Carte &amp; Bar
           </h2>
           <p className="font-sans text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed mt-3">
-            Purity-certified vegetarian dining with genuine Gujarati &amp; Punjabi traditions paired
-            with a fully licensed international bar.
+            Purity-certified vegetarian dining with genuine North &amp; South Indian flavours, street
+            delicacies, and sizzlers paired with a fully licensed international bar.
           </p>
         </div>
 

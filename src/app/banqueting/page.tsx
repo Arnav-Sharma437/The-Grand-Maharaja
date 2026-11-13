@@ -142,7 +142,7 @@ const PACKAGES = [
       "4 Imperial curries (Paneer lababdar, dum aloo, Rajasthani gatta, dal)",
       "Royal Kashmiri pulao & Hyderabadi vegetable dum biryani",
       "Full assortment of fresh hearth rotis, missi rotis, and kulchas",
-      "3 Grand desserts (Moong dal sheera, rasmalai, saffron falooda)",
+      "3 Grand desserts (Gulab jamun, royal kulfi delight, rose falooda)",
       "Full bridal suite access & ceremonial stage coordination",
       "Personalized printed menu cards & dedicated VIP table service",
     ],
@@ -506,7 +506,7 @@ export default function BanquetingPage() {
                 Live Traditional Clay Hearth
               </h3>
               <p className="text-xs text-[#666] dark:text-[#A0988A] font-sans leading-relaxed">
-                Tandoori paneer tikka, smoked malai soya chaap, and freshly baked garlic naans served
+                Paneer shashlik skewers, authentic tandoori delights, and freshly baked garlic naans served
                 piping hot from live clay tandoors on-site.
               </p>
             </div>

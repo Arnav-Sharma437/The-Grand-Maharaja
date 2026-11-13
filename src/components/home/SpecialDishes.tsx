@@ -4,39 +4,43 @@ import React from "react";
 import Image from "next/image";
 import { RoyalBackgroundGlow } from "@/components/ui/RoyalBackgroundGlow";
 
-// Authentic curated dishes from The Grand Maharaja
+// Authentic curated dishes from The Grand Maharaja Official Menu
 const CURATED_DISHES = [
   {
-    category: "BREAKFAST & FEASTS",
-    title: "Dal Makhani & Golden Kulcha",
+    category: "VEG CURRIES",
+    title: "Daal Makhani",
+    price: "£8.99",
     description:
-      "Slow-simmered velvety black lentils with churned butter, served with golden tandoori kulcha.",
+      "Whole black lentils slow-cooked with tomatoes, cream, and butter for a velvety royal texture.",
     image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
-    alt: "The Grand Maharaja Signature Dal Makhani with Tandoori Kulcha",
+    alt: "The Grand Maharaja Daal Makhani",
   },
   {
-    category: "STREET DELICACIES",
-    title: "Royal Dahi Puri Chaat",
+    category: "PURI DELIGHTS",
+    title: "Dahi Puri",
+    price: "£6.49",
     description:
-      "Crisp hollow puris with spiced potatoes, crowned with chilled yoghurt and sweet chutneys.",
+      "Crispy hollow puris filled with potatoes, topped with sweetened yogurt, tangy chutneys and sev.",
     image: "/images/food/food-tgm-royal-street-chaat.jpg",
-    alt: "The Grand Maharaja Royal Dahi Puri Chaat",
+    alt: "The Grand Maharaja Dahi Puri",
   },
   {
-    category: "BAR & MOCKTAIL",
-    title: "Artisanal Fruit Ice Cooler",
+    category: "SIGNATURE MOCKTAIL",
+    title: "Virgin Passionfruit Mojito",
+    price: "£6.49",
     description:
-      "Refreshing hand-squeezed citrus cooler infused with fresh garden mint and sparkling soda.",
+      "Refreshing crushed mint, fresh lime, and aromatic passionfruit purée topped with sparkling soda.",
     image: "/images/food/food-tgm-royal-mocktails.jpg",
-    alt: "The Grand Maharaja Artisanal Fruit Ice Cooler and Mocktails",
+    alt: "The Grand Maharaja Virgin Passionfruit Mojito",
   },
   {
-    category: "IMPERIAL DESSERT",
-    title: "Kesari Shahi Rasmalai & Kulfi",
+    category: "SWEET TEMPTATION",
+    title: "The Royal Kulfi Delight",
+    price: "£5.99",
     description:
-      "Delicate saffron discs steeped in chilled cardamom-pistachio rabri with pure silver vark.",
+      "Traditional Indian ice cream, rich, creamy, and infused with saffron, cardamom, and roasted pistachios.",
     image: "/images/food/food-tgm-royal-dessert.jpg",
-    alt: "The Grand Maharaja Kesari Shahi Rasmalai and Kulfi Dessert",
+    alt: "The Grand Maharaja The Royal Kulfi Delight Dessert",
   },
 ];
 
@@ -76,25 +80,25 @@ export function SpecialDishes() {
             <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden bg-[#1A1A1A]">
               <Image
                 src="/images/food/food-tgm-royal-tandoori-paneer.jpg"
-                alt="Shahi Tandoori Paneer Tikka - Char-grilled in traditional clay tandoor"
+                alt="Paneer Shashlik Sizzler - Served on sizzling hot plate at The Grand Maharaja"
                 fill
                 priority
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 60vw"
               />
 
-              {/* Top Left Badge: MAIN COURSE HIGHLIGHT */}
+              {/* Top Left Badge: THE EMPEROR'S SIZZLERS */}
               <div className="absolute top-4 left-4 z-10 bg-white/95 dark:bg-[#1C1813]/95 backdrop-blur-xs text-[#1A1A1A] dark:text-[#F5F1EB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm">
-                MAIN COURSE HIGHLIGHT
+                THE EMPEROR&apos;S SIZZLERS
               </div>
 
-              {/* Top Right Badge: • TRADITIONAL CLAY OVEN with Pulsing Live Indicator */}
+              {/* Top Right Badge: • SIZZLING HOT PLATTER with Pulsing Live Indicator */}
               <div className="absolute top-4 right-4 z-10 bg-[#0D3826] text-[#F3E5AB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-2">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]"></span>
                 </span>
-                <span>TRADITIONAL CLAY OVEN</span>
+                <span>SIZZLING HOT PLATTER</span>
               </div>
             </div>
 
@@ -102,15 +106,15 @@ export function SpecialDishes() {
             <div className="pt-4 sm:pt-5">
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                 <h3 className="font-playfair text-xl sm:text-2xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors">
-                  Shahi Tandoori Paneer Tikka
+                  Paneer Shashlik Sizzler
                 </h3>
-                <span className="font-serif text-sm sm:text-base font-semibold text-[#8C6E2E] dark:text-[#D4AF37]">
-                  Chef&apos;s Signature
+                <span className="font-playfair text-base sm:text-lg font-semibold text-[#8C6E2E] dark:text-[#D4AF37]">
+                  Chef&apos;s Signature &bull; &pound;12.99
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-[#555555] dark:text-[#A8A194] leading-relaxed mt-2 font-sans">
-                Artisanal cottage cheese marinated in hung yoghurt and roasted spices, char-grilled
-                over live embers. Tender, smoky, and infused with royal north Indian aroma.
+                Chunks of paneer marinated in aromatic spices, skewered with bell peppers and onions,
+                served sizzling on a hot cast-iron platter.
               </p>
             </div>
           </div>
@@ -135,9 +139,14 @@ export function SpecialDishes() {
 
                 {/* Dish Details */}
                 <div className="flex-1 min-w-0">
-                  <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37]">
-                    {dish.category}
-                  </p>
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37]">
+                      {dish.category}
+                    </p>
+                    <span className="font-playfair font-semibold text-xs sm:text-sm text-[#8C6E2E] dark:text-[#D4AF37] shrink-0">
+                      {dish.price}
+                    </span>
+                  </div>
                   <h4 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#7D6328] dark:group-hover:text-[#D4AF37] transition-colors mt-0.5 truncate">
                     {dish.title}
                   </h4>

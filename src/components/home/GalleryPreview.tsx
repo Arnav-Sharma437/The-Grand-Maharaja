@@ -21,7 +21,7 @@ function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
 
 const FEATURED_MOMENTS = [
   {
-    title: "Sizzling Royal Tandoori Platter",
+    title: "Sizzling Paneer Shashlik Platter",
     category: "Culinary Artistry",
     image: "/images/gallery/3594037010001002071.jpg",
     views: "18.5K",

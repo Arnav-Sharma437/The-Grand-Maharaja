@@ -27,12 +27,12 @@ const POPULAR_SUGGESTIONS = [
   "Paneer",
   "Dosa",
   "Kurkuri Bhindi",
-  "Dal Makhani",
+  "Daal Makhani",
   "Garlic Naan",
   "Chaat",
   "Kingfisher",
   "Mojito",
-  "Rasmalai",
+  "Kulfi",
 ];
 
 // Common culinary synonym mapping for smart related dish discovery

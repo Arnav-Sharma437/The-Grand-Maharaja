@@ -25,13 +25,13 @@ const CURATED_DISHES = [
     alt: "The Grand Maharaja Dahi Puri",
   },
   {
-    category: "SIGNATURE MOCKTAIL",
-    title: "Virgin Passionfruit Mojito",
-    price: "£6.49",
+    category: "ROYAL MILKSHAKE",
+    title: "Strawberry Milkshake",
+    price: "£4.99",
     description:
-      "Refreshing crushed mint, fresh lime, and aromatic passionfruit purée topped with sparkling soda.",
-    image: "/images/food/food-tgm-royal-mocktails.jpg",
-    alt: "The Grand Maharaja Virgin Passionfruit Mojito",
+      "Thick and luscious shake blended with sweet ripe strawberries, chilled milk, and dairy cream.",
+    image: "/images/food/Strawberry-Milk-Shake.jpg",
+    alt: "The Grand Maharaja Strawberry Milkshake",
   },
   {
     category: "SWEET TEMPTATION",
@@ -79,7 +79,7 @@ export function SpecialDishes() {
             {/* Image with Badges */}
             <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden bg-[#1A1A1A]">
               <Image
-                src="/images/food/food-tgm-royal-tandoori-paneer.jpg"
+                src="/images/food/paneer-sizzler-authentic.jpg"
                 alt="Paneer Shashlik Sizzler - Served on sizzling hot plate at The Grand Maharaja"
                 fill
                 priority

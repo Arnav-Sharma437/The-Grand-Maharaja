@@ -78,7 +78,7 @@ const KITCHEN_MASTERPIECES = [
     title: "Paneer Shashlik & Sizzling Specialties",
     description:
       "Artisanal skewers of marinated cottage cheese, charred bell peppers, and fragrant spices served sizzling on hot platters.",
-    image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
+    image: "/images/food/paneer-sizzler-authentic.jpg",
     alt: "Paneer Shashlik & Sizzling Specialties at The Grand Maharaja",
     tag: "The Emperor's Sizzlers",
   },

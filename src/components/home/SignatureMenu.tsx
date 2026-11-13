@@ -12,7 +12,7 @@ const SIGNATURE_FOOD_DISHES = [
     title: "Paneer Shashlik Sizzler",
     price: "£12.99",
     description: "Marinated cottage cheese skewered with bell peppers and onions on a sizzling hot plate",
-    image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
+    image: "/images/food/paneer-sizzler-authentic.jpg",
     alt: "Paneer Shashlik Sizzler freshly prepared at The Grand Maharaja",
   },
   {

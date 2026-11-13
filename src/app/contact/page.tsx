@@ -103,7 +103,7 @@ const FAQS = [
   {
     question: "What is the capacity of your private banquet hall?",
     answer:
-      "Our Grand Maharaja Banquet Suite comfortably hosts approximately 80 seated guests with bespoke staging, royal lighting, customizable floral decor, and complete silver-service catering (plus outdoor catering for 200+ guests across the UK).",
+      "Our Grand Maharaja Banquet Suite comfortably hosts approximately 80 seated guests with bespoke staging, royal lighting, customizable floral decor, and complete silver-service catering (plus bespoke outdoor catering across the UK).",
   },
   {
     question: "Do you offer pure vegetarian catering outside Leicester?",

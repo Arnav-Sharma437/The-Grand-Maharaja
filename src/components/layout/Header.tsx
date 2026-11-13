@@ -79,7 +79,7 @@ export function Header({ className = "" }: HeaderProps) {
 
           {/* Primary CTA: "BOOK A TABLE ->" with Shimmer Sweep & Elevation */}
           <Link
-            href="/#reservations"
+            href="/#enquiry"
             className="shimmer-hover hidden sm:inline-flex items-center gap-2 px-5 py-2.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white font-semibold text-xs uppercase tracking-wider rounded-md shadow-sm hover:shadow-[0_8px_20px_rgba(125,99,40,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group/btn"
           >
             <span>BOOK A TABLE</span>

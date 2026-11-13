@@ -48,7 +48,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${cinzel.variable} ${cormorant.variable} ${plusJakartaSans.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-white dark:bg-[#0D0C0A] text-[#1A1A1A] dark:text-[#F5F1EB] font-sans antialiased selection:bg-[#7D6328] selection:text-white transition-colors duration-200">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <Header />
           {children}
           <Footer />

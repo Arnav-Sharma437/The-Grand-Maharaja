@@ -77,10 +77,10 @@ const KITCHEN_MASTERPIECES = [
     category: "CLAY-OVEN SPECIALTY",
     title: "Sizzling Clay-Oven Specialties",
     description:
-      "Charcoal-fired artisanal skewers of marinated cottage cheese, charred bell peppers, and fragrant tandoori spices infused with rich smoky hickory aromas.",
+      "Tandoor-fired artisanal skewers of marinated cottage cheese, charred bell peppers, and fragrant spices baked inside the clay tandoor.",
     image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
     alt: "Sizzling Clay-Oven Specialties at The Grand Maharaja",
-    tag: "Live Charcoal Hearth",
+    tag: "Traditional Clay Hearth",
   },
   {
     category: "IMPERIAL CONFECTION",
@@ -264,7 +264,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   From our dedicated Jain &amp; Swaminarayan kitchen sanctum prepared strictly with
-                  separate utensils and without root vegetables, to our private 200-guest banqueting
+                  dedicated cookware utilizing fresh raw vegetables &amp; potatoes without onion or garlic, to our private 80-guest banqueting
                   suite and welcoming hearth lounge, we invite you to gather, feast, and celebrate in an
                   atmosphere of enduring warmth and regal hospitality.
                 </p>
@@ -617,7 +617,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Accommodating approximately 80 seated guests with bespoke table layouts, attentive silver service,
-                  and fully personalized multi-course banqueting menus (plus outdoor catering for 200+ across the UK),
+                  and fully personalized multi-course banqueting menus (plus bespoke outdoor catering across the UK),
                   our events team ensures every detail reflects your unique celebration.
                 </p>
               </div>
@@ -683,7 +683,7 @@ export default function AboutPage() {
               A Glimpse into Our Kitchen &amp; Heritage
             </h2>
             <p className="font-sans text-xs sm:text-sm text-[#666666] dark:text-[#A8A194] leading-relaxed mt-3">
-              Every creation honors generational artistry, charcoal tandoor hearths, and pure vegetarian grandeur.
+              Every creation honors generational artistry, traditional clay tandoors, and pure vegetarian grandeur.
             </p>
           </div>
 

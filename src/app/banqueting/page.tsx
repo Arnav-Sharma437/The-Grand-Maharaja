@@ -53,7 +53,7 @@ const BANQUET_HIGHLIGHTS = [
     icon: MapPin,
     number: "UK-Wide",
     title: "Bespoke Outdoor Catering",
-    description: "Delivering live cooking stations & silver-service across London, Midlands & the UK (50 to 500+).",
+    description: "Delivering live cooking stations & silver-service across London, Midlands & the UK.",
   },
   {
     icon: Award,
@@ -138,7 +138,7 @@ const PACKAGES = [
       "The pinnacle of Indian culinary banqueting with live interactive cooking stations, premium decor, and VIP silver service.",
     features: [
       "Live welcome mocktail bar with exotic fruit infusions",
-      "6 Gourmet appetizers with Live Charcoal Hearth & Live Chaat Counter",
+      "6 Gourmet appetizers with Live Clay Tandoor Hearth & Live Chaat Counter",
       "4 Imperial curries (Paneer lababdar, dum aloo, Rajasthani gatta, dal)",
       "Royal Kashmiri pulao & Hyderabadi vegetable dum biryani",
       "Full assortment of fresh hearth rotis, missi rotis, and kulchas",
@@ -173,7 +173,7 @@ const CELEBRATIONS = [
   },
   {
     title: "Nationwide UK Outdoor Catering",
-    description: "Live charcoal tandoors, clay ovens, and chaat stations delivered to your venue across the UK.",
+    description: "Live clay tandoors, dedicated sanctum kitchens, and chaat stations delivered to your venue across the UK.",
     image: "/images/banquet/catering_feast.jpg",
   },
   {
@@ -187,7 +187,7 @@ const FAQS = [
   {
     question: "What is the guest capacity of The Grand Maharaja Banquet Hall?",
     answer:
-      "Our private banquet suite comfortably accommodates approximately 80 seated dining guests with round banquet tables, ceremonial staging, and ambient mood lighting. For outdoor catering across the UK, we can cater for gatherings from 50 to 500+ guests.",
+      "Our private banquet suite comfortably accommodates approximately 80 seated dining guests with round banquet tables, ceremonial staging, and ambient mood lighting. For outdoor catering across the UK, we can cater for bespoke gatherings of all sizes at your private venue.",
   },
   {
     question: "Do you guarantee 100% strict Jain & Swaminarayan food?",
@@ -382,7 +382,7 @@ export default function BanquetingPage() {
                   banquet suite offers an unforgettable setting for approximately 80 seated dining guests. Crafted
                   with shimmering gold trim, crystal chandeliers, and complete privacy, it is the
                   preferred hall for celebrations, pre-wedding sangeets, and milestone
-                  anniversaries (with bespoke outdoor catering for 200+ guests across the UK).
+                  anniversaries (with bespoke outdoor catering available across the UK).
                 </p>
               </div>
 
@@ -503,11 +503,11 @@ export default function BanquetingPage() {
                 <Flame className="w-6 h-6" />
               </div>
               <h3 className="font-playfair text-base sm:text-lg font-bold text-[#1A1A1A] dark:text-[#F5F1EB] mb-2">
-                Live Charcoal Clay Hearth
+                Live Traditional Clay Hearth
               </h3>
               <p className="text-xs text-[#666] dark:text-[#A0988A] font-sans leading-relaxed">
                 Tandoori paneer tikka, smoked malai soya chaap, and freshly baked garlic naans served
-                piping hot from charcoal tandoors on-site.
+                piping hot from live clay tandoors on-site.
               </p>
             </div>
 

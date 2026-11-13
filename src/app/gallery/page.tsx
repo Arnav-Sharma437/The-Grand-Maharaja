@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = constructMetadata({
   title: "Royal Gallery & Live Instagram Reels | The Grand Maharaja Leicester",
   description:
-    "Explore our royal vegetarian culinary gallery and live Instagram reels in Leicester. Discover our grand banquet suite, charcoal clay-oven artistry, and celebratory moments.",
+    "Explore our royal vegetarian culinary gallery and live Instagram reels in Leicester. Discover our grand banquet suite, traditional clay-oven artistry, and celebratory moments.",
   pathname: "/gallery",
 });
 

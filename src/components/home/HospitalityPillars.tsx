@@ -10,7 +10,7 @@ const PILLARS_DATA = [
   {
     badge: "GASTRONOMIC HERITAGE",
     badgeType: "white",
-    image: "/images/hero/hero-slider-cuisine-spread-2.jpg",
+    image: "/images/gallery/gallery-gourmet-feast-spread.png",
     alt: "Pure Vegetarian Artistry - Authentic Indian Gastronomic Heritage",
     title: "Pure Vegetarian Artistry",
     hasGreenDot: false,
@@ -41,7 +41,7 @@ const PILLARS_DATA = [
     title: "Royal Banqueting",
     hasGreenDot: false,
     description:
-      "Celebrate life's finest milestones in our intimate 80-guest luxury banquet suite in Leicester, or arrange bespoke outdoor catering for up to 500+ guests across the UK.",
+      "Celebrate life's finest milestones in our intimate 80-guest luxury banquet suite in Leicester, or arrange bespoke outdoor catering across the UK.",
     linkText: "PLAN AN EVENT",
     linkHref: "/banqueting",
     linkColor: "gold",

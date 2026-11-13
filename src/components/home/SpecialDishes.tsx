@@ -76,7 +76,7 @@ export function SpecialDishes() {
             <div className="relative w-full h-[300px] sm:h-[380px] lg:h-[420px] rounded-xl overflow-hidden bg-[#1A1A1A]">
               <Image
                 src="/images/food/food-tgm-royal-tandoori-paneer.jpg"
-                alt="Shahi Tandoori Paneer Tikka - Char-grilled over live charcoal embers"
+                alt="Shahi Tandoori Paneer Tikka - Char-grilled in traditional clay tandoor"
                 fill
                 priority
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -88,13 +88,13 @@ export function SpecialDishes() {
                 MAIN COURSE HIGHLIGHT
               </div>
 
-              {/* Top Right Badge: • CLAY CHARCOAL OVEN with Pulsing Live Indicator */}
+              {/* Top Right Badge: • TRADITIONAL CLAY OVEN with Pulsing Live Indicator */}
               <div className="absolute top-4 right-4 z-10 bg-[#0D3826] text-[#F3E5AB] text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full shadow-sm flex items-center gap-2">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#10B981]"></span>
                 </span>
-                <span>CLAY CHARCOAL OVEN</span>
+                <span>TRADITIONAL CLAY OVEN</span>
               </div>
             </div>
 

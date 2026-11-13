@@ -136,7 +136,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     imageUrl: "/images/gallery/3616392538970423008.jpg",
     category: "culinary",
     caption:
-      "Fluffy buttery tandoori naans baked fresh inside the live charcoal clay oven.",
+      "Fluffy buttery tandoori naans baked fresh inside the live clay tandoor oven.",
     likes: "2.3K",
     views: "16.7K",
     instagramUrl: "https://www.instagram.com/thegrandmaharaja?cplk=amk1bTA4cXRwNjBy",

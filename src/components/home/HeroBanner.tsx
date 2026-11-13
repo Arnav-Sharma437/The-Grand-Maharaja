@@ -96,7 +96,7 @@ export function HeroBanner() {
 
               {/* Verified Rating & Reviews Count */}
               <span className="text-xs font-bold tracking-wider text-[#1A1A1A] dark:text-[#F5F1EB]">
-                4.4 / 5 <span className="text-[#C5BEB3] dark:text-[#555] mx-1">|</span> 71+ REVIEWS
+                4.3 / 5 <span className="text-[#C5BEB3] dark:text-[#555] mx-1">|</span> 600+ GOOGLE REVIEWS
               </span>
             </div>
 
@@ -120,10 +120,10 @@ export function HeroBanner() {
             {/* Dual CTAs */}
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
-                href="/#reservations"
+                href="/#enquiry"
                 className="shimmer-hover inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-sm hover:shadow-[0_12px_28px_rgba(125,99,40,0.4)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
               >
-                <span>RESERVE YOUR ROYAL EXPERIENCE</span>
+                <span>BOOKING &amp; BANQUET ENQUIRY</span>
                 <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1.5" />
               </Link>
 

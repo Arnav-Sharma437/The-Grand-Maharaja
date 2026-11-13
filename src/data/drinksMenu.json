@@ -1,6 +1,6 @@
 [
   {
-    "id": "cat-drink-beer",
+    "id": "cat-beer",
     "title": "BEER",
     "colHeaders": [
       "HALF",
@@ -13,8 +13,9 @@
           "£3.49",
           "£4.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Classic crisp Indian draught lager.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "MADRI (DRAUGHT)",
@@ -22,8 +23,9 @@
           "£3.49",
           "£4.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Modern crisp European draught lager.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "COBRA (DRAUGHT)",
@@ -31,67 +33,56 @@
           "£3.49",
           "£4.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Smooth extra-smooth premium draught beer.",
+        "isSignature": true,
+        "tags": []
       },
       {
-        "name": "GUINESS (MICRO DRAUGHT)",
-        "prices": [
-          "—",
-          "£5.49"
-        ],
-        "price": "",
-        "description": ""
+        "name": "GUINNESS (MICRO DRAUGHT)",
+        "price": "£5.49",
+        "description": "Iconic rich Irish stout served chilled.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "TUSKER BOTTLE",
-        "prices": [
-          "—",
-          "£4.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£4.99",
+        "description": "Finest quality East African lager bottle.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "HOLSTEN PILS BOTTLE",
-        "prices": [
-          "—",
-          "£3.25"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.25",
+        "description": "Premium German pilsner bottle.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "BUDWEISER BOTTLE",
-        "prices": [
-          "—",
-          "£3.25"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.25",
+        "description": "Crisp American beechwood-aged lager bottle.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "CORONA BOTTLE",
-        "prices": [
-          "—",
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Refreshing Mexican bottled lager served with lime.",
+        "isSignature": false,
+        "tags": []
       },
       {
-        "name": "KOPPERBERG BOTTLE (STRAWBERRY & LIME, MIXED FRUIT)",
-        "prices": [
-          "—",
-          "£4.99"
-        ],
-        "price": "",
-        "description": ""
+        "name": "KOPPARBERG BOTTLE (STRAWBERRY & LIME, MIXED FRUIT)",
+        "price": "£4.99",
+        "description": "Fruity Swedish premium cider bottle.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-whisky",
+    "id": "cat-whisky",
     "title": "WHISKY",
     "colHeaders": [
       "SINGLE",
@@ -104,8 +95,9 @@
           "£3.49",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Blended Scotch whisky.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "SOUTHERN COMFORT",
@@ -113,8 +105,9 @@
           "£3.49",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Smooth American whiskey liqueur with fruit & spice notes.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "JACK DANIEL",
@@ -122,8 +115,9 @@
           "£3.99",
           "£5.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Tennessee sour mash whiskey.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "JW BLACK LABEL",
@@ -131,8 +125,9 @@
           "£3.99",
           "£5.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Iconic 12-year-old blended Scotch whisky.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "CHIVAS REGAL",
@@ -140,8 +135,9 @@
           "£3.99",
           "£5.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Rich and smooth 12-year blended Scotch.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "JAMESON",
@@ -149,8 +145,9 @@
           "£3.99",
           "£5.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Triple-distilled Irish whiskey.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "GLENFIDDICH",
@@ -158,13 +155,14 @@
           "£4.99",
           "£7.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Single malt Scotch whisky 12 Year.",
+        "isSignature": true,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-brandy",
+    "id": "cat-brandy",
     "title": "BRANDY",
     "colHeaders": [
       "SINGLE",
@@ -177,8 +175,9 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Luxury French Cognac.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "MARTELL",
@@ -186,13 +185,14 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Refined VS Cognac.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-vodka",
+    "id": "cat-vodka",
     "title": "VODKA",
     "colHeaders": [
       "SINGLE",
@@ -205,17 +205,19 @@
           "£3.99",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Triple-distilled pure grain vodka.",
+        "isSignature": false,
+        "tags": []
       },
       {
-        "name": "GREY GROOSE",
+        "name": "GREY GOOSE",
         "prices": [
           "£5.49",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Premium French luxury vodka.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "CIROC (MANGO, PINEAPPLE)",
@@ -223,8 +225,9 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "French snap-frost grape flavoured vodka.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "AU (BLUE RASPBERRY)",
@@ -232,13 +235,14 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Gold-filtered artisanal British vodka.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-gin",
+    "id": "cat-gin",
     "title": "GIN",
     "colHeaders": [
       "SINGLE",
@@ -251,8 +255,9 @@
           "£4.49",
           "£6.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Classic London dry gin with juniper finish.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "GORDONS PINK",
@@ -260,8 +265,9 @@
           "£4.49",
           "£6.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Infused with natural sweetness of raspberries & redcurrant.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "BOMBAY SAPPHIRE",
@@ -269,8 +275,9 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Vapour-infused with 10 exotic botanicals.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "HENDRICKS",
@@ -278,13 +285,14 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Curious gin infused with cucumber and rose petals.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-rum",
+    "id": "cat-rum",
     "title": "RUM",
     "colHeaders": [
       "SINGLE",
@@ -297,8 +305,9 @@
           "£4.99",
           "£6.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Legendary Indian dark rum aged 7 years.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "BACARDI",
@@ -306,8 +315,9 @@
           "£3.99",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Crisp white Caribbean rum.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "MALIBU",
@@ -315,8 +325,9 @@
           "£3.99",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Caribbean rum with coconut liqueur.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "CAPTAIN MORGAN SPICE",
@@ -324,8 +335,9 @@
           "£3.99",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Premium spiced Caribbean rum with vanilla notes.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "CAPTAIN MORGAN DARK",
@@ -333,224 +345,202 @@
           "£3.99",
           "£5.49"
         ],
-        "price": "",
-        "description": ""
+        "description": "Full-bodied rich dark Jamaican rum.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-wines",
+    "id": "cat-wines",
     "title": "WINES",
-    "colHeaders": [],
     "items": [
       {
         "name": "RED",
-        "prices": [
-          "£5.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.49",
+        "description": "House selected rich red wine (175ml glass).",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "WHITE",
-        "prices": [
-          "£5.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.49",
+        "description": "House selected crisp chilled white wine (175ml glass).",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "ROSE",
-        "prices": [
-          "£5.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.49",
+        "description": "Refreshing light fruity rosé wine (175ml glass).",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-cocktails",
+    "id": "cat-cocktails",
     "title": "COCKTAILS",
-    "colHeaders": [],
     "items": [
       {
         "name": "PASSIONFRUIT MARTINI",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Vodka, passionfruit liqueur, vanilla syrup and citrus blend.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "MOJITO",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "White rum, muddled fresh garden mint, lime juice, and soda.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "LYCHEE MARTINI",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Vodka paired with exotic lychee cordial and sweet vermouth.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "OCEAN BLUE",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Blue curaçao, vodka, lemonade, and a burst of citrus.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "PASSIONFRUIT MOJITO",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Tropical passionfruit puree muddled with white rum, fresh mint & soda.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "WHISKY SOUR",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Premium blended whisky, fresh lemon juice, sugar syrup & bitters.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "PINK GIN FIZZ",
-        "prices": [
-          "£7.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£7.99",
+        "description": "Gordon's Pink Gin, prosecco dash, fresh strawberries & tonic fizz.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-shooters",
+    "id": "cat-shooters",
     "title": "SHOOTERS",
-    "colHeaders": [],
     "items": [
       {
         "name": "JAGERBOMB",
-        "prices": [
-          "£4.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£4.99",
+        "description": "Jägermeister shot dropped into energy drink.",
+        "isSignature": false,
+        "tags": []
       },
       {
-        "name": "TEQUILA Patron",
-        "prices": [
-          "£5.49"
-        ],
-        "price": "",
-        "description": ""
+        "name": "TEQUILA PATRON",
+        "price": "£5.49",
+        "description": "100% Weber blue agave ultra-premium silver tequila.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "TEQUILA ROSE",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Strawberry cream liqueur with a splash of tequila.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ]
       },
       {
         "name": "SAMBUCA",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Anise-flavoured sweet Italian digestif liqueur.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-liqurs",
-    "title": "LIQURS",
-    "colHeaders": [],
+    "id": "cat-liquors",
+    "title": "LIQUORS",
     "items": [
       {
         "name": "BAILEYS",
-        "prices": [
-          "£4.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£4.49",
+        "description": "Original Irish cream liqueur served chilled or on ice.",
+        "isSignature": false,
+        "tags": [
+          "D"
+        ]
       },
       {
-        "name": "KAHULA",
-        "prices": [
-          "£4.49"
-        ],
-        "price": "",
-        "description": ""
+        "name": "KAHLUA",
+        "price": "£4.49",
+        "description": "Rich Mexican coffee liqueur with rum & vanilla accents.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-mocktails",
+    "id": "cat-mocktails",
     "title": "MOCKTAILS",
-    "colHeaders": [],
     "items": [
       {
         "name": "VIRGIN MOJITO",
-        "prices": [
-          "£5.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.99",
+        "description": "Fresh crushed garden mint, zesty lime wedges, simple syrup & sparkling soda.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "SUNSET COOLER",
-        "prices": [
-          "£5.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.99",
+        "description": "Tropical layers of orange, mango juice, grenadine and ginger ale.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "BLUE LAGOON MOCKTAIL",
-        "prices": [
-          "£5.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.99",
+        "description": "Blue curacao syrup, freshly squeezed lime, and fizzy lemonade on crushed ice.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "VIRGIN POMEGRANATE MOJITO",
-        "prices": [
-          "£6.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£6.49",
+        "description": "Ruby pomegranate pearls, fresh mint, lime juice & sparkling soda mist.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "VIRGIN PASSIONFRUIT MOJITO",
-        "prices": [
-          "£6.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£6.49",
+        "description": "Real passionfruit pulp, crushed mint leaves, lime and bubbly mineral water.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "ROSE DELIGHT",
-        "prices": [
-          "£5.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£5.99",
+        "description": "Kewra and rose essence with chilled botanical soda and edible petals.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-soft-drink-juice-water",
+    "id": "cat-soft-drinks",
     "title": "SOFT DRINK, JUICE & WATER",
     "colHeaders": [
       "GLASS",
@@ -563,8 +553,9 @@
           "£3.99",
           "£13.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Original refreshing Coca Cola.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "COCA COLA ZERO",
@@ -572,8 +563,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Zero sugar Coca Cola.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "COCA COLA DIET",
@@ -581,8 +573,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Light crisp Diet Coke.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "LEMONADE",
@@ -590,17 +583,19 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Crisp sparkling fizzy lemonade.",
+        "isSignature": false,
+        "tags": []
       },
       {
-        "name": "LEMONADE (BLACKCURRENT, LIME)",
+        "name": "LEMONADE (BLACKCURRANT, LIME)",
         "prices": [
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Fizzy lemonade infused with choice of blackcurrant or fresh lime cordial.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "ORANGE JUICE",
@@ -608,8 +603,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Chilled natural orange juice.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "PINEAPPLE JUICE",
@@ -617,8 +613,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Sweet golden pineapple juice.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "APPLE JUICE",
@@ -626,8 +623,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Crisp natural pressed apple juice.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "MANGO JUICE",
@@ -635,8 +633,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Exotic ripe mango nectar.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "LYCHEE JUICE",
@@ -644,8 +643,9 @@
           "£3.49",
           "£12.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Fragrant sweet lychee juice.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "FRESH PASSION FRUIT JUICE",
@@ -653,111 +653,99 @@
           "£4.99",
           "£15.99"
         ],
-        "price": "",
-        "description": ""
+        "description": "Freshly pressed tropical passion fruit nectar.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "J2O ORANGE & PASSION",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "275ml glass bottle.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "J2O APPLE & RASPBERRY",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "275ml glass bottle.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "NIMBU PANI",
-        "prices": [
-          "£3.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.99",
+        "description": "Traditional Indian fresh lime water (sweet or salted).",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "NIMBU SODA",
-        "prices": [
-          "£3.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.99",
+        "description": "Fresh Indian lime soda with roasted cumin & rock salt.",
+        "isSignature": true,
+        "tags": []
       },
       {
         "name": "STILL WATER BOTTLE",
-        "prices": [
-          "£2.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£2.99",
+        "description": "Pure mineral still water (330ml).",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "SPARKLING WATER",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Crisp sparkling mineral water (330ml).",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "GINGER ALE",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Spicy effervescent ginger ale.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "TONIC WATER",
-        "prices": [
-          "£3.49"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.49",
+        "description": "Classic Indian tonic water with quinine.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "RED BULL",
-        "prices": [
-          "£3.99"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.99",
+        "description": "250ml energy drink can.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   },
   {
-    "id": "cat-drink-non-alcoholic",
+    "id": "cat-non-alcoholic",
     "title": "NON-ALCOHOLIC",
-    "colHeaders": [],
     "items": [
       {
-        "name": "GUINESS ZERO",
-        "prices": [
-          "£4.99"
-        ],
-        "price": "",
-        "description": ""
+        "name": "GUINNESS ZERO",
+        "price": "£4.99",
+        "description": "Alcohol-free stout with the same beautifully balanced flavour and silky dark head.",
+        "isSignature": false,
+        "tags": []
       },
       {
-        "name": "KOPPERBERG (STRAWBERRY & LIME, MIXED FRUIT)",
-        "prices": [
-          "£4.99"
-        ],
-        "price": "",
-        "description": ""
+        "name": "KOPPARBERG (STRAWBERRY & LIME, MIXED FRUIT)",
+        "price": "£4.99",
+        "description": "Refreshing alcohol-free Swedish fruit cider.",
+        "isSignature": false,
+        "tags": []
       },
       {
         "name": "HEINEKEN ZERO",
-        "prices": [
-          "£3.50"
-        ],
-        "price": "",
-        "description": ""
+        "price": "£3.50",
+        "description": "0.0% alcohol-free premium malt lager.",
+        "isSignature": false,
+        "tags": []
       }
     ]
   }

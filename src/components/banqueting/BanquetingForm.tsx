@@ -213,7 +213,7 @@ export function BanquetingForm() {
                 The Grand Maharaja Suite Leicester (Approx 80 Guests)
               </option>
               <option value="Outdoor Catering at My Venue across the UK">
-                Outdoor Catering at My Venue across the UK (50 to 500+)
+                Outdoor Catering at My Venue across the UK
               </option>
               <option value="Banqueting Suite Hire Only (Leicester)">
                 Banqueting Suite Hire Only (Leicester)

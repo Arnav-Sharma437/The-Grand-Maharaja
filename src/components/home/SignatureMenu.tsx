@@ -11,7 +11,7 @@ const SIGNATURE_FOOD_DISHES = [
   {
     title: "Shahi Tandoori Paneer Tikka",
     price: "£10.99",
-    description: "Charcoal-fired cottage cheese skewers with spiced peppers & mint chutney",
+    description: "Tandoor-fired cottage cheese skewers with spiced peppers & mint chutney",
     image: "/images/food/food-tgm-royal-tandoori-paneer.jpg",
     alt: "Shahi Tandoori Paneer Tikka freshly prepared at The Grand Maharaja",
   },

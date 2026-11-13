@@ -36,7 +36,7 @@ export function BanquetingInquiry() {
   };
 
   return (
-    <section className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200">
+    <section id="enquiry" className="relative w-full bg-[#F5F1EB]/60 dark:bg-[#14120E] py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-200 scroll-mt-20">
       {/* Live Royal Background Effects */}
       <RoyalBackgroundGlow variant="warm" particleCount={34} showMandala={true} />
 
@@ -110,7 +110,7 @@ export function BanquetingInquiry() {
                       CAPACITY
                     </div>
                     <div className="text-xs sm:text-[13.5px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover/item:text-[#9B7B34] dark:group-hover/item:text-[#D4AF37] transition-colors mt-0.5 leading-snug">
-                      Seated dining up to 200 guests with private bar
+                      Seated dining for approx 80 guests with private bar
                     </div>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export function BanquetingInquiry() {
                     <input
                       id="subject"
                       type="text"
-                      placeholder="e.g. Wedding Reception 120 Pax"
+                      placeholder="e.g. Family Celebration (Approx 50-80 Guests)"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       className="w-full bg-[#FAF8F5] dark:bg-[#12100D] border border-[#E6E0D6] dark:border-[#2C261D] rounded-xl px-4 py-3.5 text-xs sm:text-sm text-[#1A1A1A] dark:text-[#F5F1EB] placeholder-[#A8A29E] dark:placeholder-[#666] focus:outline-none focus:border-[#9B7B34] dark:focus:border-[#D4AF37] focus:bg-white dark:focus:bg-[#161310] focus:ring-1 focus:ring-[#9B7B34] transition-all duration-200"

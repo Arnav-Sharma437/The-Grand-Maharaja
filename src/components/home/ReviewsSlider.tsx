@@ -236,10 +236,10 @@ export function ReviewsSlider() {
                       <Star key={i} className="w-3.5 h-3.5 fill-[#E5A118] text-[#E5A118]" />
                     ))}
                   </div>
-                  <span className="font-bold text-sm text-[#1A1A1A] dark:text-[#F5F1EB] font-sans">4.4 / 5</span>
+                  <span className="font-bold text-sm text-[#1A1A1A] dark:text-[#F5F1EB] font-sans">4.3 / 5</span>
                 </div>
                 <div className="text-[11px] sm:text-xs text-[#555555] dark:text-[#A0988A] font-sans flex items-center gap-1 mt-0.5">
-                  <span>Based on 71+ Google Reviews</span>
+                  <span>Over 600+ Verified Google Reviews</span>
                   <span className="text-[#888888]">&bull;</span>
                   <span className="font-medium text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors inline-flex items-center gap-0.5">
                     Review us{" "}

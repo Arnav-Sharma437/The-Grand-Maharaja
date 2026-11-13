@@ -134,7 +134,7 @@ export function MobileMenu({ items = NAV_LINKS }: MobileMenuProps) {
                 </a>
 
                 <Link
-                  href="/#reservations"
+                  href="/#enquiry"
                   onClick={handleClose}
                   className="w-full h-11 bg-[#7D6328] hover:bg-[#6B531F] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-white font-semibold text-xs uppercase tracking-wider rounded-md flex items-center justify-center gap-2 shadow-sm transition-all"
                 >

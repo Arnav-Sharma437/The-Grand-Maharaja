@@ -152,7 +152,7 @@ export function ContactForm() {
                 Private Banquet Suite Hire (Approx 80 Guests)
               </option>
               <option value="Outdoor Event Catering Across UK">
-                Outdoor Event Catering Across UK (50 to 500+)
+                Outdoor Event Catering Across UK
               </option>
               <option value="No Onion & Garlic / Swaminarayan / Jain Catering">
                 No Onion &amp; Garlic / Swaminarayan / Jain Catering

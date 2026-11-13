@@ -403,6 +403,27 @@ export function MenuExplorer() {
         className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 py-10 sm:py-12 lg:py-16"
         style={{ maxWidth: "1400px" }}
       >
+        {/* Official Allergen & Dietary Guide (From Official Menu PDF) */}
+        <div className="mb-8 p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#15120E] border border-[#E6DEC9] dark:border-[#2A2318] shadow-xs flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="flex flex-wrap items-center gap-2 text-xs">
+            <span className="font-bold text-[#8C6E2E] dark:text-[#D4AF37] uppercase tracking-wider text-[11px] mr-1">
+              Dietary Indicators:
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#FAF0E6] dark:bg-[#2A2015] text-[#B45309] dark:text-[#F59E0B] border border-[#FDE68A] dark:border-[#78350F] font-bold text-[10px]">
+              <span className="font-extrabold">OG</span> No Onion No Garlic Available
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#FAF0E6] dark:bg-[#2A2015] text-[#B45309] dark:text-[#F59E0B] border border-[#FDE68A] dark:border-[#78350F] font-bold text-[10px]">
+              <span className="font-extrabold">D</span> Contains Dairy
+            </span>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#FAF0E6] dark:bg-[#2A2015] text-[#B45309] dark:text-[#F59E0B] border border-[#FDE68A] dark:border-[#78350F] font-bold text-[10px]">
+              <span className="font-extrabold">N</span> Contains Nuts
+            </span>
+          </div>
+          <div className="text-[11px] text-[#666666] dark:text-[#A0988A] leading-relaxed max-w-lg md:text-right">
+            <strong>Allergy Notice:</strong> If you have allergies (Gluten, Soya, Dairy, Celery, Nuts), please inform our team upon ordering.
+          </div>
+        </div>
+
         {filteredCategories.length === 0 ? (
           /* Friendly No-Results State with Direct Suggestions (No Dead Ends) */
           <div className="max-w-xl mx-auto text-center py-16 px-6 bg-white dark:bg-[#161310] rounded-3xl border border-[#E8E1D0] dark:border-[#2A241C] shadow-lg">

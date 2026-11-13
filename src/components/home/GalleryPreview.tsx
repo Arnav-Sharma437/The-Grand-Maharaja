@@ -37,7 +37,7 @@ const FEATURED_MOMENTS = [
   {
     title: "Royal Street Chaat Preparation",
     category: "Street Gastronomy",
-    image: "/images/gallery/3600488990898464452.jpg",
+    image: "/images/food/food-tgm-royal-street-chaat.jpg",
     views: "22.8K",
     likes: "3.1K",
     isReel: true,

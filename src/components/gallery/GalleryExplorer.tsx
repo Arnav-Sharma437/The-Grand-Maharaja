@@ -80,8 +80,8 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "reel-3",
     type: "reel",
     title: "Royal Street Gourmet Chaat Artistry",
-    videoUrl: "/images/gallery/3600488990898464452.mp4",
-    imageUrl: "/images/gallery/3600488990898464452.jpg",
+    videoUrl: "/images/gallery/3668759185878039152.mp4",
+    imageUrl: "/images/food/food-tgm-royal-street-chaat.jpg",
     category: "culinary",
     caption:
       "Handcrafted crisp papdis layered with spiced potatoes, chilled creamy curd, and ruby pomegranate jewels.",

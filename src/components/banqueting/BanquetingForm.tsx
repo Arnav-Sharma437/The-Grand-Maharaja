@@ -19,27 +19,48 @@ export function BanquetingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        eventDate: "",
-        eventType: "Wedding Reception",
-        guestCount: "80 – 120 Guests",
-        serviceNeeded: "Leicester Banqueting Suite + Royal Catering",
-        dietarySanctum: "Standard Pure Vegetarian + Jain Options",
-        specialRequests: "",
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "Banqueting Page Event Inquiry",
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          eventDate: formData.eventDate,
+          eventType: formData.eventType,
+          guestCount: formData.guestCount,
+          serviceNeeded: formData.serviceNeeded,
+          dietarySanctum: formData.dietarySanctum,
+          specialRequests: formData.specialRequests,
+        }),
       });
 
-      setTimeout(() => setIsSubmitted(false), 7000);
-    }, 800);
+      if (res.ok) {
+        setIsSubmitted(true);
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          eventDate: "",
+          eventType: "Wedding Reception",
+          guestCount: "80 – 120 Guests",
+          serviceNeeded: "Leicester Banqueting Suite + Royal Catering",
+          dietarySanctum: "Standard Pure Vegetarian + Jain Options",
+          specialRequests: "",
+        });
+        setTimeout(() => setIsSubmitted(false), 8000);
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -275,8 +296,7 @@ export function BanquetingForm() {
             <div>
               <p className="font-bold">Banqueting Inquiry Transmitted Successfully!</p>
               <p className="text-xs text-[#065F46]/90 dark:text-[#A7F3D0]/90 mt-0.5">
-                Our Events Director will contact you within 24 hours to confirm date availability and
-                present your tailored banquet menu.
+                Forwarded to <strong>info@thegrandmaharaja.co.uk</strong>. Our Events Director will contact you within 24 hours to confirm date availability and present your tailored banquet menu.
               </p>
             </div>
           </div>

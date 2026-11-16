@@ -17,22 +17,40 @@ export function BanquetingInquiry() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "Home Page Banqueting & Direct Inquiries",
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
       });
-      setTimeout(() => setIsSubmitted(false), 5000);
-    }, 800);
+
+      if (res.ok) {
+        setIsSubmitted(true);
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        setTimeout(() => setIsSubmitted(false), 6000);
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -261,7 +279,7 @@ export function BanquetingInquiry() {
                   <div className="p-3.5 bg-[#ECFDF5] dark:bg-[#064E3B]/40 border border-[#A7F3D0] dark:border-[#059669]/50 rounded-xl text-xs sm:text-sm text-[#065F46] dark:text-[#A7F3D0] flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#059669] dark:text-[#34D399] shrink-0" />
                     <span>
-                      Thank you! Your banquet inquiry has been received. Our team will contact you shortly.
+                      Thank you! Your banquet inquiry has been forwarded directly to info@thegrandmaharaja.co.uk. Our team will contact you shortly.
                     </span>
                   </div>
                 )}

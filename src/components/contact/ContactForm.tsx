@@ -17,26 +17,45 @@ export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate swift submission with royal reassurance
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      setFormData({
-        fullName: "",
-        email: "",
-        phone: "",
-        inquiryType: "Table Dining Reservation",
-        guests: "2–4 Guests",
-        preferredDate: "",
-        message: "",
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "Contact Page Message Form",
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          inquiryType: formData.inquiryType,
+          guests: formData.guests,
+          preferredDate: formData.preferredDate,
+          message: formData.message,
+        }),
       });
 
-      setTimeout(() => setIsSubmitted(false), 6000);
-    }, 700);
+      if (res.ok) {
+        setIsSubmitted(true);
+        setFormData({
+          fullName: "",
+          email: "",
+          phone: "",
+          inquiryType: "Table Dining Reservation",
+          guests: "2–4 Guests",
+          preferredDate: "",
+          message: "",
+        });
+
+        setTimeout(() => setIsSubmitted(false), 7000);
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -214,7 +233,7 @@ export function ContactForm() {
             <div>
               <p className="font-bold">Thank you for your message!</p>
               <p className="text-xs text-[#065F46]/90 dark:text-[#A7F3D0]/90 mt-0.5">
-                Our reservations team has received your inquiry and will contact you promptly.
+                Forwarded to <strong>info@thegrandmaharaja.co.uk</strong>. Our reservations team will contact you promptly.
               </p>
             </div>
           </div>

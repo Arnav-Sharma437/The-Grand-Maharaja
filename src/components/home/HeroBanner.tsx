@@ -42,12 +42,43 @@ export function HeroBanner() {
     date: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("/api/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "Hero Banner Swift Booking Desk",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          eventType: formData.eventType,
+          guests: formData.guests,
+          date: formData.date,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          eventType: "Table Dining",
+          guests: "2–4",
+          date: "",
+        });
+        setTimeout(() => setSubmitted(false), 5000);
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const currentImage = REAL_HERO_IMAGES[activeImageIndex];
@@ -205,7 +236,7 @@ export function HeroBanner() {
               </div>
               <div className="flex items-center gap-2 text-xs text-[#555555] dark:text-[#9E9689]">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 dark:text-emerald-500 shrink-0" />
-                <span>Instant booking inquiry forwarded to Catherine St reception</span>
+                <span>Instant booking inquiry forwarded to info@thegrandmaharaja.co.uk</span>
               </div>
             </div>
 
@@ -300,9 +331,10 @@ export function HeroBanner() {
               <div>
                 <button
                   type="submit"
-                  className="w-full h-10 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider rounded-lg px-4 flex items-center justify-center gap-2 shadow-sm transition-all duration-200 cursor-pointer"
+                  disabled={isSubmitting}
+                  className="w-full h-10 bg-[#1E1B18] hover:bg-[#312B25] dark:bg-[#8C6E2E] dark:hover:bg-[#A38137] text-[#FAF7F2] font-semibold text-xs uppercase tracking-wider rounded-lg px-4 flex items-center justify-center gap-2 shadow-sm transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  <span>{submitted ? "REQUEST SENT!" : "BOOK TABLE"}</span>
+                  <span>{isSubmitting ? "SENDING..." : submitted ? "INQUIRY SENT!" : "BOOK TABLE"}</span>
                   <Utensils className="w-3.5 h-3.5" />
                 </button>
               </div>

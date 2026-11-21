@@ -213,10 +213,15 @@ export function Footer() {
 
         {/* Bottom Bar: Copyright & Quick Links */}
         <div className="border-t border-[#E8E2D5] dark:border-[#241F18] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-          <p className="text-xs text-[#777777] dark:text-[#888] font-sans">
-            &copy; 2026 The Grand Maharaja Leicester. All rights reserved. Pure Vegetarian
-            Hospitality.
-          </p>
+          <div className="space-y-1">
+            <p className="text-xs text-[#777777] dark:text-[#888] font-sans">
+              &copy; 2026 The Grand Maharaja Leicester. All rights reserved. Pure Vegetarian
+              Hospitality.
+            </p>
+            <p className="text-[11px] text-[#888888] dark:text-[#777] font-sans">
+              Designed by <span className="text-[#8C6E2E] dark:text-[#D4AF37] font-medium">We Do Effects</span>
+            </p>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-semibold">
             <Link href="/" className="hover:underline">

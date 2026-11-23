@@ -31,7 +31,7 @@ const FEATURED_MOMENTS = [
   {
     title: "The Grand Maharaja Dining Hall",
     category: "Ambiance",
-    image: "/images/banquet/banquet-royal-hall-setup.png",
+    image: "/images/gallery/gallery-dining-hall-742.jpg",
     isReel: false,
   },
   {
@@ -43,9 +43,9 @@ const FEATURED_MOMENTS = [
     isReel: true,
   },
   {
-    title: "Golden Backlit Bar & Lounge",
+    title: "Dining Ambiance & Bar",
     category: "Evening Ambiance",
-    image: "/images/about/about-royal-golden-backlit-bar.png",
+    image: "/images/hero/hero-slider-dining-experience-3.jpg",
     isReel: false,
   },
 ];

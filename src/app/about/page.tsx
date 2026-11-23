@@ -343,11 +343,11 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Image 2: Luxurious Golden Backlit Bar */}
+              {/* Image 2: Luxurious Bar & Dining Ambiance */}
               <div className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#E6E0D4] dark:border-[#2C261D] shadow-md h-[180px] sm:h-[220px]">
                 <Image
-                  src="/images/about/about-royal-golden-backlit-bar.png"
-                  alt="Luxurious Golden Backlit Bar Display at The Grand Maharaja"
+                  src="/images/hero/hero-slider-dining-experience-3.jpg"
+                  alt="Luxurious Dining Ambiance & Bar Display at The Grand Maharaja"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 1024px) 50vw, 320px"
@@ -358,16 +358,16 @@ export default function AboutPage() {
                     BAR &amp; LOUNGE
                   </span>
                   <h5 className="font-playfair text-xs sm:text-sm font-bold">
-                    Golden Backlit Bar
+                    Bar &amp; Dining Ambiance
                   </h5>
                 </div>
               </div>
 
-              {/* Image 3: Elegant Teal & Gold Dining Hall */}
+              {/* Image 3: Elegant Dining Interior */}
               <div className="group relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#E6E0D4] dark:border-[#2C261D] shadow-md h-[180px] sm:h-[220px]">
                 <Image
-                  src="/images/banquet/banquet-teal-and-gold-dining-hall.png"
-                  alt="Elegant Teal and Gold Restaurant Dining Interior"
+                  src="/images/gallery/gallery-interior-737.jpg"
+                  alt="Elegant Restaurant Dining Interior at The Grand Maharaja"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 1024px) 50vw, 320px"
@@ -582,7 +582,7 @@ export default function AboutPage() {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="group relative rounded-3xl overflow-hidden border border-[#E6E0D4] dark:border-[#2C261D] shadow-[0_12px_40px_rgba(0,0,0,0.08)] dark:shadow-[0_12px_40px_rgba(0,0,0,0.5)] h-[360px] sm:h-[440px]">
                 <Image
-                  src="/images/banquet/banquet-royal-hall-setup.png"
+                  src="/images/gallery/gallery-dining-hall-742.jpg"
                   alt="Grand Celebrations and Banqueting Hall Setup at The Grand Maharaja"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700"

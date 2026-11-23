@@ -198,7 +198,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     type: "reel",
     title: "The Grand Maharaja Walkthrough",
     videoUrl: "/images/gallery/gallery-restaurant-video-625.mp4",
-    imageUrl: "/images/banquet/banquet-royal-hall-setup.png",
+    imageUrl: "/images/gallery/gallery-dining-hall-742.jpg",
     category: "dining",
     caption:
       "A cinematic royal walkthrough of Leicester's premier pure vegetarian culinary sanctuary.",
@@ -221,7 +221,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-2",
     type: "photo",
     title: "Regal Banquet Hall Grand Layout",
-    imageUrl: "/images/banquet/banquet-royal-hall-setup.png",
+    imageUrl: "/images/gallery/gallery-dining-hall-742.jpg",
     category: "banquets",
     caption:
       "Spacious luxury banquet dining room configured for celebratory receptions and anniversary parties.",
@@ -229,11 +229,11 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
   {
     id: "photo-3",
     type: "photo",
-    title: "Golden Backlit Bar & Lounge",
-    imageUrl: "/images/about/about-royal-golden-backlit-bar.png",
+    title: "Dining Ambiance & Bar Lounge",
+    imageUrl: "/images/hero/hero-slider-dining-experience-3.jpg",
     category: "dining",
     caption:
-      "The majestic golden bar illuminated at dusk, serving signature non-alcoholic cocktails and imperial spirits.",
+      "The majestic bar and dining room illuminated at dusk, serving signature non-alcoholic creations and imperial spirits.",
   },
   {
     id: "photo-4",
@@ -248,7 +248,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-5",
     type: "photo",
     title: "Bespoke Banquet Stage Decor",
-    imageUrl: "/images/banquet/banquet-luxury-dining-room.png",
+    imageUrl: "/images/gallery/gallery-decor-741.png",
     category: "banquets",
     caption:
       "Traditional floral mandap and ceremonial decor handcrafted for private celebrations.",
@@ -293,7 +293,7 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     id: "photo-10",
     type: "photo",
     title: "Teal & Gold Royal Suite",
-    imageUrl: "/images/banquet/banquet-teal-and-gold-dining-hall.png",
+    imageUrl: "/images/gallery/gallery-interior-737.jpg",
     category: "banquets",
     caption:
       "Imperial teal velvet seating paired with royal golden accents for private celebrations.",

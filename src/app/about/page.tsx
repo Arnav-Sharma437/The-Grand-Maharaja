@@ -65,12 +65,12 @@ const HERITAGE_STATS = [
 // Kitchen Masterpieces from the live site
 const KITCHEN_MASTERPIECES = [
   {
-    category: "STREET GASTRONOMY",
-    title: "Royal Gourmet Street Delicacies",
+    category: "PURI DELIGHTS",
+    title: "Handcrafted Royal Dahi Puri",
     description:
-      "Authentic street gastronomic artistry — crisp spiced papdis, velvety curd, fragrant mint chutneys, and pomegranate jewels prepared fresh to order.",
-    image: "/images/food/food-tgm-royal-street-chaat.jpg",
-    alt: "Royal Gourmet Street Delicacies at The Grand Maharaja",
+      "Crispy hollow puris filled with spiced potatoes, topped with sweetened yogurt, tangy chutneys, crunchy sev, and fresh ruby pomegranate jewels.",
+    image: "/images/food/authentic-dahi-puri.png",
+    alt: "Handcrafted Royal Dahi Puri at The Grand Maharaja",
     tag: "Handcrafted Fresh",
   },
   {
@@ -103,8 +103,8 @@ export default function AboutPage() {
       <section className="relative w-full min-h-[440px] sm:min-h-[500px] lg:min-h-[540px] flex items-center justify-center py-16 sm:py-20 lg:py-24 overflow-hidden border-b-2 border-[#D4AF37]/40 shadow-[0_4px_30px_rgba(212,175,55,0.15)]">
         {/* Authentic Background Photo with Next.js Image Optimization */}
         <Image
-          src="/images/banquet/catering_feast.jpg"
-          alt="The Grand Maharaja Royal Catering Feast & Fine Dining Hall"
+          src="/images/gallery/gallery-gourmet-feast-spread.png"
+          alt="The Grand Maharaja Royal Vegetarian Feast & Heritage Dining"
           fill
           priority
           className="object-cover object-center"

@@ -33,14 +33,14 @@ const SIGNATURE_FOOD_DISHES = [
     title: "TGM Special Biryani (with Raita)",
     price: "£10.49",
     description: "Fragrant basmati rice layered with garden vegetables & saffron, served with cooling raita",
-    image: "/images/food/veg-biryani-and-raita.jpg",
-    alt: "TGM Special Biryani with Raita at The Grand Maharaja",
+    image: "/images/food/authentic-tgm-biryani.jpg",
+    alt: "TGM Special Biryani with Fresh Raita at The Grand Maharaja",
   },
   {
     title: "Daal Makhani",
     price: "£8.99",
     description: "Whole black lentils slow-cooked with tomatoes, fresh dairy cream, and churned butter",
-    image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
+    image: "/images/food/authentic-daal-makhani.jpg",
     alt: "Daal Makhani slow-simmered black lentils at The Grand Maharaja",
   },
 ];

@@ -121,8 +121,8 @@ export default function ContactPage() {
       <section className="relative w-full min-h-[420px] sm:min-h-[480px] lg:min-h-[520px] flex items-center justify-center py-16 sm:py-20 lg:py-24 overflow-hidden border-b-2 border-[#D4AF37]/40 shadow-[0_4px_30px_rgba(212,175,55,0.15)]">
         {/* Authentic Background Photo with Next.js Image Optimization */}
         <Image
-          src="/images/banquet/catering_feast.jpg"
-          alt="The Grand Maharaja Royal Hospitality & Banqueting Leicester"
+          src="/images/hero/hero-slider-royal-ambiance-1.jpg"
+          alt="The Grand Maharaja Royal Hospitality & Dining Sanctuary in Leicester"
           fill
           priority
           className="object-cover object-center"

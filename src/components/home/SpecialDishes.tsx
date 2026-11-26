@@ -12,8 +12,8 @@ const CURATED_DISHES = [
     price: "£8.99",
     description:
       "Whole black lentils slow-cooked with tomatoes, cream, and butter for a velvety royal texture.",
-    image: "/images/food/food-tgm-signature-dal-maharaja.jpg",
-    alt: "The Grand Maharaja Daal Makhani",
+    image: "/images/food/authentic-daal-makhani.jpg",
+    alt: "The Grand Maharaja Authentic Slow-Cooked Daal Makhani in Royal Ceramic Handi",
   },
   {
     category: "PURI DELIGHTS",
@@ -21,8 +21,8 @@ const CURATED_DISHES = [
     price: "£6.49",
     description:
       "Crispy hollow puris filled with potatoes, topped with sweetened yogurt, tangy chutneys and sev.",
-    image: "/images/food/food-tgm-royal-street-chaat.jpg",
-    alt: "The Grand Maharaja Dahi Puri",
+    image: "/images/food/authentic-dahi-puri.png",
+    alt: "The Grand Maharaja Fresh Handcrafted Royal Dahi Puri Plate",
   },
   {
     category: "ROYAL MILKSHAKE",

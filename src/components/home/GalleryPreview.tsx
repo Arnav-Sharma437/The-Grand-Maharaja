@@ -35,9 +35,9 @@ const FEATURED_MOMENTS = [
     isReel: false,
   },
   {
-    title: "Royal Street Chaat Preparation",
-    category: "Street Gastronomy",
-    image: "/images/food/food-tgm-royal-street-chaat.jpg",
+    title: "Handcrafted Royal Dahi Puri",
+    category: "Puri Delights",
+    image: "/images/food/authentic-dahi-puri.png",
     views: "22.8K",
     likes: "3.1K",
     isReel: true,

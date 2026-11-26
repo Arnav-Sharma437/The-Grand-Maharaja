@@ -79,12 +79,12 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
   {
     id: "reel-3",
     type: "reel",
-    title: "Royal Street Gourmet Chaat Artistry",
+    title: "Handcrafted Royal Dahi Puri Artistry",
     videoUrl: "/images/gallery/3668759185878039152.mp4",
-    imageUrl: "/images/food/food-tgm-royal-street-chaat.jpg",
+    imageUrl: "/images/food/authentic-dahi-puri.png",
     category: "culinary",
     caption:
-      "Handcrafted crisp papdis layered with spiced potatoes, chilled creamy curd, and ruby pomegranate jewels.",
+      "Crispy hollow puris filled with spiced potatoes, topped with sweetened yogurt, tangy chutneys, crunchy sev, and pomegranate jewels.",
     likes: "3.1K",
     views: "22.8K",
     instagramUrl: "https://www.instagram.com/thegrandmaharaja?cplk=amk1bTA4cXRwNjBy",
@@ -283,11 +283,11 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
   {
     id: "photo-9",
     type: "photo",
-    title: "Royal Gourmet Street Chaat",
-    imageUrl: "/images/food/food-tgm-royal-street-chaat.jpg",
+    title: "Handcrafted Royal Dahi Puri",
+    imageUrl: "/images/food/authentic-dahi-puri.png",
     category: "culinary",
     caption:
-      "A vibrant medley of fresh Indian street gastronomy prepared with royal precision and zero compromises.",
+      "Crisp hollow puris filled with potatoes, sweetened yogurt, tangy chutneys, crunchy sev, and pomegranate jewels.",
   },
   {
     id: "photo-10",
@@ -297,6 +297,24 @@ const INITIAL_MEDIA_ITEMS: GalleryItem[] = [
     category: "banquets",
     caption:
       "Imperial teal velvet seating paired with royal golden accents for private celebrations.",
+  },
+  {
+    id: "photo-11",
+    type: "photo",
+    title: "Slow-Simmered Royal Daal Makhani",
+    imageUrl: "/images/food/authentic-daal-makhani.jpg",
+    category: "culinary",
+    caption:
+      "Whole black lentils slow-simmered in churned dairy butter and rich cream, presented in our royal ceramic handi.",
+  },
+  {
+    id: "photo-12",
+    type: "photo",
+    title: "TGM Special Dum Biryani & Raita",
+    imageUrl: "/images/food/authentic-tgm-biryani.jpg",
+    category: "culinary",
+    caption:
+      "Fragrant long-grain basmati layered with garden vegetables, saffron aromatics, and garnished with fried onions, served with cooling raita.",
   },
 ];
 

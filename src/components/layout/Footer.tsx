@@ -126,10 +126,10 @@ export function Footer() {
               <li className="flex items-center gap-2.5 group">
                 <Mail className="w-4 h-4 text-[#8C6E2E] dark:text-[#D4AF37] shrink-0 group-hover:scale-110 transition-transform duration-200" />
                 <a
-                  href="mailto:reservations@thegrandmaharaja.co.uk"
+                  href={`mailto:${SITE_CONFIG.contact.email}`}
                   className="hover:text-[#8C6E2E] dark:hover:text-[#D4AF37] hover:translate-x-1 transition-all duration-200 break-all leading-snug"
                 >
-                  reservations@thegrandmaharaja.co.uk
+                  {SITE_CONFIG.contact.email}
                 </a>
               </li>
             </ul>

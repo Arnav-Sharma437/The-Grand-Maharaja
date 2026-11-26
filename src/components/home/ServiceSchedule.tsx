@@ -35,13 +35,13 @@ export function ServiceSchedule() {
 
         {/* 3 Schedule Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-          {/* Card 1: Weekday Dining */}
+          {/* Card 1: Regular Dining */}
           <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
             <div>
               {/* Header with Green Active Dot */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#666666] dark:text-[#A8A194] font-sans">
-                  WEEKDAY DINING
+                  REGULAR DINING
                 </span>
                 <span className="relative flex h-2.5 w-2.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#10B981] opacity-75"></span>
@@ -51,7 +51,7 @@ export function ServiceSchedule() {
 
               {/* Day Subhead */}
               <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors mt-1.5">
-                Monday, Tuesday &amp; Thursday
+                Thu, Fri, Sun, Mon, Tue
               </h3>
 
               {/* Big Timing */}
@@ -63,10 +63,10 @@ export function ServiceSchedule() {
             {/* Service Notes Footer */}
             <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16] space-y-1">
               <p className="text-xs sm:text-[13px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
-                Lunch &amp; Royal Dinner Service
+                12:00 PM &ndash; 10:00 PM
               </p>
               <p className="text-xs text-[#666666] dark:text-[#A0988A]">
-                Full &Agrave; La Carte &amp; Royal Specialties
+                Lunch, Evening Feasts &amp; Royal Sweets
               </p>
               <p className="text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-medium pt-0.5">
                 Last Seating: 21:30
@@ -74,22 +74,60 @@ export function ServiceSchedule() {
             </div>
           </div>
 
-          {/* Card 2: Midweek Rest (Wednesday Closed) */}
+          {/* Card 2: Saturday Late Night */}
+          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#9B7B34]/40 dark:border-[#D4AF37]/40 shadow-[0_8px_30px_rgba(155,123,52,0.08)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.5)] hover:border-[#9B7B34] hover:shadow-2xl flex flex-col justify-between transition-all duration-300 group cursor-default ring-1 ring-[#D4AF37]/20">
+            <div>
+              {/* Header with Gold Late-Night Badge */}
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
+                  SATURDAY LATE NIGHT
+                </span>
+                <span className="bg-[#FAF4E6] dark:bg-[#D4AF37]/15 text-[#8C6E2E] dark:text-[#F3E5AB] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-[#D4AF37]/30 transition-transform duration-200 group-hover:scale-105">
+                  1 HOUR EXTRA
+                </span>
+              </div>
+
+              {/* Day Subhead */}
+              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors mt-1.5">
+                Every Saturday
+              </h3>
+
+              {/* Big Timing */}
+              <div className="font-playfair text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#8C6E2E] dark:text-[#D4AF37] my-6 sm:my-8 tracking-tight">
+                12:00 &ndash; 23:00
+              </div>
+            </div>
+
+            {/* Service Notes Footer */}
+            <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16] space-y-1">
+              <p className="text-xs sm:text-[13px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
+                12:00 PM &ndash; 11:00 PM
+              </p>
+              <p className="text-xs text-[#666666] dark:text-[#A0988A]">
+                Extended Weekend Dining &amp; Cocktail Ambiance
+              </p>
+              <p className="text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-medium pt-0.5">
+                Last Seating: 22:15
+              </p>
+            </div>
+          </div>
+
+          {/* Card 3: Midweek Rest (Wednesday Closed) */}
           <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#B91C1C]/40 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
             <div>
               {/* Header with Red REST DAY Badge */}
               <div className="flex items-center justify-between">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#B91C1C] dark:text-[#F87171] font-sans">
-                  MIDWEEK REST
+                  WEEKLY REST
                 </span>
                 <span className="bg-[#FEE2E2] dark:bg-[#7F1D1D]/30 text-[#B91C1C] dark:text-[#FCA5A5] text-[10px] sm:text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-transparent dark:border-[#7F1D1D]/50 transition-transform duration-200 group-hover:scale-105">
-                  REST DAY
+                  CLOSED
                 </span>
               </div>
 
               {/* Day Subhead */}
               <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mt-1.5">
-                Wednesday
+                Every Wednesday
               </h3>
 
               {/* Big Status */}
@@ -107,47 +145,45 @@ export function ServiceSchedule() {
                 Deep cleansing &amp; handcrafted masala preparation
               </p>
               <p className="text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-medium pt-0.5">
-                Private Banquets Available On Request
+                Private Banquet Hire on Request
               </p>
             </div>
           </div>
+        </div>
 
-          {/* Card 3: Weekend Feasts */}
-          <div className="card-hover-elevate bg-white dark:bg-[#181511] rounded-2xl p-6 sm:p-8 border border-[#EBE6DC] dark:border-[#2C261D] shadow-[0_8px_30px_rgba(0,0,0,0.03)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.4)] hover:border-[#9B7B34]/60 hover:shadow-xl flex flex-col justify-between transition-all duration-300 group cursor-default">
-            <div>
-              {/* Header with Gold/Amber Dot */}
-              <div className="flex items-center justify-between">
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.18em] text-[#9B7B34] dark:text-[#D4AF37] font-sans">
-                  WEEKEND FEASTS
-                </span>
-                <span className="relative flex h-2.5 w-2.5">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#D4AF37] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#D4AF37]"></span>
-                </span>
-              </div>
-
-              {/* Day Subhead */}
-              <h3 className="font-playfair text-base sm:text-lg font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] group-hover:text-[#9B7B34] dark:group-hover:text-[#D4AF37] transition-colors mt-1.5">
-                Friday to Sunday
-              </h3>
-
-              {/* Big Timing */}
-              <div className="font-playfair text-2xl sm:text-3xl lg:text-[34px] font-bold text-[#1A1A1A] dark:text-[#F5F1EB] my-6 sm:my-8 tracking-tight">
-                12:00 &ndash; 22:00
-              </div>
+        {/* 7-Day Google Weekly Breakdown Strip */}
+        <div className="mt-8 p-5 sm:p-6 bg-white dark:bg-[#181511] rounded-2xl border border-[#EBE6DC] dark:border-[#2C261D] shadow-sm">
+          <p className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#8C6E2E] dark:text-[#D4AF37] mb-3 text-center sm:text-left">
+            OFFICIAL GOOGLE OPERATING HOURS
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 text-center">
+            <div className="p-2.5 rounded-xl bg-[#FAF8F5] dark:bg-[#13110E] border border-[#F0EBE3] dark:border-[#221D16]">
+              <span className="block text-xs font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">Thursday</span>
+              <span className="block text-xs text-[#666] dark:text-[#A8A194] mt-0.5">12&ndash;10 PM</span>
             </div>
-
-            {/* Service Notes Footer */}
-            <div className="pt-4 border-t border-[#F0EBE3] dark:border-[#221D16] space-y-1">
-              <p className="text-xs sm:text-[13px] font-semibold text-[#1A1A1A] dark:text-[#F5F1EB]">
-                Weekend Celebratory Feasts
-              </p>
-              <p className="text-xs text-[#666666] dark:text-[#A0988A]">
-                Live Ambiance &amp; Multi-generational Family Tables
-              </p>
-              <p className="text-xs text-[#8C6E2E] dark:text-[#D4AF37] font-medium pt-0.5">
-                Prior Booking Strongly Recommended
-              </p>
+            <div className="p-2.5 rounded-xl bg-[#FAF8F5] dark:bg-[#13110E] border border-[#F0EBE3] dark:border-[#221D16]">
+              <span className="block text-xs font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">Friday</span>
+              <span className="block text-xs text-[#666] dark:text-[#A8A194] mt-0.5">12&ndash;10 PM</span>
+            </div>
+            <div className="p-2.5 rounded-xl bg-[#FAF4E6] dark:bg-[#D4AF37]/10 border border-[#D4AF37]/40">
+              <span className="block text-xs font-bold text-[#8C6E2E] dark:text-[#D4AF37]">Saturday</span>
+              <span className="block text-xs font-bold text-[#8C6E2E] dark:text-[#F3E5AB] mt-0.5">12&ndash;11 PM</span>
+            </div>
+            <div className="p-2.5 rounded-xl bg-[#FAF8F5] dark:bg-[#13110E] border border-[#F0EBE3] dark:border-[#221D16]">
+              <span className="block text-xs font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">Sunday</span>
+              <span className="block text-xs text-[#666] dark:text-[#A8A194] mt-0.5">12&ndash;10 PM</span>
+            </div>
+            <div className="p-2.5 rounded-xl bg-[#FAF8F5] dark:bg-[#13110E] border border-[#F0EBE3] dark:border-[#221D16]">
+              <span className="block text-xs font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">Monday</span>
+              <span className="block text-xs text-[#666] dark:text-[#A8A194] mt-0.5">12&ndash;10 PM</span>
+            </div>
+            <div className="p-2.5 rounded-xl bg-[#FAF8F5] dark:bg-[#13110E] border border-[#F0EBE3] dark:border-[#221D16]">
+              <span className="block text-xs font-bold text-[#1A1A1A] dark:text-[#F5F1EB]">Tuesday</span>
+              <span className="block text-xs text-[#666] dark:text-[#A8A194] mt-0.5">12&ndash;10 PM</span>
+            </div>
+            <div className="p-2.5 rounded-xl bg-[#FEE2E2]/60 dark:bg-[#7F1D1D]/20 border border-[#EF4444]/30 col-span-2 sm:col-span-1">
+              <span className="block text-xs font-bold text-[#DC2626] dark:text-[#F87171]">Wednesday</span>
+              <span className="block text-xs font-semibold text-[#DC2626] dark:text-[#FCA5A5] mt-0.5">Closed</span>
             </div>
           </div>
         </div>

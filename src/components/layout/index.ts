@@ -3,3 +3,4 @@ export { DesktopNavigation, type DesktopNavigationProps, type NavItem } from "./
 export { MobileMenu, type MobileMenuProps } from "./MobileMenu";
 export { Footer } from "./Footer";
 export { ThemeToggle } from "./ThemeToggle";
+export { MobileStickyBar } from "./MobileStickyBar";

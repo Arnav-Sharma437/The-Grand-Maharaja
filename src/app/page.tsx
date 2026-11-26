@@ -6,7 +6,6 @@ import {
   ServiceSchedule,
   GalleryPreview,
   ReviewsSlider,
-  BanquetingInquiry,
 } from "@/components/home";
 
 export default function Home() {
@@ -32,9 +31,6 @@ export default function Home() {
 
       {/* 7. What Our Customers Say / Customer Reviews Slider with #F5F1EB (60%) background */}
       <ReviewsSlider />
-
-      {/* 8. Banqueting & Direct Inquiries / Contact Form with White (#FFFFFF) background */}
-      <BanquetingInquiry />
     </main>
   );
 }

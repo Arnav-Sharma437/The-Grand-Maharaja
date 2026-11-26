@@ -57,7 +57,7 @@ const HERITAGE_STATS = [
     icon: Clock,
     statNumber: "Daily",
     title: "Regal Hospitality",
-    description: "Lunch & dinner served 12:00 – 22:00 (Wednesday Closed)",
+    description: "Lunch & dinner 12:00 – 22:00 (Sat till 23:00, Wed Closed)",
     highlight: "Authentic Taste",
   },
 ];

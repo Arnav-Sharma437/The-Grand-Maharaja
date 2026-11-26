@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Utensils, CheckCircle2 } from "lucide-react";
@@ -32,17 +32,28 @@ const REAL_HERO_IMAGES = [
 
 export function HeroBanner() {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [minDate, setMinDate] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     eventType: "Table Dining",
-    guests: "2–4",
+    guests: "2",
     date: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  // Disable present (today) and past dates — minimum selectable date is tomorrow
+  useEffect(() => {
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const yyyy = tomorrow.getFullYear();
+    const mm = String(tomorrow.getMonth() + 1).padStart(2, "0");
+    const dd = String(tomorrow.getDate()).padStart(2, "0");
+    setMinDate(`${yyyy}-${mm}-${dd}`);
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -137,7 +148,7 @@ export function HeroBanner() {
           {/* Dual CTAs */}
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
-              href="/#enquiry"
+              href="/banqueting"
               className="shimmer-hover inline-flex items-center gap-2.5 px-7 py-3.5 bg-[#8C6E2E] hover:bg-[#A38137] text-white text-xs sm:text-[13px] font-semibold uppercase tracking-wider rounded-md shadow-[0_8px_24px_rgba(140,110,46,0.45)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 group"
             >
               <span>BOOKING &amp; BANQUET ENQUIRY</span>
@@ -243,21 +254,14 @@ export function HeroBanner() {
                 />
               </div>
 
-              {/* Field 4: Event Type */}
+              {/* Field 4: Event Type (Fixed to Table Dining) */}
               <div className="space-y-1.5">
                 <label className="block text-[10px] font-bold uppercase tracking-wider text-[#A8A194]">
                   EVENT TYPE *
                 </label>
-                <select
-                  value={formData.eventType}
-                  onChange={(e) => setFormData({ ...formData, eventType: e.target.value })}
-                  className="w-full h-10 bg-[#12100D] border border-[#2C261D] rounded-lg px-3 py-2 text-xs text-[#F5F1EB] focus:outline-none focus:border-[#D4AF37] focus:bg-[#161310] transition-colors cursor-pointer"
-                >
-                  <option value="Table Dining">Table Dining</option>
-                  <option value="Royal Banquet">Royal Banquet</option>
-                  <option value="Private Dining">Private Dining</option>
-                  <option value="Outdoor Catering">Outdoor Catering</option>
-                </select>
+                <div className="w-full h-10 bg-[#12100D] border border-[#2C261D] rounded-lg px-3 py-2 flex items-center text-xs text-[#D4AF37] font-semibold tracking-wide">
+                  Table Dining
+                </div>
               </div>
 
               {/* Field 5: Guests & Date */}
@@ -267,8 +271,11 @@ export function HeroBanner() {
                 </label>
                 <div className="flex items-center gap-2">
                   <input
-                    type="text"
-                    placeholder="2–4"
+                    type="number"
+                    min="1"
+                    max="20"
+                    required
+                    placeholder="2"
                     value={formData.guests}
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
                     className="w-16 h-10 bg-[#12100D] border border-[#2C261D] rounded-lg px-2 text-center text-xs text-[#F5F1EB] placeholder:text-[#666] focus:outline-none focus:border-[#D4AF37] focus:bg-[#161310] transition-colors"
@@ -276,6 +283,7 @@ export function HeroBanner() {
                   <input
                     type="date"
                     required
+                    min={minDate}
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                     className="flex-1 h-10 bg-[#12100D] border border-[#2C261D] rounded-lg px-2 text-xs text-[#F5F1EB] focus:outline-none focus:border-[#D4AF37] focus:bg-[#161310] transition-colors cursor-pointer"

@@ -135,23 +135,39 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Service Hours */}
+          {/* Column 3: Service Hours (Exact Google Hours) */}
           <div className="lg:col-span-3">
             <h3 className="font-playfair text-lg sm:text-xl font-semibold text-[#1A1A1A] dark:text-[#F5F1EB] mb-4">
-              Service Hours
+              Opening Hours
             </h3>
-            <div className="space-y-2.5 text-xs sm:text-[13px] font-sans">
-              <div className="flex items-center justify-between gap-3 p-1.5 -mx-1.5 rounded-lg hover:bg-[#EBE5D8]/50 dark:hover:bg-[#1A1713] transition-colors">
-                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Thursday &ndash; Tuesday</span>
+            <div className="space-y-1.5 text-xs sm:text-[13px] font-sans">
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Thursday</span>
                 <span className="text-[#555555] dark:text-[#A0988A]">12:00 PM &ndash; 10:00 PM</span>
               </div>
-              <div className="flex items-center justify-between gap-3 p-1.5 -mx-1.5 rounded-lg hover:bg-[#EBE5D8]/50 dark:hover:bg-[#1A1713] transition-colors">
-                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Wednesday</span>
-                <span className="text-[#DC2626] dark:text-[#F87171] font-medium">Closed for Rest</span>
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Friday</span>
+                <span className="text-[#555555] dark:text-[#A0988A]">12:00 PM &ndash; 10:00 PM</span>
               </div>
-              <div className="flex items-center justify-between gap-3 pt-1 p-1.5 -mx-1.5 rounded-lg hover:bg-[#EBE5D8]/50 dark:hover:bg-[#1A1713] transition-colors">
-                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Royal Banquet Hall</span>
-                <span className="text-[#666666] dark:text-[#A0988A]">Private Bookings Only</span>
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Saturday</span>
+                <span className="text-[#8C6E2E] dark:text-[#D4AF37] font-semibold">12:00 PM &ndash; 11:00 PM</span>
+              </div>
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Sunday</span>
+                <span className="text-[#555555] dark:text-[#A0988A]">12:00 PM &ndash; 10:00 PM</span>
+              </div>
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Monday</span>
+                <span className="text-[#555555] dark:text-[#A0988A]">12:00 PM &ndash; 10:00 PM</span>
+              </div>
+              <div className="flex items-center justify-between gap-3 py-1 border-b border-[#F0EBE3]/60 dark:border-[#221D16]">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Tuesday</span>
+                <span className="text-[#555555] dark:text-[#A0988A]">12:00 PM &ndash; 10:00 PM</span>
+              </div>
+              <div className="flex items-center justify-between gap-3 py-1">
+                <span className="text-[#333333] dark:text-[#D5CFC5] font-medium">Wednesday</span>
+                <span className="text-[#DC2626] dark:text-[#F87171] font-semibold uppercase text-[11px] tracking-wider">Closed</span>
               </div>
             </div>
           </div>
